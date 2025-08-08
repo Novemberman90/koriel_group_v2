@@ -1,5 +1,4 @@
 @use 'importer' as *;
-
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +13,7 @@ body {
   @extend %Muli-400;
   font-size: 16px;
   line-height: 1.2;
-  color: $text;
+  color:$dark-blue;
   position: relative;
   &.lock {
     overflow: hidden;
@@ -28,7 +27,7 @@ a {
 }
 .container {
   max-width: 1440px;
-  padding: 0 100px;
+  padding: 0 120px;
   margin: 0 auto;
 }
 

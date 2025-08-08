@@ -1,2 +1,102 @@
 @use 'importer' as *;
 @forward 'global';
+
+.header-top-bar {
+  padding: 20px 0;
+  background-color: $semi-white;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__work-time-info {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    padding-right: 5px;
+    font-size: 18px;
+  }
+  &__openTime {
+    line-height: 1;
+  }
+  &__social-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__social-link{
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    svg {
+      path {
+        fill: $dark-blue;
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          fill: $blue;
+        } 
+      }
+    }
+  }
+}
+
+.header {
+  &__inner {
+    
+  }
+  &__info {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__contact-list {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+  }
+  &__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    svg {
+      path {
+        transition: all 0.3s;
+        fill:$blue;
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          transition: all 0.3s;
+          fill: $dark-blue;
+          stroke: $white;
+        } 
+      }
+      a.header__contact-link {
+        transition: all 0.3s;
+        color: $dark-blue;
+      }
+    }
+  }
+  &__contact-name {
+    font-size: 20px;
+  }
+  &__contact-link {
+    color: $grey;
+  }
+}

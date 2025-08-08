@@ -80,7 +80,8 @@ function scripts() {
 }
 
 function styles() {
-    return src ('app/scss/*.scss')
+    return src ('app/scss/styles.scss')
+    .pipe(scss({ outputStyle: 'expanded' }).on('error', scss.logError))
     .pipe(autoprefixer({ overrideBrowserslist: ['last 2 version'], grid: true, cascade: false})) 
     .pipe(concat('styles.min.scss'))
     .pipe(scss({outputStyle: 'compressed'}))

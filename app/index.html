@@ -10,596 +10,128 @@
 </head>
 <body>
 <header class="header" id="header">
-  <div class="header__wrapper">
-    <div class="header__menu">
-      <a class="header__logo" href="./index.html">
-        <img class="header__logo" src="./images/icon/logo.svg" alt="logo">
-      </a>
-      <nav class="menu">
-        <button class="menu__btn">
-          <p>Menu</p>
-        </button>
-        <div class="menu__block">
-          <img class="menu__logo" src="./images/icon/logo.svg" alt="">
+  <div class="header-top-bar">
+    <div class="container">
+      <div class="header-top-bar__wrap">
+        <div class="header-top-bar__work-time-info">
+          <p class="header-top-bar__title">Час роботи </p>
+          <time class="header-top-bar__openTime" datetime="Mo-Fr 09:00-18:00" itemprop="openingHours">09:00 to 18:00</time>
+        </div>
+        <ul class="header-top-bar__social-list">
+          <li class="header-top-bar__social-item">
+            <a class="header-top-bar__social-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="19px"
+                viewBox="0 0 20 19" version="1.1">
+                  <path style=" stroke:none;fill-rule:evenodd;fill:'';fill-opacity:1;"
+                    d="M 19.488281 10.035156 C 19.488281 5.03125 15.289062 0.976562 10.105469 0.976562 C 4.925781 0.976562 0.726562 5.03125 0.726562 10.035156 C 0.726562 14.558594 4.15625 18.304688 8.640625 18.984375 L 8.640625 12.65625 L 6.257812 12.65625 L 6.257812 10.035156 L 8.640625 10.035156 L 8.640625 8.039062 C 8.640625 5.769531 10.042969 4.515625 12.183594 4.515625 C 13.210938 4.515625 14.285156 4.691406 14.285156 4.691406 L 14.285156 6.921875 L 13.101562 6.921875 C 11.9375 6.921875 11.574219 7.621094 11.574219 8.335938 L 11.574219 10.035156 L 14.175781 10.035156 L 13.757812 12.65625 L 11.574219 12.65625 L 11.574219 18.988281 C 16.058594 18.304688 19.488281 14.558594 19.488281 10.035156 Z M 19.488281 10.035156 " />
+              </svg>
+            </a>
+          </li>
+          <li class="header-top-bar__social-item">
+            <a class="header-top-bar__social-link" href="#">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.6268 2.35469C13.6109 2.35752 14.5539 2.73524 15.2498 3.40535C15.9456 4.07546 16.3379 4.98351 16.3408 5.93119V13.0834C16.3379 14.0311 15.9456 14.9392 15.2498 15.6093C14.5539 16.2794 13.6109 16.6571 12.6268 16.6599H5.19944C4.21532 16.6571 3.27234 16.2794 2.57645 15.6093C1.88057 14.9392 1.48832 14.0311 1.48539 13.0834V5.93119C1.48832 4.98351 1.88057 4.07546 2.57645 3.40535C3.27234 2.73524 4.21532 2.35752 5.19944 2.35469H12.6268ZM12.6268 0.924316H5.19944C2.33969 0.924316 0 3.17735 0 5.93119V13.0834C0 15.8373 2.33969 18.0903 5.19944 18.0903H12.6268C15.4865 18.0903 17.8262 15.8373 17.8262 13.0834V5.93119C17.8262 3.17735 15.4865 0.924316 12.6268 0.924316Z"
+                  fill="" />
+                <path
+                  d="M13.7409 5.93139C13.5205 5.93139 13.3051 5.86847 13.1219 5.75058C12.9387 5.63269 12.7959 5.46513 12.7116 5.26909C12.6272 5.07305 12.6052 4.85733 12.6482 4.64921C12.6912 4.44109 12.7973 4.24993 12.9531 4.09988C13.1089 3.94984 13.3074 3.84766 13.5235 3.80626C13.7397 3.76486 13.9637 3.78611 14.1673 3.86731C14.3708 3.94852 14.5448 4.08603 14.6673 4.26246C14.7897 4.4389 14.855 4.64632 14.855 4.85852C14.8553 4.9995 14.8267 5.13914 14.7709 5.26945C14.715 5.39975 14.6329 5.51815 14.5294 5.61783C14.4259 5.71752 14.3029 5.79653 14.1676 5.85034C14.0323 5.90415 13.8873 5.9317 13.7409 5.93139ZM8.9131 6.64639C9.50074 6.64639 10.0752 6.81419 10.5638 7.12857C11.0524 7.44296 11.4332 7.8898 11.6581 8.41261C11.883 8.93541 11.9418 9.51069 11.8272 10.0657C11.7125 10.6207 11.4296 11.1305 11.014 11.5306C10.5985 11.9308 10.0691 12.2033 9.49274 12.3137C8.91639 12.4241 8.31899 12.3674 7.77608 12.1508C7.23317 11.9343 6.76914 11.5676 6.44266 11.0971C6.11619 10.6266 5.94193 10.0734 5.94193 9.50751C5.94277 8.74894 6.25608 8.02168 6.81309 7.48529C7.37011 6.9489 8.12535 6.6472 8.9131 6.64639ZM8.9131 5.21602C8.03167 5.21602 7.17005 5.46771 6.43717 5.93926C5.70429 6.41082 5.13309 7.08106 4.79578 7.86523C4.45847 8.6494 4.37022 9.51227 4.54218 10.3447C4.71413 11.1772 5.13858 11.9419 5.76184 12.5421C6.3851 13.1422 7.17918 13.551 8.04367 13.7165C8.90815 13.8821 9.80422 13.7972 10.6185 13.4723C11.4329 13.1475 12.1289 12.5975 12.6186 11.8917C13.1083 11.186 13.3696 10.3563 13.3696 9.50751C13.3696 8.36934 12.9001 7.27778 12.0644 6.47297C11.2286 5.66815 10.095 5.21602 8.9131 5.21602Z"
+                  fill="" />
+              </svg>
+            </a>
+          </li>
+          <li class="header-top-bar__social-item">
+            <a href="#" class="header-top-bar__social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="18px"
+                viewBox="0 0 20 18" version="1.1">
+                <path style=" stroke:none;fill-rule:nonzero;fill:'';fill-opacity:1;"
+                  d="M 19.085938 4.363281 C 18.871094 3.53125 18.226562 2.875 17.410156 2.65625 C 15.933594 2.25 10.003906 2.25 10.003906 2.25 C 10.003906 2.25 4.074219 2.25 2.59375 2.65625 C 1.777344 2.875 1.136719 3.53125 0.917969 4.363281 C 0.519531 5.871094 0.519531 9.015625 0.519531 9.015625 C 0.519531 9.015625 0.519531 12.15625 0.917969 13.664062 C 1.136719 14.496094 1.777344 15.125 2.59375 15.34375 C 4.074219 15.75 10.003906 15.75 10.003906 15.75 C 10.003906 15.75 15.933594 15.75 17.414062 15.34375 C 18.230469 15.125 18.871094 14.496094 19.089844 13.664062 C 19.484375 12.15625 19.484375 9.015625 19.484375 9.015625 C 19.484375 9.015625 19.484375 5.871094 19.089844 4.363281 Z M 8.0625 11.867188 L 8.0625 6.160156 L 13.015625 9.015625 Z M 8.0625 11.867188 " />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header__inner">
+    <div class="container">
+      <div class="header__info">
+        <a class="header__logo" href="#">
+          <img class="header__logo-img" src="./images/icon/logo.svg" alt="koriel group logo">
+        </a>
+        <ul class="header__contact-list">
+          <li class="header__contact-item">
+            <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                fill="#232d55" />
+              <path
+                d="M44.5 24H23.5C22.1193 24 21 25.1193 21 26.5V41.5C21 42.8807 22.1193 44 23.5 44H44.5C45.8807 44 47 42.8807 47 41.5V26.5C47 25.1193 45.8807 24 44.5 24Z"
+                stroke="#232d55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M25 28L34 35L43 28" stroke="#232d55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div class="header__contact-box">
+              <p class="header__contact-name">Email</p>
+              <a class="header__contact-link" href="mailto:kelenakiev@gmail.com">kelenakiev@gmail.com</a>
+            </div>
+          </li>
+          <li class="header__contact-item">
+            <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                fill="#FFB342" />
+                <path
+                  d="M45.2509 40.8062C44.3347 39.8832 42.1158 38.5361 41.0393 37.9933C39.6373 37.2871 39.5219 37.2294 38.42 38.0481C37.6849 38.5944 37.1963 39.0824 36.3361 38.899C35.4759 38.7155 33.6066 37.6811 31.9698 36.0497C30.333 34.4182 29.2386 32.4948 29.0545 31.6376C28.8705 30.7803 29.3667 30.2974 29.9078 29.5607C30.6705 28.5223 30.6129 28.3492 29.9609 26.9474C29.4526 25.857 28.0663 23.6591 27.1397 22.7476C26.1485 21.7686 26.1485 21.9416 25.5098 22.207C24.9899 22.4258 24.4911 22.6917 24.0196 23.0014C23.0965 23.6146 22.5842 24.124 22.2259 24.8896C21.8676 25.6551 21.7067 27.4499 23.5569 30.8109C25.4071 34.1719 26.7053 35.8905 29.3921 38.5696C32.0788 41.2487 34.1449 42.6892 37.1651 44.383C40.9014 46.4754 42.3345 46.0675 43.1024 45.7098C43.8703 45.3522 44.382 44.8445 44.9965 43.9215C45.307 43.4508 45.5735 42.9526 45.7926 42.4331C46.0586 41.7967 46.2317 41.7967 45.2509 40.8062Z"
+                  stroke="#1C2752" stroke-width="2" stroke-miterlimit="10" />
+            </svg>
+                       
+            <div class="header__contact-box">
+              <p class="header__contact-name">Телефон</p>
+              <a class="header__contact-link" href="tel:+380966258089">(096) 625-80-89</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="header__nav-box">
+        <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link menu__link--active" href="./index.html">
-                Home
-              </a>
+              <a href="#" class="menu__link">Головна</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="./about.html">
-                About Us
-              </a>
+              <a href="#" class="menu__link">Про Нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#gallery">
-                Gallery
-              </a>
+              <a href="#" class="menu__link">Послуги</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#contact">
-                Contact Us
-              </a>
+              <a href="#" class="menu__link">Проєкти</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакти</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Новини</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Залишились питання ?</a>
             </li>
           </ul>
-          <div class="menu__contact-box">
-            <h3 class="menu__contact-title">
-              Contact Us
-            </h3>
-            <address class="menu__contact-adress">
-              <p>
-                Latsi Beach, Polis Cyprus
-              </p>
-            </address>
-            <a class="menu__contact-email" href="mailto:info@villajolo.com">info@villajolo.com</a>
-            <a class="menu__contact-tel" href="tel:+35799901551">+357 99901551</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <div class="header__text-box">
-      <h1 class="header__title">
-        Welcome to
-        The Villa Jolo
-      </h1>
+        </nav>
+      </div>
     </div>
   </div>
-  <div class="header__bottom">
-    <div class="header__inner">
-        <div class="header__content">
-          <p class="header__text">
-            The Villa Jolo  located in the charming town of Latsi, near Polis in Cyprus. Nestled just 20 meters from the beach, the
-            villa offers breathtaking first-line sea views.
-          </p>
-        </div>
-        <div class="header__video-block">
-          <div class="header__video-popup">
-            <a class="header__video-link" data-fancybox data-src="./images/video/IMG_9098.mp4" href="./images/video/IMG_9098.mp4">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="-0.75" y="0.75" width="62.5" height="62.5" rx="31.25" transform="matrix(-1 0 0 1 62.5 0)" fill="#FCFBF9" />
-                <rect x="-0.75" y="0.75" width="62.5" height="62.5" rx="31.25" transform="matrix(-1 0 0 1 62.5 0)" stroke="#292725"
-                  stroke-width="1.5" />
-                <path
-                  d="M41.9814 30.5508C43.0405 31.2627 43.005 32.8632 41.875 33.5156L28.375 41.3096L28.2646 41.3682C27.1184 41.9299 25.75 41.099 25.75 39.7939L25.75 24.2061C25.75 22.8589 27.2083 22.0169 28.375 22.6904L41.875 30.4844L41.9814 30.5508Z"
-                  stroke="#292725" stroke-width="1.5" />
-              </svg>
-            </a>
-          </div>
-        </div>
-    </div>
-    <ul class="vilas-description vilas-description__header">
-      <li class="vilas-description__item">
-        6 guests
-      </li>
-      <li class="vilas-description__item">
-        3 bedrooms
-      </li>
-      <li class="vilas-description__item">
-        3 bathrooms
-      </li>
-      <li class="vilas-description__item">
-        320 sqm
-      </li>
-    </ul>
-  </div>
-  
 </header>
+
+
+
+
 <main class="main">
-  <section class="about">
-    <div class="container">
-      <div class="about__inner">
-        <div class="about__video-block">
-          <div class="about__video-popup">
-            <a class="about__video-link" data-fancybox data-src="./images/video/villa out.mp4" href="./images/video/villa out.mp4">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="-0.75" y="0.75" width="62.5" height="62.5" rx="31.25" transform="matrix(-1 0 0 1 62.5 0)"
-                  fill="#FCFBF9" />
-                <rect x="-0.75" y="0.75" width="62.5" height="62.5" rx="31.25" transform="matrix(-1 0 0 1 62.5 0)"
-                  stroke="#292725" stroke-width="1.5" />
-                <path
-                  d="M41.9814 30.5508C43.0405 31.2627 43.005 32.8632 41.875 33.5156L28.375 41.3096L28.2646 41.3682C27.1184 41.9299 25.75 41.099 25.75 39.7939L25.75 24.2061C25.75 22.8589 27.2083 22.0169 28.375 22.6904L41.875 30.4844L41.9814 30.5508Z"
-                  stroke="#292725" stroke-width="1.5" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="about__content">
-          <div class="about__content-text">
-            <p>The Villa Jolo  located in the charming town of Latchi, near Polis in Cyprus. Nestled just 20 meters from the beach, the
-            villa offers breathtaking first-line sea views.
-          </p>
-            <p>
-              Situated in a serene and picturesque area, it provides the perfect retreat for relaxation and tranquility.
-            </p>
-            <p>
-              This is the ideal place for you to escape the hustle and bustle of everyday life and immerse yourself in the beauty of
-              nature.
-            </p>
-          </div>
-          <a class="about__content-link" href="./about.html" target="_blank" rel="noopener noreferrer">About Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="location" id="location">
-    <div class="container">
-      <div class="location__inner">
-        <div class="location__content">
-          <h2 class="location__title title">Location</h2>
-          <p class="location__descr">The villa is located in the charming town of Latsi, in the north west part of Cyprus.
-          </p>
-          <picture class="location__map-img">
-            <source srcset="./images/content/map@x2.jpg 2x, ./images/content/map.jpg 1x" type="image/jpeg">
-            <img class="location__map-img" src="./images/content/map.jpg" alt="map location">
-          </picture>
-          <div class="location__block-link">
-            <div class="location__link-decsr">
-              <p class="location__pre-title">Location</p>
-              <h3 class="location__link-title">Latchi Beach</h3>
-              <h4 class="location__sub-title">Cyprus</h4>
-            </div>
-            <a class="location__link-map" href="https://www.google.com/maps/search/Latchi+Beach/@35.0407213,32.3853968,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">google maps</a>
-          </div>
-        </div>
-        <div class="location__img-block">
-          <picture class="location__img">
-            <!-- От 840px и выше -->
-            <source srcset="./images/content/location-1.jpg 1x, ./images/content/location-1@x2.jpg 2x"
-              type="image/jpeg">
-        
-            <img class="location__img" src="./images/content/location-1.jpg" alt="resort photo" loading="lazy" decoding="async">
-          </picture>
-          <picture class="location__img">
-            <!-- От 840px и выше -->
-            <source srcset="./images/content/location-2.jpg 1x, ./images/content/location-2@x2.jpg 2x" media="(min-width: 840px)"
-              type="image/jpeg">
-          
-            <img class="location__img" src="./images/content/location-2.jpg" alt="resort photo" loading="lazy" decoding="async">
-          </picture>
-
-          <picture class="location__img">
-            <!-- От 840px и выше -->
-            <source srcset="./images/content/location-3.jpg 1x, ./images/content/location-3@x2.jpg 2x" media="(min-width: 840px)"
-              type="image/jpeg">
-          
-            <!-- От 480px до 839px -->
-            <source srcset="./images/content/location-3-m.jpg 1x, ./images/content/location-3@x2-m.jpg 2x"
-              media="(min-width: 480px)" type="image/jpeg">
-          
-            <!-- От 375px до 479px -->
-            <source srcset="./images/content/location-3-s.jpg 1x, ./images/content/location-3@x2-s.jpg 2x"
-              media="(min-width: 375px)" type="image/jpeg">
-          
-            <!-- Ниже 375px -->
-            <img class="location__img" src="./images/content/location-3.jpg" alt="resort photo" loading="lazy" decoding="async">
-          </picture>
-
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="rooms">
-    <div class="container">
-      <h2 class="rooms__title title">Rooms</h2>
-      <div class="rooms__inner">
-        <picture class="rooms__img">
-          <source srcset="./images/rooms/rooms-bg.jpg 1x, ./images/rooms/rooms-bg@x2.jpg 2x" type="image/jpeg">
-          <img src="./images/rooms/rooms-bg.jpg" alt="rooms photo" loading="lazy">
-        </picture>
-
-        <div class="rooms__descr">
-          <ul class="vilas-description vilas-description--rooms">
-            <li class="vilas-description__item vilas-description__item--rooms">
-              6 guests
-            </li>
-            <li class="vilas-description__item vilas-description__item--rooms">
-              3 bedrooms
-            </li>
-            <li class="vilas-description__item vilas-description__item--rooms">
-              3 bathrooms
-            </li>
-            <li class="vilas-description__item vilas-description__item--rooms">
-              320 sqm
-            </li>
-          </ul>
-
-          <h3 class="rooms__descr-title">Key features</h3>
-          <ul class="rooms__descr-list">
-            <li class="rooms__descr-item">
-              <img src="./images/icon/swimming-pool.svg" alt="decsriprion icon" class="rooms__descr-img">
-              <p>swimming pool</p>
-            </li>
-            <li class="rooms__descr-item">
-              <img src="./images/icon/conditioning.svg" alt="decsriprion icon" class="rooms__descr-img">
-              <p>
-                Full air conditioning
-              </p>
-            </li>
-            <li class="rooms__descr-item">
-              <img src="./images/icon/beach-front.svg" alt="decsriprion icon" class="rooms__descr-img">
-              <p>Beach front</p>
-            </li>
-            <li class="rooms__descr-item">
-              <img src="./images/icon/grill.svg" alt="decsriprion icon" class="rooms__descr-img">
-              <p>Barbecue</p>
-            </li>
-            <li class="rooms__descr-item">
-              <img src="./images/icon/sea-view.svg" alt="decsriprion icon" class="rooms__descr-img">
-              <p>Sea view</p>
-            </li>
-            <li class="rooms__descr-item">
-              <img src="./images/icon/house.svg" alt="decsriprion icon" class="rooms__descr-img">
-              <p>Build in 2024 </p>
-            </li>
-            <li class="rooms__descr-item">
-              <img src="./images/icon/sauna.svg" alt="decsriprion icon" class="rooms__descr-img">
-              <p>Sauna</p>
-            </li>
-            <li class="rooms__descr-item">
-              <img src="./images/icon/activities.svg" alt="decsriprion icon" class="rooms__descr-img">
-              <p>Outdoor activities</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="rooms-tabs" id="gallery">
-      <div class="container">
-        <div class="rooms-tabs__nav" role="tablist">
-          <button type="button" class="rooms-tabs__button rooms-tabs__button--active" data-tab="bedroom1">Bedroom 1</button>
-          <button type="button" class="rooms-tabs__button" data-tab="bedroom2">Bedroom 2</button>
-          <button  type="button" class="rooms-tabs__button" data-tab="bedroom3">Bedroom 3</button>
-          <button  type="button" class="rooms-tabs__button" data-tab="livingroom">Living Room</button>
-          <button  type="button" class="rooms-tabs__button" data-tab="kitchen">Kitchen</button>
-          <button  type="button" class="rooms-tabs__button" data-tab="lounge">Outdoor lounge</button>
-          <button  type="button" class="rooms-tabs__button" data-tab="barbecue">Barbecue</button>
-          <button  type="button" class="rooms-tabs__button" data-tab="activities">Activities</button>
-        </div>
-      </div>
-    <div class="container">
-      <div class="rooms-tabs__content">
-        <div class="rooms-tabs__panel rooms-tabs__panel--active" id="bedroom1">
-          <div class="rooms-tabs__carusel rooms-tabs__carusel--active">
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/Bedroom-1.1.jpg 1x, ./images/rooms/Bedroom-1.1@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/Bedroom-1.1.jpg" alt="Bedroom 1">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Bedroom 1</p>
-                <h4 class="rooms-tabs__card-title">Bedroom </h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/Bedroom-1.2.jpg 1x, ./images/rooms/Bedroom-1.2@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/Bedroom-1.2.jpg" alt="Bedroom 1">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Bedroom 1</p>
-                <h4 class="rooms-tabs__card-title">Bedroom </h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/Bedroom-1.3.jpg 1x, ./images/rooms/Bedroom-1.3@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/Bedroom-1.3.jpg" alt="Bedroom 1">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Bedroom 1</p>
-                <h4 class="rooms-tabs__card-title">Bedroom </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <div class="rooms-tabs__panel" id="bedroom2">
-          <div class="rooms-tabs__carusel">
-            <div class="rooms-tabs__card rooms-tabs__card--bedroom2">
-              <picture>
-                <source srcset="./images/rooms/Bedroom-2.1.jpg 1x, ./images/rooms/Bedroom-2.1@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/Bedroom-2.1.jpg" alt="Bedroom 2">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Bedroom 2</p>
-                <h4 class="rooms-tabs__card-title">Bedroom </h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card rooms-tabs__card--bedroom2">
-              <picture>
-                <source srcset="./images/rooms/Bedroom-2.2.jpg 1x, ./images/rooms/Bedroom-2.2@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/Bedroom-2.2.jpg" alt="Bedroom 2">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Bedroom 2</p>
-                <h4 class="rooms-tabs__card-title">Bedroom </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="rooms-tabs__panel" id="bedroom3">
-          <div class="rooms-tabs__carusel">
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/Bedroom-3.1.jpg 1x, ./images/rooms/Bedroom-3.1@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/Bedroom-3.1.jpg" alt="Bedroom 3">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Bedroom 3</p>
-                <h4 class="rooms-tabs__card-title">Bedroom </h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/Bedroom-3.2.jpg 1x, ./images/rooms/Bedroom-3.2@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/Bedroom-3.2.jpg" alt="Bedroom 3">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Bedroom 3</p>
-                <h4 class="rooms-tabs__card-title">Bedroom </h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/Bedroom-3.3.jpg 1x, ./images/rooms/Bedroom-3.3@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/Bedroom-3.3.jpg" alt="Bedroom 3">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Bedroom 3</p>
-                <h4 class="rooms-tabs__card-title">Bedroom </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="rooms-tabs__panel" id="livingroom">
-          <div class="rooms-tabs__carusel">
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/living-room-1.jpg 1x, ./images/rooms/living-room-1@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/living-room-1.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Living Room</p>
-                <h4 class="rooms-tabs__card-title">Photo 1</h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/living-room-2.jpg 1x, ./images/rooms/living-room-2@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/living-room-2.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Living Room</p>
-                <h4 class="rooms-tabs__card-title">Photo 2</h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/living-room-3.jpg 1x, ./images/rooms/living-room-3@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/living-room-3.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Living Room</p>
-                <h4 class="rooms-tabs__card-title">Photo 3</h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/living-room-4.jpg 1x, ./images/rooms/living-room-4@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/living-room-4.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Living Room</p>
-                <h4 class="rooms-tabs__card-title">Photo 4</h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/living-room-5.jpg 1x, ./images/rooms/living-room-5@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/living-room-5.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Living Room</p>
-                <h4 class="rooms-tabs__card-title">Photo 5</h4>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="rooms-tabs__panel" id="kitchen">
-          <div class="rooms-tabs__carusel">
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/kitchen1.jpg 1x, ./images/rooms/kitchen1@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/kitchen1.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Kitchen</p>
-                <h4 class="rooms-tabs__card-title">Photo 1</h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/kitchen2.jpg 1x, ./images/rooms/kitchen2@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/kitchen2.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Kitchen</p>
-                <h4 class="rooms-tabs__card-title">Photo 2</h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/kitchen3.jpg 1x, ./images/rooms/kitchen3@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/kitchen3.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Kitchen</p>
-                <h4 class="rooms-tabs__card-title">Photo 3</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="rooms-tabs__panel" id="lounge">
-          <div class="rooms-tabs__card">
-            <picture>
-              <source srcset="./images/rooms/lounge.jpg 1x, ./images/rooms/lounge@x2.jpg 2x" type="image/jpeg">
-              <img src="./images/rooms/lounge.jpg" alt="livingroom">
-            </picture>
-            <div class="rooms-tabs__card-titlebox">
-              <p class="rooms-tabs__card-pretitle">Outdoor lounge</p>
-              <h4 class="rooms-tabs__card-title">Photo 1</h4>
-            </div>
-          </div> 
-        </div>
-
-        <div class="rooms-tabs__panel" id="barbecue">
-          <div class="rooms-tabs__carusel">
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/barbecue-1.jpg 1x, ./images/rooms/barbecue-1@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/barbecue-1.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Barbecue</p>
-                <h4 class="rooms-tabs__card-title">Photo 1</h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/barbecue-2.jpg 1x, ./images/rooms/barbecue-2@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/barbecue-2.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Barbecue</p>
-                <h4 class="rooms-tabs__card-title">Photo 2</h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/barbecue-3.jpg 1x, ./images/rooms/barbecue-3@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/barbecue-3.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Barbecue</p>
-                <h4 class="rooms-tabs__card-title">Photo 3</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="rooms-tabs__panel" id="activities">
-          <div class="rooms-tabs__carusel">
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/activities-1.jpg 1x, ./images/rooms/activities-1@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/activities-1.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Activities</p>
-                <h4 class="rooms-tabs__card-title">Photo </h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/activities-2.jpg 1x, ./images/rooms/activities-2@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/activities-2.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Activities</p>
-                <h4 class="rooms-tabs__card-title">Photo </h4>
-              </div>
-            </div>
-            <div class="rooms-tabs__card">
-              <picture>
-                <source srcset="./images/rooms/activities-3.jpg 1x, ./images/rooms/activities-3@x2.jpg 2x" type="image/jpeg">
-                <img src="./images/rooms/activities-3.jpg" alt="livingroom">
-              </picture>
-              <div class="rooms-tabs__card-titlebox">
-                <p class="rooms-tabs__card-pretitle">Activities</p>
-                <h4 class="rooms-tabs__card-title">Photo </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-
-      </div>
-    </div>
-  </div>
-
-  </section>
 </main>
 <footer class="footer">
   <div class="container">
-    <div class="footer__top">
-      <img class="footer__logo" src="./images/icon/logo-footer.svg" alt="fotter logo">
-      <div class="footer__column-block">
-        <div class="footer__column">
-          <h3 class="footer__title">About us</h3>
-          <ul class="footer__list">
-            <li class="footer__item"><a href="#gallery" class="footer__link">Activities</a></li>
-            <li class="footer__item"><a href="#gallery" class="footer__link">Rooms</a></li>
-            <li class="footer__item"><a href="#location" class="footer__link">Location</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h3 class="footer__title">Villa</h3>
-          <ul class="footer__list">
-            <li class="footer__item"><a href="#gallery" class="footer__link">Gallery</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Makes us unique</a></li>
-            <li class="footer__item"><a href="https://www.booking.com/" class="footer__link" target="_blank">Booking</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h3 class="footer__title">Contact Us</h3>
-          <ul class="footer__list">
-            <li class="footer__item">Latsi Beach, Polis Cyprus</li>
-            <li class="footer__item"><a href="mailto:info@villajolo.com" class="footer__link">info@villajolo.com</a></li>
-            <li class="footer__item"><a href="tel:+35799901551" class="footer__link">+357 99901551</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer__bottom" id="contact">
-      <a class="footer__bottom-link footer__bottom-notice" href="#">Legal notice</a>
-      <a class="footer__bottom-link footer__bottom-unanime" href="#">© 2025 Unanime</a>
-      <div class="footer__bottom-link footer__bottom-gotop">
-        <a class="footer__back-to-top" href="#header">Back to top
-          <img src="./images/icon/go-top.svg" alt="">
-        </a>
-      </div>
-    </div>
   </div>
 </footer>
 
-  <script src="./js/main.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
