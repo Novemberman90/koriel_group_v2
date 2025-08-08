@@ -1,0 +1,35 @@
+@use 'importer' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  @extend %Muli-400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $text;
+  position: relative;
+  &.lock {
+    overflow: hidden;
+  }
+}
+a {
+  color: inherit;
+}
+.main {
+  flex-grow: 1;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+

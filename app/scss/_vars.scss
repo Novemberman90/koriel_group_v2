@@ -1,0 +1,47 @@
+
+$semi-white: #f0f0f5;
+$text: #232d55;
+$grey: #64738c;
+$blue:#5d98d8;
+$white: #fff;
+
+%Muli-900 {
+  font-family: 'Muli-Black';
+  font-weight: 900;
+}
+%Muli-700 {
+  font-family: 'Muli-Bold';
+  font-weight: 700;
+}
+%Muli-400 {
+  font-family: 'Muli-Regular';
+  font-weight: 400;
+}
+%Muli-300 {
+  font-family: 'Muli-Light';
+  font-weight: 300;
+}
+
+
+ %checkbox-hidden,
+ %radio-hidden {
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+   position: absolute;
+ }
+ %uppercase{
+   text-transform: uppercase;
+ }
+ %capitalaize {
+  text-transform: capitalize;
+ }
+
+ %visual-hiden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    position: absolute;
+ }
