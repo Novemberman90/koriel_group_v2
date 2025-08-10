@@ -31,4 +31,13 @@ a {
   margin: 0 auto;
 }
 
-
+@media (max-width: 1282px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1180px) {
+  .container {
+    padding: 0 30px;
+  }
+}
