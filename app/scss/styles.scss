@@ -305,6 +305,143 @@
   }
 }
 
+
+.footer {
+  padding: 50px 0px 95px;
+  background-color: $dark-blue;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $semi-white;
+    gap: 20px;
+  }
+  &__logo {
+    max-width: 250px;
+    width: 100%;
+    display: block;
+  }
+  &__logo-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  &__logo-text {
+    max-width: 300px;
+    width: 100%;
+    padding-right: 5px;
+    text-wrap: balance;
+    margin-bottom: 50px;
+
+    p {
+      color: $semi-white;
+    }
+  }
+  &__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    svg {
+      width: 50px;
+      height: 50px;
+      path {
+        transition: all 0.3s;
+        fill: $blue;
+      }
+    }
+  
+    &:hover {
+      svg {
+        path {
+          transition: all 0.3s;
+          fill: $white;
+          stroke: $dark-blue;
+        }
+      }
+  
+      a.footer__contact-link {
+        &::before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 1px;
+          background-color: #fff;
+          bottom: 0;
+          left: 0;
+        }
+      } 
+    }
+  }
+
+  &__contact-name {
+    @extend %Muli-400;
+    font-size: 20px;
+    color: $semi-white;
+  }
+  &__contact-link {
+    color: $semi-white;
+    position: relative;
+    padding-bottom: 5px;
+    &::before {
+      transition: all 0.3s;
+      content: '';
+      width: 0;
+      height: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__contact-title {
+    color: $white;
+    @extend %Muli-400;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  &__social-box {
+    text-align: center;
+  }
+  &__social-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__social-item {
+    width: 50px;
+    height: 50px;
+    background-color: $blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: $semi-white;
+    }
+  }
+  &__social-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    &:first-child {
+      svg {
+        top: -0.5px;
+        position: relative;
+      }
+    }
+  }
+  &__bottom {
+    padding-top: 20px;
+    p {
+      color: $semi-white;
+      text-align: center;
+    }
+  }
+
+}
+
+
+
 @media (max-width: 1180px) {
   .header {
     &__logo {
@@ -358,6 +495,11 @@
     }
     &__experience-item {
       font-size: 18px;
+    }
+  }
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
     }
   }
 }
@@ -500,6 +642,18 @@
     }
     &__experience-descr {
       margin-bottom: 20px;
+    }
+  }
+  .footer {
+    &__inner {
+      display: block;
+    }
+    &__logo-text {
+      margin-bottom: 30px;
+    }
+    &__social-box {
+      text-align: left;
+      margin-bottom: 30px;
     }
   }
 }
