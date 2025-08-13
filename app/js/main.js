@@ -17,8 +17,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
   // tabs
 
   const tabBtn = document.querySelectorAll('.tab-nav__btn'),
-  tabItem = document.querySelectorAll('.tab__item'),
-  tabNav = document.querySelector('.tab-nav');
+        tabItem = document.querySelectorAll('.tab__item');
   
   tabBtn.forEach(button => {
     button.addEventListener('click', (e)=>{
@@ -34,10 +33,10 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
       // Скрываем все табы
       tabItem.forEach(item => {
-        item.classList.remove('tab__item--active');
+        item.classList.remove('tab__item--active', 'fade');
       });
 
-      document.getElementById(tabId).classList.add('tab__item--active')
+      document.getElementById(tabId).classList.add('tab__item--active', 'fade')
     })
   });
 

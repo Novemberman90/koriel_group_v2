@@ -407,6 +407,7 @@
     border: none;
     color: $dark-blue;
     margin: 0;
+    cursor: pointer;
     &:hover,
     &:active {
       transition: all 0.3s;
@@ -424,6 +425,69 @@
 .service {
   background-color: $semi-white;
   padding: 250px 0 140px;
+  &__title-box {
+    max-width: 840px;
+    padding: 0 5px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__pretitle {
+    font-size: 18px;
+    margin: 0 auto 20px auto;
+    background-color: $white;
+  }
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__template {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 30px;
+    align-items: flex-start;
+  }
+  &__item {
+    padding: 50px 30px;
+    background-color: $dark-blue;
+    max-width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__icon {
+    width: 38px;
+    height: auto;
+    object-fit: cover;
+  }
+  &__item-title {
+    @extend %Muli-400;
+    font-size: 25px;
+    letter-spacing: 0.04em;
+    color: $blue;
+  }
+  &__item-descr {
+    font-size: 18px;
+    color: $white;
+    p{
+      text-wrap: balance;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      /* кол-во строк */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+  &__link {
+    color: $white;
+    font-size: 16px;
+    transition: all .1s;
+    &:hover,
+    &:active {
+      color: $blue;
+    }
+  }
 }
 
 .footer {
@@ -617,6 +681,11 @@
       font-size: 18px;
     }
   }
+  .service {
+    &__item {
+      padding: 30px 20px;
+    }
+  }
   .footer {
     &__inner {
       flex-wrap: wrap;
@@ -754,8 +823,21 @@
       max-width: 100%;
     }
   }
+  .service {
+    &__template {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
-
+@media (max-width: 660px) {
+  .service {
+    &__template {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
 @media (max-width: 578px) {
   .lang-menu {
     &__link {
@@ -839,6 +921,14 @@
       font-size: 16px; 
     }
   }
+  .service {
+    &__item-title {
+      font-size: 22px;
+    }
+    &__item-descr {
+      font-size: 16px;
+    }
+  }
 }
 @media (max-width: 395px) {
   .header-top-bar {
@@ -869,5 +959,20 @@
         text-wrap: balance;
       }
     }
+  }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
   }
 }

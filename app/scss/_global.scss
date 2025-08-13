@@ -54,3 +54,8 @@ a {
 .title {
   font-size: 40px;
 }
+@media (max-width: 395px) {
+  .title {
+  font-size: 30px; 
+ }
+}
