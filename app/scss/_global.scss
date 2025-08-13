@@ -30,7 +30,17 @@ a {
   padding: 0 120px;
   margin: 0 auto;
 }
-
+.pretitle-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+  width: fit-content;
+  &__pretitle-title {
+    @extend %Muli-400;
+    font-size: 18px;
+  }
+}
 @media (max-width: 1282px) {
   .container {
     padding: 0 50px;
@@ -40,4 +50,7 @@ a {
   .container {
     padding: 0 30px;
   }
+}
+.title {
+  font-size: 40px;
 }
