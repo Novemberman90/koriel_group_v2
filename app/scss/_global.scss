@@ -29,7 +29,11 @@ a {
   max-width: 1440px;
   padding: 0 120px;
   margin: 0 auto;
+  &--style {
+    padding: 0 80px;
+  }
 }
+
 .pretitle-box {
   display: flex;
   align-items: center;
@@ -44,15 +48,22 @@ a {
 @media (max-width: 1282px) {
   .container {
     padding: 0 50px;
+    &--style {
+      padding: 0 50px; 
+    }
   }
 }
 @media (max-width: 1180px) {
   .container {
     padding: 0 30px;
+    &--style {
+      padding: 0 30px; 
+    }
   }
 }
 .title {
   font-size: 40px;
+  @extend %Muli-400;
 }
 @media (max-width: 395px) {
   .title {
