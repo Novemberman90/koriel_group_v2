@@ -62,7 +62,7 @@ function images() {
 
 function scripts() {
     return src ([
-      'node_modules/swiper/swiper.min.js',
+      'node_modules/swiper/swiper-bundle.min.js',
       'node_modules/wow.js/dist/wow.js',
       'app/js/main.js'
     ])

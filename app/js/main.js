@@ -40,4 +40,55 @@ window.addEventListener('DOMContentLoaded', ()=>{
     })
   });
 
+/* clients-slider */
+
+var swiper = new Swiper(".clients-slider", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    365: {
+      slidesPerView: 2,
+    },
+    578: {
+      slidesPerView: 3,
+    },
+    990: {
+      slidesPerView: 4,
+    },
+  },
+});
+var swiper = new Swiper(".partner-slider", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    365: {
+      slidesPerView: 2,
+    },
+    578: {
+      slidesPerView: 3,
+    },
+    990: {
+      slidesPerView: 4,
+    },
+  },
+});
+
 })

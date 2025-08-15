@@ -651,6 +651,49 @@
   }
 }
 
+.clients,
+.partner {
+  padding: 50px 0 100px;
+  &__inner {
+    .swiper-wrapper {
+      align-items: center;
+    }
+  }
+  &__title-box {
+    margin-bottom: 40px;
+  }
+  &__pretitle{
+    margin: 0 auto;
+    background-color: $semi-white;
+  }
+  &__title{
+    color: $dark-blue;
+    margin: 0 auto;
+    display: block; 
+    text-align: center;
+  }
+}
+.clients-slider,
+.partner-slider {
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    img {
+      width: 200px;
+      height: auto;
+      object-fit: cover;
+      margin: 0 auto;
+    }
+  }
+}
+.partner {
+  background-color: $semi-white;
+  &__pretitle {
+    background-color: $white;
+  }
+}
 .footer {
   padding: 50px 0px 95px;
   background-color: $dark-blue;
