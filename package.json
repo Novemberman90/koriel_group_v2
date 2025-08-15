@@ -31,8 +31,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "jquery": "^3.7.1",
-    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.10",
     "wow": "^0.0.7"
   }
 }
