@@ -1,5 +1,5 @@
 $semi-white: #f0f0f5;
-$dark-blue: rgb(35, 45, 85);
+$dark-blue: #232d55;
 $grey: #64738c;
 $blue:#5d98d8;
 $white: #fff;
@@ -8,8 +8,9 @@ $white: #fff;
   font-family: 'Muli-Black';
   font-weight: 900;
 }
-%Muli-700 {
-  font-family: 'Muli-Bold';
+
+@mixin Muli-700 {
+  font-family: "Muli", sans-serif;
   font-weight: 700;
 }
 %Muli-400 {

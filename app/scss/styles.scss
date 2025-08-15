@@ -716,10 +716,71 @@
     flex: 1 1 50%;
     max-width: 50%;
   }
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
   &__meta-blok {
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: -30px 0 auto 0;
   }
+  &__meta-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: $blue;
+    height: 62px;
+    max-width: 200px;
+    width: 100%;
+    &:last-child {
+      background-color: $dark-blue;
+    }
+  }
+  &__meta-author,
+  &__meta-data {
+    font-size: 15px;
+    color: $white;
+  }
+  &__content {
+    padding-top: 50px;
+    padding-right: 20px;
+    position: relative;
+  }
+  &__content-title {
+    font-size: 30px;
+    @extend %Muli-400;
+    margin-bottom: 15px;
+    text-wrap: balance;
+  }
+  &__content-text {
+    font-size: 18px;
+    color: $grey;
+    margin-bottom: 15px;
+  }
+  &__link {
+    color: $dark-blue;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .2s;
+    svg {
+      stroke: $dark-blue;
+    }
+    &:hover {
+      gap: 15px;
+      color: $blue;
+      svg {
+          stroke: $blue; }
+    }
+  }
+
 }
 
 .footer {
@@ -920,6 +981,11 @@
       padding: 0;
     }
   }
+  .news {
+    &__content-title {
+      font-size: 28px;
+    }
+  }
 }
 
 @media (max-width: 990px) {
@@ -963,6 +1029,11 @@
     }
     &__item {
       padding: 10px 10px 20px;
+    }
+  }
+  .news {
+    &__content-title {
+      font-size: 24px;
     }
   }
   .footer {
@@ -1136,6 +1207,24 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .news {
+    &__inner {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__item {
+      flex: 1 1 100%;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__content {
+      padding-right: 0;
+    }
+  }
+}
 @media (max-width: 660px) {
   .service {
     &__template {
@@ -1257,6 +1346,15 @@
       width: 88px;
     }
   }
+  .news {
+    &__meta-item {
+      padding: 10px;
+    }
+    &__content-title {
+      @include Muli-700;
+      font-size: 20px;
+    }
+  }
 }
 @media (max-width: 395px) {
   .header-top-bar {
@@ -1298,6 +1396,15 @@
     &__descr,
     &__num {
       font-size: 16px;
+    }
+  }
+  .news {
+    &__content-text {
+      font-size: 16px;
+    }
+    &__meta-author,
+    &__meta-data {
+      font-size: 14px;
     }
   }
 }
