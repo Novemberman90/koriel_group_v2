@@ -653,7 +653,7 @@
 
 .clients,
 .partner {
-  padding: 50px 0 100px;
+  padding: 100px 0 50px;
   &__inner {
     .swiper-wrapper {
       align-items: center;
@@ -694,6 +694,34 @@
     background-color: $white;
   }
 }
+.news {
+  padding: 100px 0 80px;
+  &__pretitle {
+    margin: 0 auto;
+    background-color: #f0f0f5;
+    margin-bottom: 20px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+  }
+  &__item {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+  &__meta-blok {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .footer {
   padding: 50px 0px 95px;
   background-color: $dark-blue;
