@@ -91,4 +91,15 @@ var swiper = new Swiper(".partner-slider", {
   },
 });
 
+
+var swiper = new Swiper(".testmemorail__slider", {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: ".testmemorail__next",
+    prevEl: ".testmemorail__prev",
+  },
+});
+
+
 })
