@@ -102,4 +102,6 @@ var swiper = new Swiper(".testmemorail__slider", {
 });
 
 
+  /* Анимация */
+  new WOW().init();
 })
