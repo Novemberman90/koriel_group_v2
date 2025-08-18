@@ -53,7 +53,7 @@
   background-color: $white;
   &__inner {
     position: relative;
-    padding: 30px 0px 60px;
+    padding: 20px 0px 40px;
     background-color: $white;
   }
   &__info {
@@ -63,7 +63,7 @@
   }
   &__logo {
     display: inline-block;
-    width: 250px;
+    width: 180px;
     height: auto;
     img {
       width: 100%;
@@ -81,6 +81,8 @@
     align-items: center;
     gap: 10px;
     svg {
+      width: 50px;
+      height: 50px;
       path {
         transition: all 0.3s;
         fill:$blue;
@@ -149,7 +151,7 @@
     background-color: $dark-blue;
     padding: 10px 20px;
     position: absolute;
-    bottom: -60px;
+    bottom: -45px;
     left: 0;
     right:0;
   }
@@ -170,7 +172,7 @@
     }
   }
   &__link {
-    padding: 20px;
+    padding: 10px 15px;
     color: $white;
     font-size: 20px;
     line-height: 1.4;
@@ -183,11 +185,11 @@
 }
 /* hero */
 .hero {
-  margin-top: 218px;
+  padding-top: 200px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 77vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -667,7 +669,7 @@
   &__img {
     max-width: 278px;
     width: 100%;
-    height: auto;
+    height: 285px;
     object-fit: cover;
   }
   &__descr {
@@ -1107,21 +1109,42 @@
 
 }
 
+.go-top {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: rgba($blue, 0.6);
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right: 20px;
+  transition: all .3s;
+  svg {
+    path {
+      transition: all .3s;
+      fill:#000;
+    }
+  }
+  &:hover {
+    background-color: rgba($blue, 1);
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+  &--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 
 @media (max-width: 1180px) {
   .header {
-    &__logo {
-      width: 220px;
-    }
     &__contact-name {
       font-size: 18px;
-    }
-    &__contact-item {
-      svg {
-        width: 58px;
-        height: 58px;
-      }
     }
   }
   .menu {
@@ -1353,8 +1376,7 @@
     }
   }
   .hero {
-    margin-top: 192px;
-    padding-top: 0;
+    padding-top: 180px;
   }
   .about {
     &__content {

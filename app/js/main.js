@@ -104,4 +104,15 @@ var swiper = new Swiper(".testmemorail__slider", {
 
   /* Анимация */
   new WOW().init();
+
+  /* Кнопка НА ВЕРХ */
+const goTop = document.querySelector('.go-top');
+
+goTop.addEventListener('click', (e)=>{
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+})
 })
