@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', ()=>{
   const MENUBTN = document.querySelector('.menu__btn');
   const MENUWRAP = document.querySelector('.menu__wrap');
-  // const goTop = document.querySelector('.go-top');
+  const goTop = document.querySelector('.go-top');
 
   MENUBTN.addEventListener('click', ()=> {
     MENUBTN.classList.toggle('menu__btn--active');
@@ -12,6 +12,21 @@ window.addEventListener('DOMContentLoaded', ()=>{
     document.body.classList.toggle('lock');
     MENUWRAP.classList.toggle('menu__wrap--active')
   }
+
+
+/* При скроле меняется хедер и активация кнопки НА ВЕРХ */
+const headerScroll = () => {
+  const header = document.querySelector('.header');
+  const headerHeght = header.offsetHeight;
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+  if(scrollPosition > headerHeght + 50) {
+    goTop.classList.add('go-top--active'); 
+  } else {
+    goTop.classList.remove('go-top--active'); 
+  }
+}
+window.addEventListener('scroll', headerScroll);
 
 
   // tabs
@@ -102,11 +117,50 @@ var swiper = new Swiper(".testmemorail__slider", {
 });
 
 
+/* Счетчик */
+const startAddonNumber = (elements)=> {
+  const time = 2000;  // Общее время анимации в миллисекундах
+    
+    elements.forEach(item => {
+        let startTime;
+        let num = parseInt(item.dataset.projectDone) || 0;
+
+        const updateNumber = (timestamp) => {
+            if (!startTime) startTime = timestamp;
+            let progress = Math.min((timestamp - startTime) / time, 1);
+            item.textContent = Math.floor(progress * num);
+
+            if (progress < 1) {
+                requestAnimationFrame(updateNumber);
+            }
+        };
+
+        requestAnimationFrame(updateNumber);
+    });
+}
+
+/* Слежу когда счетчик попадёт в поле видимости, чтобы его запустить */
+const addonElement = document.querySelector('.project-done');
+  if (addonElement) {
+    const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const elements = document.querySelectorAll('.project-done__num');
+            startAddonNumber(elements);
+            observer.disconnect(); // Отключаем после первого срабатывания
+        }
+    });
+    
+    }, { threshold: 0.25 });
+
+    observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы
+  }
+
+
   /* Анимация */
   new WOW().init();
 
   /* Кнопка НА ВЕРХ */
-const goTop = document.querySelector('.go-top');
 
 goTop.addEventListener('click', (e)=>{
   e.preventDefault();
