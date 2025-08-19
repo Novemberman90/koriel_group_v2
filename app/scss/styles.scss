@@ -623,18 +623,6 @@
     font-size: 24px;
     letter-spacing: 0.04em;
     padding: 5px;
-    position: relative;
-    &--plus {
-      &::after {
-        position: absolute;
-        content: '+';
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: $blue;
-        font-size: 18px;
-      }
-    }
   }
   &__descr {
     @extend %Muli-400 ;
