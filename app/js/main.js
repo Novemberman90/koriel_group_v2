@@ -4,14 +4,49 @@ window.addEventListener('DOMContentLoaded', ()=>{
   const goTop = document.querySelector('.go-top');
 
   MENUBTN.addEventListener('click', ()=> {
-    MENUBTN.classList.toggle('menu__btn--active');
-    openMenu();
+    if(MENUBTN) {
+      openMenu();
+      document.body.classList.toggle('lock');
+    }
   });
 
   const openMenu=()=>{
-    document.body.classList.toggle('lock');
-    MENUWRAP.classList.toggle('menu__wrap--active')
+    MENUWRAP.classList.toggle('menu__wrap--active');
+    MENUBTN.classList.toggle('menu__btn--active');
   }
+  const closeMenu =()=>{
+    document.body.classList.remove('lock');
+    MENUWRAP.classList.remove('menu__wrap--active');
+    MENUBTN.classList.remove('menu__btn--active');
+  }
+
+  const scrollNavigation = ()=> {
+    const scrollLinks = document.querySelectorAll('.menu__link');
+
+    scrollLinks.forEach(link => {
+      link.addEventListener('click', (e)=>{
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        console.log(targetId);
+        
+        const targetElement = document.querySelector(targetId)
+        console.log(targetElement);
+        
+        if(targetElement) {
+          const headerHeght = document.querySelector('#header').offsetHeight;
+
+          const top = targetElement.getBoundingClientRect().top + window.scrollY - headerHeght;
+
+          window.scrollTo({
+            top: top,
+            behavior: "smooth"
+          });
+        }
+        closeMenu();
+      })
+    });
+  }
+scrollNavigation()
 
 
 /* При скроле меняется хедер и активация кнопки НА ВЕРХ */
@@ -19,11 +54,14 @@ const headerScroll = () => {
   const header = document.querySelector('.header');
   const headerHeght = header.offsetHeight;
   const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  const contactWiget = document.querySelector('.contact-wiget');
 
-  if(scrollPosition > headerHeght + 50) {
+  if(scrollPosition > headerHeght + 100) {
     goTop.classList.add('go-top--active'); 
+    contactWiget.classList.add('contact-wiget--active'); 
   } else {
     goTop.classList.remove('go-top--active'); 
+    contactWiget.classList.remove('contact-wiget--active'); 
   }
 }
 window.addEventListener('scroll', headerScroll);
