@@ -20,33 +20,38 @@ window.addEventListener('DOMContentLoaded', ()=>{
     MENUBTN.classList.remove('menu__btn--active');
   }
 
-  const scrollNavigation = ()=> {
-    const scrollLinks = document.querySelectorAll('.menu__link');
-
-    scrollLinks.forEach(link => {
-      link.addEventListener('click', (e)=>{
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        console.log(targetId);
-        
-        const targetElement = document.querySelector(targetId)
-        console.log(targetElement);
-        
-        if(targetElement) {
-          const headerHeght = document.querySelector('#header').offsetHeight;
-
-          const top = targetElement.getBoundingClientRect().top + window.scrollY - headerHeght;
-
-          window.scrollTo({
-            top: top,
-            behavior: "smooth"
-          });
-        }
+/* Скрол меню и кнопки вверх */
+  const navLink = document.querySelectorAll('a[href^="#"], [data-scroll]');
+  navLink.forEach(link => {
+    link.addEventListener('click', (e)=>{
+      e.preventDefault();
+       const targetId = link.dataset.scroll || link.getAttribute('href').substring(1);
+       
+       if(!link.classList.contains('go-top')) {
+        scrollNavigation(targetId)
         closeMenu();
+       } else {
+        window.scrollTo({
+          top: 0,
+          behavior:'smooth',
+          })
+       }
+    })
+  });
+
+  const scrollNavigation = (targetId)=> {
+    const targetElement = document.getElementById(targetId);
+  
+    if(!targetElement) return;
+
+    const headerHeght = document.querySelector('#header').offsetHeight;
+    const top = targetElement.getBoundingClientRect().top + window.scrollY - headerHeght;
+  
+      window.scrollTo({
+        top: top,
+        behavior:'smooth',
       })
-    });
   }
-scrollNavigation()
 
 
 /* При скроле меняется хедер и активация кнопки НА ВЕРХ */
@@ -75,6 +80,7 @@ window.addEventListener('scroll', headerScroll);
   tabBtn.forEach(button => {
     button.addEventListener('click', (e)=>{
       const tabId = button.getAttribute('data-btn');
+      e.preventDefault();
       
        // Убираем активный класс у всех кнопок
       tabBtn.forEach(btn => {
@@ -89,8 +95,9 @@ window.addEventListener('scroll', headerScroll);
         item.classList.remove('tab__item--active', 'fade');
       });
 
-      document.getElementById(tabId).classList.add('tab__item--active', 'fade')
+      document.getElementById(tabId).classList.add('tab__item--active', 'fade');
     })
+
   });
 
 /* clients-slider */
@@ -103,7 +110,6 @@ var swiper = new Swiper(".clients-slider", {
     delay: 1500,
     disableOnInteraction: false,
   },
-  speed: 800,
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -127,7 +133,6 @@ var swiper = new Swiper(".partner-slider", {
     delay: 2500,
     disableOnInteraction: false,
   },
-  speed: 800,
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -198,13 +203,4 @@ const addonElement = document.querySelector('.project-done');
   /* Анимация */
   new WOW().init();
 
-  /* Кнопка НА ВЕРХ */
-
-goTop.addEventListener('click', (e)=>{
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-})
 })
