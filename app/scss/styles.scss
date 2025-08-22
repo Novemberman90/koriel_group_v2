@@ -51,10 +51,26 @@
   height: fit-content;
   z-index: 20;
   background-color: $white;
+  &__content {
+    transition: all .1s ease-in-out;
+    max-width: 1440px;
+    padding: 0 120px;
+    margin: 0 auto;
+    &--transform {
+      padding: 0 30px;
+    }
+  }
   &__inner {
     position: relative;
     padding: 20px 0px 40px;
     background-color: $white;
+    transition: all .3s ease-in-out;
+    &--transform {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0 20px;
+    }
   }
   &__info {
     display: flex;
@@ -75,6 +91,14 @@
     display: flex;
     align-items: center;
     gap: 65px;
+    visibility: visible;
+    transition: all .3s ease;
+    &--transform {
+      display: none;
+    }
+    &--scrolled {
+      visibility: hidden;
+    }
   }
   
   &__contact-name {
@@ -154,6 +178,14 @@
     bottom: -45px;
     left: 0;
     right:0;
+    visibility: visible;
+    transition: all .5s ease;
+    &--transform {
+      position: static;
+    }
+    &--scrolled {
+      visibility: hidden;
+    }
   }
   &__img {
     display: none;
@@ -164,15 +196,15 @@
   &__list{
     display: flex;
     align-items: center;
+    gap: 15px;
   }
   &__item {
-    padding: 0 5px;
     &:last-child {
       margin-left: auto;
     }
   }
   &__link {
-    padding: 10px 15px;
+    padding: 10px 5px;
     color: $white;
     font-size: 20px;
     line-height: 1.4;
@@ -209,12 +241,14 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
+    @include Rubik-500;
     p {
       font-size: 18px;
     }
   }
   &__title {
     font-size: 60px;
+    @include Rubik-600;
     margin-bottom: 30px;
     color: $dark-blue;
   }
@@ -233,7 +267,7 @@
 }
 /* about */
 .about {
-  padding: 140px 0;
+  padding: 100px 0;
   &__inner {
     display: flex;
     align-items: center;
@@ -257,14 +291,14 @@
     margin-bottom: 20px;
   }
   &__pretitle-title {
-    font-size: 18px;
-    @extend %Muli-400;
+    font-size: 20px;
+    @include Rubik-500;
   }
   &__info {
     margin-bottom: 20px;
   }
   &__info-title {
-    @extend %Muli-400;
+    @include Rubik-400;
     font-size: 40px;
     margin-bottom: 10px;
   }
@@ -288,7 +322,7 @@
     padding: 24px 40px 40px 40px;
     text-align: center;
     dt {
-      @extend %Muli-400;
+      @include Rubik-400;
       font-size: 80px;
       line-height: 1;
       margin-bottom: 15px;
@@ -318,7 +352,7 @@
 /* offer */
 .offer {
   background-color: $dark-blue;
-  padding-top: 140px;
+  padding-top: 100px;
   &__title-box {
     max-width: 840px;
     padding: 0 5px;
@@ -331,7 +365,7 @@
     margin: 0 auto 20px auto;
   }
   &__pretitle-title {
-    font-size: 18px;
+    font-size: 20px;
   }
   &__title {
     color: $white;
@@ -466,7 +500,7 @@
 /* service */
 .service {
   background-color: $semi-white;
-  padding: 230px 0 140px;
+  padding: 200px 0 140px;
   &__title-box {
     max-width: 840px;
     padding: 0 5px;
@@ -475,9 +509,12 @@
     margin-bottom: 50px;
   }
   &__pretitle {
-    font-size: 18px;
     margin: 0 auto 20px auto;
     background-color: $white;
+  }
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
   }
   &__title {
     margin-bottom: 15px;
@@ -504,7 +541,7 @@
     object-fit: cover;
   }
   &__item-title {
-    @extend %Muli-400;
+    @include Rubik-400;
     font-size: 25px;
     letter-spacing: 0.04em;
     color: $blue;
@@ -564,7 +601,8 @@
     margin-bottom: 20px;
   }
   &__pretitle-title {
-    font-size: 18px;
+    font-size: 20px;
+    @include Rubik-500;
   }
   &__title {
    padding-right: 85px;
@@ -589,7 +627,7 @@
     }
   }
   &__item-title {
-    @extend %Muli-400;
+    @include Rubik-400;
     font-size: 20px;
     margin-bottom: 10px;
   }
@@ -638,7 +676,7 @@
 }
 
 .projects {
-  padding: 140px 0 120px;
+  padding: 100px 0 100px;
   background-color: $dark-blue;
   &__title-box {
     max-width: 840px;
@@ -648,11 +686,15 @@
     margin-bottom: 50px;
   }
   &__pretitle {
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
   }
   &__title,
   &__pretitle-title {
     color: $white;
+  }
+  &__pretitle-title {
+    @include Rubik-500;
+    font-size: 20px;
   }
   &__inner{
     display: flex;
@@ -682,7 +724,7 @@
     padding: 0 10px;
   }
   &__descr-title{
-    @extend %Muli-400;
+    @include Rubik-400;
     font-size: 20px;
     margin-bottom: 5px;
     text-wrap: balance;
@@ -706,6 +748,10 @@
   &__pretitle{
     margin: 0 auto 20px auto;
     background-color: $semi-white;
+  }
+  &__pretitle-title {
+    @include Rubik-500;
+    font-size: 20px;
   }
   &__title{
     color: $dark-blue;
@@ -745,6 +791,10 @@
   &__title {
     text-align: center;
     margin-bottom: 40px;
+  }
+  &__pretitle-title {
+    @include Rubik-500;
+    font-size: 20px;
   }
   &__inner {
     display: flex;
@@ -795,7 +845,7 @@
   }
   &__content-title {
     font-size: 30px;
-    @extend %Muli-400;
+    @include Rubik-400;
     margin-bottom: 15px;
     text-wrap: balance;
   }
@@ -844,10 +894,18 @@
   &__form {
     background-color: $semi-white;
   }
-  &__pretitle {
+  &__pretitle,
+  &__pretitle-info {
     margin-bottom: 20px;
     background-color: $semi-white;
     width: fit-content;
+  }
+  &__pretitle-info {
+    color: $dark-blue;
+  }
+  &__pretitle-title {
+    @include Rubik-500;
+    font-size: 20px;
   }
   &__title-box {
     margin-bottom: 30px;
@@ -913,10 +971,10 @@
     outline: transparent;
     transition: all .3s;
     font-size: 16px;
-    @extend %Muli-400;
+    @include Rubik-400;
     color: $dark-blue;
     &::placeholder {
-      @extend %Muli-400;
+      @include Rubik-400;
       font-size: 16px;
       color: $dark-blue;
     }
@@ -932,12 +990,12 @@
     outline: transparent;
     transition: all .3s;
     font-size: 16px;
-    @extend %Muli-400;
+    @include Rubik-400;
     color: $dark-blue;
     resize: none;
     height: 150px;
     &::placeholder {
-      @extend %Muli-400;
+      @include Rubik-400;
       font-size: 16px;
       color: $dark-blue;
     }
@@ -985,7 +1043,7 @@
   }
   &__name {
     font-size: 20px;
-    @extend %Muli-400;
+    @include Rubik-400;
     margin-bottom: 5px;
   }
   &__text{
@@ -1069,7 +1127,7 @@
   }
 
   &__contact-name {
-    @extend %Muli-400;
+    @include Rubik-400;
     font-size: 20px;
     color: $semi-white;
   }
@@ -1088,7 +1146,7 @@
   }
   &__contact-title {
     color: $white;
-    @extend %Muli-400;
+    @include Rubik-600;
     font-size: 24px;
     margin-bottom: 20px;
   }
@@ -1200,8 +1258,20 @@
   }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1298px) {
   .header {
+    &__content {
+      padding: 0 30px;
+    }
+  }
+}
+@media (max-width: 1190px) {
+  .header {
+    &__content {
+      &--transform {
+        padding: 0 20px;
+      }
+    }
     &__contact-name {
       font-size: 18px;
     }
@@ -1284,8 +1354,133 @@
     }
   }
 }
+@media (max-width: 1130px) {
+  .menu {
+    &__list {
+      gap: 10px;
+    }
+    &__link {
+      padding: 10px 5px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .header-top-bar {
+      position: relative;
+      z-index: 250;
+    }
+  
+  .header {
+    &__content {
+      position: relative;
 
+      &--transform {
+        padding: 0 30px;
+      }
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+      position: static;
+    }
+
+    &__contact-list {
+      display: none;
+    }
+  }
+
+  .menu {
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      inset: 0;
+      padding-top: 100px;
+      height: 100vh;
+      background-color: $dark-blue;
+      z-index: 100;
+      transform: translateY(-200%);
+      transition: transform .5s;
+
+      &--active {
+        transform: translateY(0);
+
+        .menu__img {
+          display: block;
+          width: 180px;
+          margin: 0 auto 50px auto;
+        }
+      }
+    }
+
+    &__btn {
+      display: block;
+      border: none;
+      width: 40px;
+      height: 26px;
+      position: relative;
+      background-color: transparent;
+      cursor: pointer;
+      z-index: 150;
+
+      &::before,
+      &::after {
+        content: '';
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background-color: $dark-blue;
+      }
+
+      &::before {
+        top: 0;
+        box-shadow: 0 11px 0 $dark-blue;
+        transition: top .3s .15s, transform .3s;
+      }
+
+      &::after {
+        bottom: 0;
+        transition: bottom .3s .15s, transform .3s;
+      }
+
+      &--active {
+        &::before {
+          top: 11px;
+          transform: rotate(45deg);
+          box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+          transition: box-shadow .15s, top .3s, transform .3s .15s;
+          background-color: $blue;
+        }
+
+        &::after {
+          bottom: 11px;
+          transform: rotate(-45deg);
+          transition: bottom .3s, transform .3s .15s;
+          background-color: $blue;
+        }
+      }
+    }
+
+    &__list {
+      display: block;
+      text-align: center;
+    }
+
+    &__link {
+      padding: 20px;
+      font-size: 20px;
+    }
+  }
+}
 @media (max-width: 990px) {
+
   .about {
     &__inner {
       flex-direction: column-reverse;
@@ -1345,106 +1540,7 @@
   }
 }
 @media (max-width: 880px) {
-  .header-top-bar {
-    position: relative;
-    z-index: 250;
-  }
-  .header {
-    &__content {
-      position: relative;
-    }
-    &__inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 30px 0;
-      position: static;
-    }
-    &__contact-list {
-      display: none;
-    }
-  }
-  .menu {
-    &__wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      inset: 0;
-      padding-top: 100px;
-      height: 100vh;
-      background-color: $dark-blue;
-      z-index: 100;
-      transform: translateY(-200%);
-      transition: transform .5s;
-      &--active {
-        transform: translateY(0);
-        .menu__img {
-          display: block;
-          width: 180px;
-          margin: 0 auto 50px auto;
-        }
-      }
-    }
-    &__btn {
-        display: block;
-        border: none;
-        width: 40px;
-        height: 26px;
-        position: relative;
-        background-color: transparent;
-        cursor: pointer;
-        z-index: 150;
-    
-        &::before,
-        &::after {
-          content: '';
-          left: 0;
-          position: absolute;
-          display: block;
-          width: 100%;
-          height: 4px;
-          border-radius: 10px;
-          background-color: $dark-blue;
-        }
-    
-        &::before {
-          top: 0;
-          box-shadow: 0 11px 0 $dark-blue;
-          transition: top .3s .15s, transform .3s;
-        }
-    
-        &::after {
-          bottom: 0;
-          transition: bottom .3s .15s, transform .3s;
-        }
-    
-      &--active {
-        &::before {
-          top: 11px;
-          transform: rotate(45deg);
-          box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
-          transition: box-shadow .15s, top .3s, transform .3s .15s;
-          background-color: $blue;
-        }
-  
-        &::after {
-          bottom: 11px;
-          transform: rotate(-45deg);
-          transition: bottom .3s, transform .3s .15s;
-          background-color: $blue;
-        }
-      }
-    }
-    &__list {
-      display: block;
-      text-align: center;
-    }
-    &__link {
-      padding: 20px;
-      font-size: 20px;
-    }
-  }
+
   .hero {
     padding-top: 180px;
       background-position: center left 30%;
@@ -1503,6 +1599,11 @@
   
 }
 @media (max-width: 768px) {
+  .about {
+    &__info-title {
+      @include Rubik-500;
+    }
+  }
   .news {
     &__inner {
       flex-direction: column;
@@ -1577,6 +1678,9 @@
     &__logo-text {
       margin-bottom: 30px;
     }
+    &__contact-title {
+      @include Rubik-500;
+    }
     &__social-box {
       text-align: left;
       margin-bottom: 30px;
@@ -1605,6 +1709,9 @@
     padding: 70px 0 50px;
     &__title {
       font-size: 30px;
+    }
+    &__pretitle-title {
+      @include Rubik-500;
     }
   }
   .projects {

@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
     const headerHeght = document.querySelector('#header').offsetHeight;
     const top = targetElement.getBoundingClientRect().top + window.scrollY - headerHeght;
-  
+
       window.scrollTo({
         top: top,
         behavior:'smooth',
@@ -55,6 +55,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
 
 /* При скроле меняется хедер и активация кнопки НА ВЕРХ */
+let isScrolled = false;
 const headerScroll = () => {
   const header = document.querySelector('.header');
   const headerHeght = header.offsetHeight;
@@ -67,6 +68,44 @@ const headerScroll = () => {
   } else {
     goTop.classList.remove('go-top--active'); 
     contactWiget.classList.remove('contact-wiget--active'); 
+  }
+
+  
+  const headerInner = document.querySelector('.header__inner'),
+        headerContactList = document.querySelector('.header__contact-list'),
+        headerContent = document.querySelector('.header__content'),
+        menuWrap = document.querySelector('.menu__wrap')
+
+    if (scrollPosition >= headerHeght + 100  && !isScrolled) {
+    isScrolled = true;
+    headerContactList.classList.add('header__contact-list--scrolled');
+    menuWrap.classList.add('menu__wrap--scrolled');
+    headerContent.classList.add('header__content--transform');
+    
+    setTimeout(() => {
+      headerInner.classList.add('header__inner--transform');
+      headerContactList.classList.add('header__contact-list--transform');
+      headerContactList.classList.remove('header__contact-list--scrolled');
+      menuWrap.classList.remove('menu__wrap--scrolled');
+      menuWrap.classList.add('menu__wrap--transform');
+    }, 50);
+      
+  } else if (scrollPosition  <= headerHeght + 20  && isScrolled) {
+     isScrolled = false;
+    headerContactList.classList.add('header__contact-list--scrolled');
+    menuWrap.classList.add('menu__wrap--scrolled');
+    setTimeout(() => {
+
+    headerContactList.classList.remove('header__contact-list--scrolled');
+    headerContactList.classList.remove('header__contact-list--transform');
+
+    menuWrap.classList.remove('menu__wrap--scrolled');
+    menuWrap.classList.remove('menu__wrap--transform');
+
+    headerContent.classList.remove('header__content--transform');
+    headerInner.classList.remove('header__inner--transform');
+    }, 20);
+
   }
 }
 window.addEventListener('scroll', headerScroll);
@@ -106,6 +145,7 @@ var swiper = new Swiper(".clients-slider", {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
+  speed: 800,
   autoplay: {
     delay: 1500,
     disableOnInteraction: false,
@@ -129,6 +169,7 @@ var swiper = new Swiper(".partner-slider", {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
+  speed: 1000,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -202,5 +243,8 @@ const addonElement = document.querySelector('.project-done');
 
   /* Анимация */
   new WOW().init();
+
+
+
 
 })
