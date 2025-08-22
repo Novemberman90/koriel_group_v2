@@ -668,7 +668,7 @@
     padding: 5px;
   }
   &__descr {
-    @extend %Muli-400 ;
+    @include Rubik-400;
     font-size: 22px;
     color: $white;
     flex: 1 1 0;
@@ -1258,9 +1258,7 @@
   }
 }
 
-@media (max-width: 1298px) {
-  
-}
+
 @media (max-width: 1190px) {
   .header {
     &__content {
