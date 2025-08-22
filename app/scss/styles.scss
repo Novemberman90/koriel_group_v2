@@ -1259,15 +1259,12 @@
 }
 
 @media (max-width: 1298px) {
-  .header {
-    &__content {
-      padding: 0 30px;
-    }
-  }
+  
 }
 @media (max-width: 1190px) {
   .header {
     &__content {
+      padding: 0 30px;
       &--transform {
         padding: 0 20px;
       }
@@ -1280,10 +1277,14 @@
     &__wrap {
       padding: 10px;
       bottom: -40px;
+      &--transform {
+        .menu__link {
+          font-size: 18px;
+        }
+      }
     }
     &__link {
       padding: 10px;
-      font-size: 18px;
     }
   }
   .hero {
@@ -1356,11 +1357,18 @@
 }
 @media (max-width: 1130px) {
   .menu {
-    &__list {
-      gap: 10px;
+    &__wrap {
+      &--transform {
+        .menu__list {
+          gap: 10px;
+        }
+        .menu__link {
+          padding: 10px 5px;
+        }
+      }
     }
     &__link {
-      padding: 10px 5px;
+      font-size: 18px;
     }
   }
 }
@@ -1469,13 +1477,14 @@
     }
 
     &__list {
-      display: block;
-      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
 
     &__link {
-      padding: 20px;
-      font-size: 20px;
+      padding: 20px !important;
+      font-size: 20px !important;
     }
   }
 }
@@ -1752,8 +1761,8 @@
       width: 150px;
     }
     &__link {
-      padding: 20px;
-      font-size: 16px; 
+      padding: 10px !important;
+      font-size: 16px !important; 
     }
   }
   .service {
