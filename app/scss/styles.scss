@@ -375,6 +375,7 @@
     p {
       font-size: 18px;
       color: $semi-white;
+      text-wrap: balance;
     }
   }
 }
@@ -768,7 +769,7 @@
     justify-content: center;
     width: 100%;
     img {
-      width: 200px;
+      width: 180px;
       height: auto;
       object-fit: cover;
       margin: 0 auto;
