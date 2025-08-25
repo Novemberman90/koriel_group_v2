@@ -245,6 +245,4 @@ const addonElement = document.querySelector('.project-done');
   new WOW().init();
 
 
-
-
 })

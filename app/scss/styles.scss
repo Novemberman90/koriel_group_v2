@@ -533,7 +533,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 10px;
   }
   &__icon {
@@ -553,7 +553,7 @@
     p{
       text-wrap: balance;
       display: -webkit-box;
-      -webkit-line-clamp: 6;
+      -webkit-line-clamp: 7;
       /* кол-во строк */
       -webkit-box-orient: vertical;
       overflow: hidden;
