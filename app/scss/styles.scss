@@ -270,7 +270,7 @@
   padding: 100px 0;
   &__inner {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     gap: 30px;
   }
@@ -278,8 +278,7 @@
     flex: 1 1 48%;
     max-width: 48%;
     object-fit: cover;
-    max-height: 580px;
-    height: 100vh;
+    height: auto;
   }
   &__content {
     flex: 1 1 48%;
