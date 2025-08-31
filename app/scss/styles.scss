@@ -371,11 +371,9 @@
     margin-bottom: 15px;
   }
   &__descr {
-    p {
-      font-size: 18px;
-      color: $semi-white;
-      text-wrap: balance;
-    }
+    font-size: 18px;
+    color: $semi-white;
+    text-wrap: balance;
   }
 }
 
@@ -799,15 +797,18 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
-    padding: 10px;
   }
   &__item {
     flex: 1 1 50%;
     max-width: 50%;
+    flex-direction: column;
+    height: 100%;
   }
   &__img {
+    aspect-ratio: 575/360;
+    overflow: hidden;
     width: 100%;
     height: auto;
     object-fit: cover;
