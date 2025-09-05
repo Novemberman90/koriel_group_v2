@@ -263,7 +263,7 @@ const observer = new IntersectionObserver((entries)=> {
        }
     }
   });
-}, {threshold: 0.5} ); // Observer срабатывает, когда 50% элемента в зоне видимости
+}, {threshold: 0.25} ); // Observer срабатывает, когда 50% элемента в зоне видимости
 
 // Находим все элементы, за которыми будем следить, и подключаем их к Observer'у
 document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #contact, #news, #question' ).forEach(element => {
