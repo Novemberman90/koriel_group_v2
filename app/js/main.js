@@ -88,7 +88,7 @@ const headerScroll = () => {
       headerContactList.classList.remove('header__contact-list--scrolled');
       menuWrap.classList.remove('menu__wrap--scrolled');
       menuWrap.classList.add('menu__wrap--transform');
-    }, 50);
+    }, 100);
       
   } else if (scrollPosition  <= headerHeght + 20  && isScrolled) {
      isScrolled = false;
@@ -104,9 +104,9 @@ const headerScroll = () => {
 
     headerContent.classList.remove('header__content--transform');
     headerInner.classList.remove('header__inner--transform');
-    }, 20);
-
+    }, 50);
   }
+  
 }
 window.addEventListener('scroll', headerScroll);
 
@@ -263,7 +263,7 @@ const observer = new IntersectionObserver((entries)=> {
        }
     }
   });
-}, {threshold: 0.25} ); // Observer срабатывает, когда 50% элемента в зоне видимости
+}, {threshold: 0.5} ); // Observer срабатывает, когда 50% элемента в зоне видимости
 
 // Находим все элементы, за которыми будем следить, и подключаем их к Observer'у
 document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #contact, #news, #question' ).forEach(element => {
