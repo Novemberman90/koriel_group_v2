@@ -224,7 +224,7 @@ const startAddonNumber = (elements)=> {
 }
 
 /* Слежу когда счетчик попадёт в поле видимости, чтобы его запустить */
-const addonElement = document.querySelector('.project-done');
+/* const addonElement = document.querySelector('.project-done');
   if (addonElement) {
     const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -238,7 +238,7 @@ const addonElement = document.querySelector('.project-done');
     }, { threshold: 0.25 });
 
     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы
-  }
+  } */
 
   // Создаем IntersectionObserver, который будет следить за элементами на странице
 const observer = new IntersectionObserver((entries)=> {
@@ -261,13 +261,22 @@ const observer = new IntersectionObserver((entries)=> {
        if(adctivLink) {
         adctivLink.closest('.menu__link').classList.add('menu__link--active');
        }
+    ///
+       /* const addonElement = document.querySelector('.project-done'); */
+       if (addonElement) {
+         const elements = document.querySelectorAll('.project-done__num');
+         startAddonNumber(elements);
+       }
     }
+
   });
-}, {threshold: 0.25} ); // Observer срабатывает, когда 50% элемента в зоне видимости
+}, {threshold: 0.20} ); // Observer срабатывает, когда 50% элемента в зоне видимости
 
 // Находим все элементы, за которыми будем следить, и подключаем их к Observer'у
-document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #contact, #news, #question' ).forEach(element => {
+const addonElement = document.querySelector('.project-done');
+document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #contact, #news, #question', addonElement).forEach(element => {
   observer.observe(element)
+
 });
 
   /* Анимация */
