@@ -240,6 +240,35 @@ const addonElement = document.querySelector('.project-done');
     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы
   }
 
+  // Создаем IntersectionObserver, который будет следить за элементами на странице
+const observer = new IntersectionObserver((entries)=> {
+  entries.forEach(entry => {
+
+     // Проверяем, пересек ли элемент 50% своей высоты в зоне видимости
+    if(entry.isIntersecting){
+      // Получаем id элемента, который сейчас виден
+       const activeId = entry.target.id;
+       
+       // Удаляем класс активности у всех элементов списка навигации
+       document.querySelectorAll('.menu__link').forEach(item => {
+        item.classList.remove('menu__link--active')
+       });
+
+       // Находим ссылку, которая ведет к активному элементу
+       const adctivLink = document.querySelector(`.menu__link[href="#${activeId}"]`);
+
+       // Если такая ссылка существует, добавляем активный класс ее родителю (элементу списка)
+       if(adctivLink) {
+        adctivLink.closest('.menu__link').classList.add('menu__link--active');
+       }
+    }
+  });
+}, {threshold: 0.25} ); // Observer срабатывает, когда 50% элемента в зоне видимости
+
+// Находим все элементы, за которыми будем следить, и подключаем их к Observer'у
+document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #contact, #news, #question' ).forEach(element => {
+  observer.observe(element)
+});
 
   /* Анимация */
   new WOW().init();
