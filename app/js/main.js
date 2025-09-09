@@ -224,7 +224,20 @@ const startAddonNumber = (elements)=> {
 }
 
 /* Слежу когда счетчик попадёт в поле видимости, чтобы его запустить */
-const addonElement = document.querySelector('.project-done');
+const addonElement = document.querySelector('.project-done'); 
+  if (addonElement) { 
+    const observer = new IntersectionObserver((entries, observer) => { 
+      entries.forEach(entry => { 
+
+      if (entry.isIntersecting) { 
+          const elements = document.querySelectorAll('.project-done__num'); 
+          startAddonNumber(elements); observer.disconnect(); // Отключаем после первого срабатывания 
+         }
+     });
+
+     }, { threshold: 0.25 }); observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы 
+    
+  }
 
   // Создаем IntersectionObserver, который будет следить за элементами на странице
 const observer = new IntersectionObserver((entries)=> {
@@ -247,12 +260,6 @@ const observer = new IntersectionObserver((entries)=> {
        if(adctivLink) {
         adctivLink.closest('.menu__link').classList.add('menu__link--active');
        }
-       
-       if (addonElement) {
-         const elements = document.querySelectorAll('.project-done__num');
-         startAddonNumber(elements);
-         observer.disconnect();
-       }
     }
 
   });
@@ -260,7 +267,7 @@ const observer = new IntersectionObserver((entries)=> {
 
 // Находим все элементы, за которыми будем следить, и подключаем их к Observer'у
 
-document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #contact, #news, #question', addonElement).forEach(element => {
+document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #news, #question').forEach(element => {
   observer.observe(element)
 });
 
