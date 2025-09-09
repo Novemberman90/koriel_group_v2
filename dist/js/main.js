@@ -224,20 +224,19 @@ const startAddonNumber = (elements)=> {
 }
 
 /* Слежу когда счетчик попадёт в поле видимости, чтобы его запустить */
-const addonElement = document.querySelector('.project-done');
-  if (addonElement) {
-    const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const elements = document.querySelectorAll('.project-done__num');
-            startAddonNumber(elements);
-            observer.disconnect(); // Отключаем после первого срабатывания
-        }
-    });
-    
-    }, { threshold: 0.25 });
+const addonElement = document.querySelector('.project-done'); 
+  if (addonElement) { 
+    const observer = new IntersectionObserver((entries, observer) => { 
+      entries.forEach(entry => { 
 
-    observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы
+      if (entry.isIntersecting) { 
+          const elements = document.querySelectorAll('.project-done__num'); 
+          startAddonNumber(elements); observer.disconnect(); // Отключаем после первого срабатывания 
+         }
+     });
+
+     }, { threshold: 0.25 }); observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы 
+    
   }
 
   // Создаем IntersectionObserver, который будет следить за элементами на странице
@@ -262,13 +261,16 @@ const observer = new IntersectionObserver((entries)=> {
         adctivLink.closest('.menu__link').classList.add('menu__link--active');
        }
     }
+
   });
-}, {threshold: 0.25} ); // Observer срабатывает, когда 50% элемента в зоне видимости
+}, {threshold: 0.20} ); // Observer срабатывает, когда 50% элемента в зоне видимости
 
 // Находим все элементы, за которыми будем следить, и подключаем их к Observer'у
-document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #contact, #news, #question' ).forEach(element => {
+
+document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #news, #question').forEach(element => {
   observer.observe(element)
 });
+
 
   /* Анимация */
   new WOW().init();
