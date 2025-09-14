@@ -231,11 +231,13 @@ const addonElement = document.querySelector('.project-done');
 
       if (entry.isIntersecting) { 
           const elements = document.querySelectorAll('.project-done__num'); 
-          startAddonNumber(elements); observer.disconnect(); // Отключаем после первого срабатывания 
+          startAddonNumber(elements); 
+          observer.disconnect(); // Отключаем после первого срабатывания 
          }
      });
 
-     }, { threshold: 0.25 }); observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы 
+     }, { threshold: 0.25 }); 
+     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы 
     
   }
 

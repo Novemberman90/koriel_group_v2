@@ -280,6 +280,7 @@
     justify-content: space-between;
     gap: 30px;
   }
+  
   &__img {
     flex: 1 1 48%;
     max-width: 48%;
@@ -482,9 +483,17 @@
     cursor: pointer;
     transition: all 0.3s;
     text-transform: capitalize;
-    &:hover,
+    &:hover {
+      background-color: rgba($blue, 0.75);
+      color: $semi-white;
+      svg {
+        path {
+          fill: $semi-white;
+        }
+      }
+    }
     &:active {
-      background-color: $blue;
+      background-color: rgba($blue, 0.5);
       color: $semi-white;
       svg {
         path {
@@ -739,6 +748,7 @@
     @include Rubik-400;
     font-size: 20px;
     margin-bottom: 5px;
+    text-wrap: balance;
   }
   &__descr-text {
     color: $grey;
@@ -812,6 +822,7 @@
     justify-content: space-between;
     align-items: stretch;
     gap: 30px;
+
   }
   &__item {
     flex: 1 1 50%;
@@ -883,7 +894,6 @@
           stroke: $blue; }
     }
   }
-
 }
 /* contact */
 
