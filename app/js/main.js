@@ -200,6 +200,27 @@ var swiper = new Swiper(".testmemorail__slider", {
   },
 });
 
+var swiper = new Swiper(".news-slider", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  pagination: {
+    el: ".news-slider__pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".news-slider__btn--next",
+    prevEl: ".news-slider__btn--prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    880: {
+      slidesPerView: 2,
+    }
+  }
+});
+
 
 /* Счетчик */
 const startAddonNumber = (elements)=> {
