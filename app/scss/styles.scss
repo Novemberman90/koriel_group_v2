@@ -234,7 +234,7 @@
   &__content {
     max-width: 720px;
     width: 100%;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(30px);
     padding: 20px 10px;
     border-radius: 10px;
     box-shadow:
@@ -257,7 +257,7 @@
 
   }
   &__title {
-    font-size: 60px;
+    font-size: 42px;
     @include Rubik-600;
     margin-bottom: 30px;
     color: $dark-blue;
@@ -318,6 +318,9 @@
       margin-bottom: 10px;
       &:last-child {
         margin-bottom: 0;
+      }
+      span {
+        color: $dark-blue;
       }
     }
   }
@@ -551,13 +554,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px 30px;
-    align-self: flex-start;
+    align-self: stretch;
   }
   &__item {
     padding: 50px 30px;
     background-color: $dark-blue;
-    max-width: 380px;
-    height: auto;
+    /* max-width: 380px; */
+    max-width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -578,11 +582,6 @@
     color: $white;
     p{
       text-wrap: balance;
-      display: -webkit-box;
-      -webkit-line-clamp: 7;
-      /* кол-во строк */
-      -webkit-box-orient: vertical;
-      overflow: hidden;
     }
   }
   &__link {
@@ -919,8 +918,8 @@
       justify-content: center;
       align-items: center;
       position: absolute;
-      top: 25%;
-      transform: translateY(-25%);
+      top: 30%;
+      transform: translateY(-30%);
       z-index: 5;
       width: 54px;
       height: 54px;
@@ -1393,9 +1392,9 @@ width: 100%;
     }
   }
   .hero {
-    &__title {
+/*     &__title {
       font-size: 52px;
-    }
+    } */
     &__subtitle-link {
       font-size: 18px;
     }
@@ -1618,6 +1617,9 @@ width: 100%;
     }
   }
   .service {
+    &__template {
+      grid-template-columns: repeat(2, 1fr);
+    }
     &__item {
       padding: 30px 20px;
     }
@@ -1664,7 +1666,7 @@ width: 100%;
 
   .hero {
     padding-top: 180px;
-      background-position: center left 30%;
+      /* background-position: center left 35%; */
   }
   .about {
     &__content {

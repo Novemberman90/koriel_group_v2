@@ -46,6 +46,9 @@ a {
     font-size: 18px;
   }
 }
+.accent-text {
+  color: $blue;
+}
 @media (max-width: 1298px) {
   .container {
     padding: 0 50px;
