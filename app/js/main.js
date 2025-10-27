@@ -62,7 +62,7 @@ const headerScroll = () => {
   const scrollPosition = window.scrollY || document.documentElement.scrollTop;
   const contactWiget = document.querySelector('.contact-wiget');
 
-  if(scrollPosition > headerHeght + 100) {
+  if(scrollPosition > headerHeght) {
     goTop.classList.add('go-top--active'); 
     contactWiget.classList.add('contact-wiget--active'); 
   } else {

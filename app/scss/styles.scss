@@ -3,6 +3,7 @@
 
 
 .header-top-bar {
+  display: none;
   padding: 20px 0;
   background-color: $semi-white;
   &__wrap {
@@ -149,7 +150,8 @@
       height: 100%;
       top: 0;
       right: 0;
-      background-color: $dark-blue;
+      /*  background-color: $dark-blue;*/
+      background-color: $white
     }
 
     &:last-child::after {
@@ -160,7 +162,7 @@
     }
   }
   &__link {
-    color: $dark-blue;
+    color: $white;
     font-size: 18px;
     display: inline-block;
     letter-spacing: 0.04em;
@@ -183,6 +185,10 @@
     right:0;
     visibility: visible;
     transition: all .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
     &--transform {
       position: static;
     }
@@ -209,7 +215,7 @@
   &__link {
     padding: 10px 5px;
     color: $white;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4;
     display: inline-block;
     letter-spacing: 0.04em;
@@ -360,7 +366,86 @@
     }
   }
 }
+.co {
+  background-color: $semi-white;
+  padding: 100px 0;
+  &__inner  {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__pretitle {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: $white;
+  }
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+  &__content {
+    flex: 1 1 50%;
+  }
+  &__info-title {
+    @include Rubik-400;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  &__info-text {
+    margin-bottom: 20px;
+    p {
+      color: $grey;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        color: $dark-blue;
+      }
+    }
+  }
+  ul.co__list{
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  &__list-item {
+    color: $grey;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 5px;
 
+    span {
+      color: $dark-blue;
+    }
+
+    &::marker {
+      content: '-';
+      color: $dark-blue;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 40px;
+    background-color: $dark-blue;
+    color: $white;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $dark-blue;
+      background-color: $blue;
+    }
+  }
+  &__img {
+    max-width: 50%;
+    width: 100%;
+  }
+}
 /* offer */
 .offer {
   background-color: $dark-blue;
@@ -615,12 +700,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 140px;
   }
   &__content {
     flex: 1 1 50%;
     max-width: 50%;
-    padding-left: 10px;
+    padding-left: 70px;
   }
   &__pretitle {
     background-color: $semi-white;
@@ -663,6 +747,7 @@
 .project-done {
   flex: 1 1 50%;
   max-width: 50%;
+  padding: 0 80px 0 40px;
   &__inner {
     padding: 100px 80px 120px;
     background-color:rgba($dark-blue, 0.9);
@@ -722,6 +807,8 @@
   }
   &__inner{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 30px;
   }
   &__item {
@@ -729,8 +816,8 @@
     flex-direction: column;
     background-color: $white;
     padding: 20px 20px 25px;
-    flex: 1 1 25%;
-    max-width: 25%;
+    flex: 1 1 23%;
+    max-width: 23%;
     &:hover {
       transform: scale(1.03);
       transition: all 0.3s;
@@ -739,8 +826,10 @@
   }
   &__img {
     width: 100%;
-    height: 316px;
+    max-height: 334px;
+    height: auto;
     object-fit: cover;
+    aspect-ratio: 280 / 334;
   }
   &__descr {
     text-align: center;
@@ -1383,12 +1472,17 @@ width: 100%;
       bottom: -40px;
       &--transform {
         .menu__link {
-          font-size: 18px;
+          font-size: 16px;
         }
       }
     }
     &__link {
       padding: 10px;
+    }
+  }
+  .lang-menu {
+    &__item {
+      font-size: 16px;
     }
   }
   .hero {
@@ -1405,8 +1499,9 @@ width: 100%;
     }
   }
   .project-done {
+    padding: 0 40px 0 0;
     &__inner {
-      padding: 80px 40px 100px;
+      padding: 40px 40px 60px;
     }
     &__num {
       font-size: 20px;
@@ -1416,8 +1511,8 @@ width: 100%;
     }
   }
   .whyus {
-    &__inner {
-      gap: 80px;
+    &__content {
+      padding-left: 40px;
     }
     &__item {
       margin-bottom: 15px;
@@ -1425,13 +1520,14 @@ width: 100%;
   }
   .projects {
     &__inner {
-      gap: 15px;
+    justify-content: center;
+    }
+    &__item {
+      flex: 48%;
+      max-width: 48%;
     }
     &__descr{
       padding: 0;
-    }
-    &__img {
-      height: 260px;
     }
   }
   .news {
@@ -1472,11 +1568,19 @@ width: 100%;
       }
     }
     &__link {
-      font-size: 18px;
+      font-size: 16px;
+    }
+  }
+  .co {
+    &__inner {
+      flex-direction: column-reverse;
+    }
+    &__img {
+      max-width: 100%;
     }
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
   .header-top-bar {
       position: relative;
       z-index: 250;
@@ -1495,7 +1599,7 @@ width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 30px 0;
+      padding: 20px 0;
       position: static;
     }
 
@@ -1509,9 +1613,10 @@ width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       position: absolute;
       inset: 0;
-      padding-top: 100px;
+      padding-top: 70px;
       height: 100vh;
       background-color: $dark-blue;
       z-index: 100;
@@ -1524,7 +1629,7 @@ width: 100%;
         .menu__img {
           display: block;
           width: 180px;
-          margin: 0 auto 50px auto;
+          margin: 0 auto 25px auto;
         }
       }
     }
@@ -1633,22 +1738,17 @@ width: 100%;
     }
   }
   .project-done {
+    padding: 0 20px 0 0;
     &__descr,
     &__num {
       font-size: 18px;
     }
   }
   .projects {
-    &__inner {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
     &__item {
       padding: 10px 10px 20px;
-      max-width: 100%;
-    }
-    &__img {
-      height: 25vh;
+      flex:1 1 47%;
+      max-width: 47%;
     }
   }
   .news {
@@ -1672,6 +1772,11 @@ width: 100%;
     &__content {
       padding: 0;
     }
+    &__info-title {
+      font-size: 36px;
+    }
+  }
+  .co {
     &__info-title {
       font-size: 36px;
     }
@@ -1704,6 +1809,7 @@ width: 100%;
     flex: 1 1 100%;
     max-width: 100%;
     width: 100%;
+    padding: 30px 0 0 0;
   }
   .whyus {
     &__inner {
@@ -1722,7 +1828,8 @@ width: 100%;
   
 }
 @media (max-width: 768px) {
-  .about {
+  .about,
+  .co {
     &__info-title {
       @include Rubik-500;
     }
@@ -1785,6 +1892,12 @@ width: 100%;
       margin-bottom: 20px;
     }
   }
+  .co {
+    padding: 50px 0;
+    &__info-title {
+      font-size: 36px;
+    }
+  }
   .offer{
     padding-top: 70px;
   }
@@ -1840,8 +1953,9 @@ width: 100%;
     &__title {
       font-size: 30px;
     }
-    &__inner {
-      grid-template-columns: repeat(1, 1fr);
+    &__item  {
+      max-width: 100%;
+      flex: 1 1 auto;
     }
   }
   .clients,
