@@ -24,12 +24,12 @@ window.addEventListener('DOMContentLoaded', ()=>{
   const navLink = document.querySelectorAll('a[href^="#"], [data-scroll]');
   navLink.forEach(link => {
     link.addEventListener('click', (e)=>{
-      e.preventDefault();
+      //e.preventDefault();
        const targetId = link.dataset.scroll || link.getAttribute('href').substring(1);
        
        if(!link.classList.contains('go-top')) {
-        scrollNavigation(targetId)
-        closeMenu();
+         scrollNavigation(targetId)
+         closeMenu();
        } else {
         window.scrollTo({
           top: 0,
@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
     if(!targetElement) return;
 
     const headerHeght = document.querySelector('#header').offsetHeight;
-    const top = targetElement.getBoundingClientRect().top + window.scrollY - headerHeght;
+    const top = targetElement.getBoundingClientRect().top + window.scrollY - (headerHeght - 10);
 
       window.scrollTo({
         top: top,
@@ -265,28 +265,19 @@ const addonElement = document.querySelector('.project-done');
   // Создаем IntersectionObserver, который будет следить за элементами на странице
 const observer = new IntersectionObserver((entries)=> {
   entries.forEach(entry => {
+    const activeId = entry.target.id;
+    const adctivLink = document.querySelector(`.menu__link[href="#${activeId}"]`);
 
-     // Проверяем, пересек ли элемент 50% своей высоты в зоне видимости
-    if(entry.isIntersecting){
-      // Получаем id элемента, который сейчас виден
-       const activeId = entry.target.id;
-       
-       // Удаляем класс активности у всех элементов списка навигации
-       document.querySelectorAll('.menu__link').forEach(item => {
-        item.classList.remove('menu__link--active')
-       });
+    if (!adctivLink) return;
 
-       // Находим ссылку, которая ведет к активному элементу
-       const adctivLink = document.querySelector(`.menu__link[href="#${activeId}"]`);
-
-       // Если такая ссылка существует, добавляем активный класс ее родителю (элементу списка)
-       if(adctivLink) {
-        adctivLink.closest('.menu__link').classList.add('menu__link--active');
-       }
+    if(entry.isIntersecting) {
+      adctivLink.classList.add('menu__link--active');
+    } else {
+      adctivLink.classList.remove('menu__link--active');
     }
 
   });
-}, {threshold: 0.20} ); // Observer срабатывает, когда 50% элемента в зоне видимости
+}, {rootMargin: '-50% 0px -50% 0px',threshold: 0} ); // Observer срабатывает, когда 50% элемента в зоне видимости
 
 // Находим все элементы, за которыми будем следить, и подключаем их к Observer'у
 

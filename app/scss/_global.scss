@@ -1,4 +1,6 @@
-@use 'importer' as *;
+@use 'vars' as *;
+@use 'fonts' as *;
+
 html {
   scroll-behavior: smooth;
 }
@@ -20,9 +22,7 @@ body {
     overflow: hidden;
   }
 }
-a {
-  color: inherit;
-}
+
 .main {
   flex-grow: 1;
 }

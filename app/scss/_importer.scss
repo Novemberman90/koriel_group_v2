@@ -1,4 +1,12 @@
 @forward 'reset';
-@forward 'vars';
 @forward 'fonts';
 @forward 'libs';
+@forward 'vars';
+@forward 'global';
+
+@forward 'header';
+@forward 'index';
+@forward 'breadcrumbs';
+@forward 'co2';
+
+@forward 'footer';

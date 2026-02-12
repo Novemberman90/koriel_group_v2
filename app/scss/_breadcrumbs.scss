@@ -1,0 +1,97 @@
+@use 'vars' as *;
+@use 'fonts' as *;
+
+.top {
+  padding: 200px 0 30px;
+  &__title{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+    @include Rubik-400;
+  }
+  &__sub-title {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+.breadcrumbs {
+  margin-bottom: 30px;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    padding-right: 32px;
+    position: relative;
+    color: $dark-blue;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url('../images/icon/chevron-breadcrumbs.svg');
+      width: 16px;
+      height: 16px;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:last-child {
+      padding-right: 0;
+      color: $grey;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    border-bottom: 1px solid transparent;
+    outline-offset: 3px;
+    transition: color 0.3s, border-color 0.3s, outline 0.3s;
+    color: inherit;
+
+    &:hover {
+      color: $blue;
+
+      &::before {
+        left: -25px;
+      }
+
+      &::after {
+        right: -25px;
+      }
+    }
+
+    &:active {
+      opacity: .7;
+    }
+  }
+  &__link-sub-txt {
+    font-size: 12px;
+    position: absolute;
+    bottom: -2px;
+  }
+}
+
+@media(max-width: 576px) {
+  .breadcrumbs {
+    &__item {
+      padding-right: 22px;
+
+      &::after {
+        width: 14px;
+        height: 14px;
+        right: 4px;
+      }
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+}
