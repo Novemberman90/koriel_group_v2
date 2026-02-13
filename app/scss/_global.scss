@@ -87,6 +87,11 @@ body {
    }
  }
 }
+@media (max-width: 440px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 @media (max-width: 395px) {
   .title {
   font-size: 30px; 
