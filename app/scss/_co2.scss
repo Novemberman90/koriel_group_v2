@@ -235,7 +235,7 @@
     height: 50px;
   }
   &__item-title {
-    @include Rubik-400;
+    @include Rubik-500;
     font-size: 22px;
     color: $dark-blue;
     margin-bottom: 10px;
@@ -356,6 +356,7 @@
     &__title {
       font-size: 24px;
       margin-bottom: 20px;
+      text-align: left;
     }
     &__descr {
       p {
@@ -377,6 +378,7 @@
     }
     &__sub-title {
       font-size: 16px;
+      text-align: left;
     }
     &__item {
       padding: 10px;
@@ -387,6 +389,11 @@
     &__item-icon {
       width: 40px;
       height: 40px;
+    }
+  }
+  .used {
+    &__title {
+      text-align: left;
     }
   }
   .result {
@@ -403,6 +410,7 @@
     }
     &__title {
       font-size: 24px;
+      text-align: left;
     }
     &__list {
       gap: 15px;
