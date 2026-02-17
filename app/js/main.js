@@ -141,7 +141,7 @@ window.addEventListener('scroll', headerScroll);
 
 /* clients-slider */
 
-var swiper = new Swiper(".clients-slider", {
+var clientsSlider = new Swiper(".clients-slider", {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
@@ -165,7 +165,7 @@ var swiper = new Swiper(".clients-slider", {
     },
   },
 });
-var swiper = new Swiper(".partner-slider", {
+var partnerSlider = new Swiper(".partner-slider", {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
@@ -191,7 +191,7 @@ var swiper = new Swiper(".partner-slider", {
 });
 
 
-var swiper = new Swiper(".testmemorail__slider", {
+var testmemorailSlider = new Swiper(".testmemorail__slider", {
   slidesPerView: 1,
   loop: true,
   navigation: {
@@ -200,7 +200,7 @@ var swiper = new Swiper(".testmemorail__slider", {
   },
 });
 
-var swiper = new Swiper(".news-slider", {
+var newsSlider = new Swiper(".news-slider", {
   slidesPerView: 2,
   spaceBetween: 30,
   pagination: {
@@ -284,6 +284,38 @@ const observer = new IntersectionObserver((entries)=> {
 document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #news, #question').forEach(element => {
   observer.observe(element)
 });
+
+
+  const accordeons = document.querySelectorAll("[data-accordion]");
+
+  accordeons.forEach(item => {
+    const btn = item.querySelector(".faq__button");
+    const content = item.querySelector("[data-accordion-content]");
+    const icon = item.querySelector(".faq__icon");
+
+    btn.addEventListener("click", () => {
+      const isOpening = !item.classList.contains("is-open");
+
+      // Закрываем все
+      accordeons.forEach(acc => {
+        acc.classList.remove("is-open");
+
+        const inner = acc.querySelector("[data-accordion-content]");
+        inner.style.maxHeight = null;
+
+        acc.querySelector(".faq__icon")
+          .classList.remove("faq__icon--open");
+      });
+
+      // Открываем текущий
+      if (isOpening) {
+        item.classList.add("is-open");
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.classList.add("faq__icon--open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
 
 
   /* Анимация */

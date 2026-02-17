@@ -9,6 +9,21 @@ html,
 body {
   height: 100%;
 }
+ a,
+ button {
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   outline: none
+ }
+
+ button:focus-visible,
+ a:focus-visible {
+   outline: none;
+ }
+
+ button:focus-visible,
+ a:focus-visible {
+   outline: none;
+ }
 
 body {
   display: flex;
@@ -55,6 +70,19 @@ body {
 .accent-text {
   color: $blue;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @media (max-width: 1298px) {
   .container {
     &--style {

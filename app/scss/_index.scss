@@ -1167,6 +1167,48 @@
     justify-content: flex-start;
     gap: 10px;
   }
+  &__prev,
+  &__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s, color 0.3s, outline 0.3s, box-shadow 0.3s;
+    border: 1px solid $dark-blue;
+    svg {
+      path {
+        transition: all 0.3s;
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          fill: $dark-blue;
+          stroke: $semi-white;
+        }
+      }
+    }
+    
+    &:focus {
+      outline: 1px solid $dark-blue;
+    }
+  
+    &:active {
+      border-color: $blue;
+  
+      svg {
+        path {
+          fill: $blue;
+          stroke: $semi-white;
+        }
+      }
+    }
+  }
 }
 
 
