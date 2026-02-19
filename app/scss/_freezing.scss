@@ -317,17 +317,31 @@
       font-size: 14px;
     }
   }
+  .advantages{
+    &__title{
+      text-align: left;
+    }
+    &__item {
+      text-align: left;
+      align-items: flex-start;
+    }
+  }
   .freezing {
     &__title {
       font-size: 24px;
+      text-align: left;
     }
     &__pretitle-title {
       font-size: 16px;
+    }
+    &__descr {
+      text-align: left;
     }
   }
   .storage {
     &__title {
       font-size: 24px;
+      text-align: left;
     }
         
     &__pretitle-title {
@@ -358,9 +372,9 @@
     &__descr {
       font-size: 14px;
     }
-  }
-  &__item-icon {
-    width: 30px;
-    height: 30px;
+    &__item-icon {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
