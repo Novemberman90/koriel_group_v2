@@ -83,6 +83,20 @@ body {
   overflow: hidden;
 }
 
+.cta {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 40px;
+  background-color: $dark-blue;
+  color: $white;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $dark-blue;
+    background-color: $blue;
+  }
+}
+
 @media (max-width: 1298px) {
   .container {
     &--style {
@@ -90,7 +104,7 @@ body {
    }
   }
 }
-@media (max-width: 1190px) {
+@media (max-width: 1200px) {
   .container {
     padding: 0 30px;
     &--style {
@@ -99,6 +113,9 @@ body {
   }
   .container-xl {
     padding: 0 20px;
+  }
+  .cta {
+    font-size: 18px;
   }
 }
 .title {
@@ -115,6 +132,9 @@ body {
      @include Rubik-400;
    }
  }
+  .cta {
+    font-size: 16px;
+  }
 }
 @media (max-width: 440px) {
   .container {
