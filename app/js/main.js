@@ -281,7 +281,7 @@ const observer = new IntersectionObserver((entries)=> {
 
 // Находим все элементы, за которыми будем следить, и подключаем их к Observer'у
 
-document.querySelectorAll('#hero, #about, #offer, #projects, #contact, #news, #question').forEach(element => {
+document.querySelectorAll('#hero, #about, #offer, #projects, #service, #contact, #news, #question').forEach(element => {
   observer.observe(element)
 });
 

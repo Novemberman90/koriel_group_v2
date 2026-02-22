@@ -517,6 +517,9 @@
     &__inner {
       flex-direction: column;
     }
+    &__pretitle {
+      margin: 0 auto 25px auto;
+    }
   }
   .step {
     flex-direction: column;
@@ -568,7 +571,6 @@
       margin-bottom: 20px;
       padding: 18px;
       background-color: $dark-blue;
-      border-radius: 14px;
     }
   
     &__table td {
