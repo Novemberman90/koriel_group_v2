@@ -115,6 +115,21 @@
 
   &__answer {
     font-size: 18px;
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;      
+      }
+    }
+    ul {
+      margin: 0 0 10px;
+      li {
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   &__icon {
