@@ -125,8 +125,12 @@
       margin: 0 0 10px;
       li {
         margin-bottom: 5px;
+        list-style: disc;
         &:last-child {
           margin-bottom: 0;
+        }
+        &::marker {
+          color: $blue;
         }
       }
     }
