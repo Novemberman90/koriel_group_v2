@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="./css/styles.min.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container header__content">
+      <div class="header__inner">
+        <div class="header__info">
+          <a class="header__logo" href="#">
+            <img class="header__logo-img" src="./images/icon/logo.svg" alt="koriel group logo">
+          </a>
+          <ul class="header__contact-list">
+            <li class="header__contact-item">
+              <a class="header__contact-link" href="mailto:kelenakiev@gmail.com">
+                <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                    fill="#232d55" />
+                  <path
+                    d="M44.5 24H23.5C22.1193 24 21 25.1193 21 26.5V41.5C21 42.8807 22.1193 44 23.5 44H44.5C45.8807 44 47 42.8807 47 41.5V26.5C47 25.1193 45.8807 24 44.5 24Z"
+                    stroke="#232d55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M25 28L34 35L43 28" stroke="#232d55" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div class="header__contact-box">
+                  <p class="header__contact-name">Email</p>
+                  <p class="header__contact-text">kelenakiev@gmail.com</p>
+                </div>
+              </a>
+            </li>
+            <li class="header__contact-item">
+              <a class="header__contact-link" href="tel:+380966258089">
+                <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                    fill="#FFB342" />
+                  <path
+                    d="M45.2509 40.8062C44.3347 39.8832 42.1158 38.5361 41.0393 37.9933C39.6373 37.2871 39.5219 37.2294 38.42 38.0481C37.6849 38.5944 37.1963 39.0824 36.3361 38.899C35.4759 38.7155 33.6066 37.6811 31.9698 36.0497C30.333 34.4182 29.2386 32.4948 29.0545 31.6376C28.8705 30.7803 29.3667 30.2974 29.9078 29.5607C30.6705 28.5223 30.6129 28.3492 29.9609 26.9474C29.4526 25.857 28.0663 23.6591 27.1397 22.7476C26.1485 21.7686 26.1485 21.9416 25.5098 22.207C24.9899 22.4258 24.4911 22.6917 24.0196 23.0014C23.0965 23.6146 22.5842 24.124 22.2259 24.8896C21.8676 25.6551 21.7067 27.4499 23.5569 30.8109C25.4071 34.1719 26.7053 35.8905 29.3921 38.5696C32.0788 41.2487 34.1449 42.6892 37.1651 44.383C40.9014 46.4754 42.3345 46.0675 43.1024 45.7098C43.8703 45.3522 44.382 44.8445 44.9965 43.9215C45.307 43.4508 45.5735 42.9526 45.7926 42.4331C46.0586 41.7967 46.2317 41.7967 45.2509 40.8062Z"
+                    stroke="#1C2752" stroke-width="2" stroke-miterlimit="10" />
+                </svg>
+
+                <div class="header__contact-box">
+                  <p class="header__contact-name">Телефон</p>
+                  <p class="header__contact-text">+38 (096) 625-80-89</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="menu">
+          <button class="menu__btn" type="button"></button>
+          <div class="menu__wrap">
+            <img class="menu__img" src="./images/icon/logo-white.svg" alt="">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="index.html#hero" class="menu__link" data-scroll>Головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#about" class="menu__link" data-scroll>Про Нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#offer" class="menu__link" data-scroll>Послуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="#projects" class="menu__link" data-scroll>Проєкти</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#service" class="menu__link" data-scroll>Рішення</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#news" class="menu__link" data-scroll>Новини</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contact" class="menu__link" data-scroll>Контакти</a>
+              </li>
+            </ul>
+            <ul class="lang-menu">
+              <li class="lang-menu__item">
+                <a class="lang-menu__link lang-menu__link--active" href="#">Ua</a>
+              </li>
+              <li class="lang-menu__item">
+                <a class="lang-menu__link" href="#">En</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="top">
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="./">
+                Головна
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Промислове кліматичне обладнання
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="climat-hero" style="background-image: url(./images/content/ventilyaciya.webp);">
+      <div class="container">
+        <div class="climat-hero__inner">
+          <h1 class="climat-hero__title">
+            Промислові кліматичні та HVAC системи для складів і виробництва
+          </h1>
+
+          <p class="climat-hero__sub-title">
+            Інжиніринг та впровадження систем вентиляції, кондиціонування,
+            осушення й контролю мікроклімату для промислових об’єктів.
+            Розрахунок теплових навантажень, інтеграція з холодильними установками
+            та автоматизацією. Можливе застосування енергоефективних технологій
+            на базі CO₂ (R744).
+          </p>
+
+          <a class="cta" href="#question" data-scroll>
+            отримати консультацію
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="climate-about">
+      <div class="container">
+        <div class="pretitle-box comparison__pretitle wow animate__animated animate__fadeInUp">
+          <img class="comparison__pretitle-img" src="./images/icon/service-icon.svg" alt="Технологія сублімації">
+          <p class="comparison__pretitle-title">Промисловий клімат</p>
+        </div>
+        <h2 class="climate-about__title">
+          Комплексні системи клімат-контролю для промислових підприємств
+        </h2>
+        <div class="climate-about__descr">
+          <p>
+            <strong>Промислове кліматичне обладнання</strong> забезпечує стабільні параметри повітря
+            у виробничих цехах, складських комплексах та логістичних центрах.
+            Системи вентиляції, кондиціонування та осушення повітря
+            проєктуються з урахуванням теплового навантаження,
+            технологічних процесів та вимог до температури й вологості.
+          </p>
+
+          <p>
+            Ми впроваджуємо енергоефективні рішення з можливістю інтеграції
+            <strong>холодильних установок</strong> та систем автоматизації.
+            За потреби використовуються сучасні технології на базі
+            природного холодоагенту CO₂ (R744), що дозволяє знизити
+            енергоспоживання та відповідати екологічним стандартам.
+          </p>
+        </div>
+        <div class="climate-about__inner">
+          <div class="climate-about__img-block wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+            <img class="climate-about__img" src="./images/content/com-air-conditioning.jpg" alt="Результати ефективності CO2"
+              loading="lazy">
+          </div>
+          <div class="climate-about__content">
+            <ul class="climate-about__list">
+
+              <li class="climate-about__item wow animate__animated animate__fadeIn" data-wow-delay=".1s">
+                <img class="climate-about__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                <div class="climate-about__item-content">
+                  <h3 class="climate-about__item-title">Промислова вентиляція та повітрообмін</h3>
+                  <div class="climate-about__item-text">
+                    <p>
+                      Розрахунок кратності повітрообміну відповідно до теплових навантажень та специфіки виробництва.
+                      Проєктування припливно-витяжних систем з урахуванням зонування приміщень,
+                      видалення надлишкового тепла та підтримання стабільних параметрів мікроклімату.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="climate-about__item wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+                <img class="climate-about__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Системи кондиціонування великого об’єму">
+                <div class="climate-about__item-content">
+                  <h3 class="climate-about__item-title">Системи кондиціонування великого об’єму</h3>
+                  <div class="climate-about__item-text">
+                    <p>
+                      Центральні та мультизональні HVAC-рішення для складів, логістичних центрів
+                      та виробничих комплексів. Підбір обладнання виконується на основі
+                      теплотехнічного аналізу будівлі та пікових навантажень.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="climate-about__item wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+                <img class="climate-about__item-icon" src="./images/icon/choose-marker.svg" alt="Осушення та контроль вологості">
+                <div class="climate-about__item-content">
+                  <h3 class="climate-about__item-title">Осушення та контроль вологості</h3>
+                  <div class="climate-about__item-text">
+                    <p>
+                      Промислові осушувачі повітря для підтримання заданого рівня відносної вологості.
+                      Рішення критично важливі для складів зберігання продукції,
+                      холодильних комплексів та виробництв із підвищеними вимогами до мікроклімату.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="climate-about__item wow animate__animated animate__fadeIn" data-wow-delay=".4s">
+                <img class="climate-about__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Інтеграція з холодильними системами та CO₂ (R744)">
+                <div class="climate-about__item-content">
+                  <h3 class="climate-about__item-title">Інтеграція з холодильними системами та CO₂ (R744)</h3>
+                  <div class="climate-about__item-text">
+                    <p>
+                      Синхронізація кліматичних систем із промисловими холодильними установками,
+                      включаючи рішення на базі природного холодоагенту CO₂ (R744).
+                      Оптимізація енергоспоживання за рахунок рекуперації тепла та
+                      комплексного управління тепловими потоками.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="climate-about__item wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                <img class="climate-about__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Автоматизація та моніторинг кліматичних систем">
+                <div class="climate-about__item-content">
+                  <h3 class="climate-about__item-title">Автоматизація та моніторинг кліматичних систем</h3>
+                  <div class="climate-about__item-text">
+                    <p>
+                      Впровадження PLC-контролю, систем диспетчеризації та дистанційного моніторингу.
+                      Інтеграція з BMS та промисловими системами автоматизації для точного
+                      регулювання температури, вологості та енергоефективності об’єкта.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="climate-systems">
+      <div class="container">
+        <div class="pretitle-box climate-systems__pretitle wow animate__animated animate__fadeInUp">
+          <img class="climate-systems__pretitle-img" src="./images/icon/service-icon.svg" alt="Промислові кліматичні системи">
+          <p class="climate-systems__pretitle-title">
+            Інженерні рішення
+          </p>
+        </div>
+        <h2 class="climate-systems__title title">
+          Основні системи промислового кліматичного обладнання
+        </h2>
+        <div class="climate-systems__descr">
+          <p>
+            Промислові кліматичні системи для підприємств включають проєктування,
+            монтаж та інтеграцію холодильного обладнання, вентиляції, кондиціювання
+            та рекуперації тепла. Рішення розробляються з урахуванням теплових навантажень,
+            специфіки виробництва та вимог до енергоефективності.
+          </p>
+          <p>
+            Ми впроваджуємо централізовані системи холодопостачання та контролю
+            мікроклімату, що працюють як єдина інженерна платформа.
+          </p>
+        </div>
+    
+        <!-- SYSTEMS WRAPPER -->
+        <div class="climate-systems__wrapper">
+    
+          <!-- SYSTEM 1 -->
+          <div class="climate-systems__item">
+            <div class="climate-systems__img-block">
+              <img class="climate-systems__img" src="./images/content/refrigeration-units.webp" alt="Промислова CO₂ холодильна установка R744">
+            </div>
+            <div class="climate-systems__content">
+              <div class="pretitle-box climate-systems__item-title-box wow animate__animated animate__fadeInUp">
+                <img class="climate-systems__pretitle-img" src="./images/icon/helmet.svg" alt="Технологія сублімації">
+                <h3 class="climate-systems__item-title">CO₂ холодильні установки (R744)</h3>
+              </div>
+              <div class="climate-systems__item-descr">
+                Транскритичні холодильні машини на базі природного холодоагенту CO₂ (R744)
+                забезпечують середньо- та низькотемпературне охолодження,
+                стабільність технологічних процесів та централізоване холодопостачання.
+              </div>
+              <ul class="climate-systems__list">
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Висока холодопродуктивність для промислових об'єктів</h4>
+                </li>
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Стабільна робота при пікових навантаженнях</h4>
+                </li>
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Інтеграція з кондиціюванням та рекуперацією тепла</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- SYSTEM 2 -->
+          <div class="climate-systems__item climate-systems__item--reverse">
+            <div class="climate-systems__img-block">
+              <img class="climate-systems__img" src="./images/content/ventilation-2.webp" alt="Промислове кондиціювання та HVAC системи">
+            </div>
+            <div class="climate-systems__content">
+              <div class="pretitle-box climate-systems__item-title-box wow animate__animated animate__fadeInUp">
+                <img class="climate-systems__pretitle-img" src="./images/icon/gear.svg" alt="Технологія сублімації">
+                <h3 class="climate-systems__item-title">Кондиціювання великих виробничих площ</h3>
+              </div>
+              <div class="climate-systems__item-descr">
+                HVAC-рішення для складів, логістичних центрів та виробничих комплексів
+                інтегруються з центральною холодильною машиною для оптимізації
+                енергоспоживання та централізованого управління температурою.
+              </div>
+              <ul class="climate-systems__list">
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Чилерні системи та повітрообробні агрегати</h4>
+                </li>
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Мультизональні рішення для великих площ</h4>
+                </li>
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Теплотехнічний розрахунок та моделювання навантажень</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- SYSTEM 3 -->
+          <div class="climate-systems__item">
+            <div class="climate-systems__img-block">
+              <img class="climate-systems__img" src="./images/content/rekuperation.jpg" alt="Система рекуперації тепла на підприємстві">
+            </div>
+            <div class="climate-systems__content">
+              <div class="pretitle-box climate-systems__item-title-box wow animate__animated animate__fadeInUp">
+                <img class="climate-systems__pretitle-img" src="./images/icon/helmet.svg" alt="Технологія сублімації">
+                <h3 class="climate-systems__item-title">Рекуперація тепла</h3>
+              </div>
+              <div class="climate-systems__item-descr">
+                Використання теплової енергії від холодильного контуру дозволяє
+                зменшити експлуатаційні витрати та підвищити загальний коефіцієнт
+                енергоефективності підприємства.
+              </div>
+              <ul class="climate-systems__list">
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Опалення виробничих та адміністративних приміщень</h4>
+                </li>
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Нагрів води для господарських потреб</h4>
+                </li>
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Використання тепла в технологічних процесах</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- SYSTEM 4 -->
+          <div class="climate-systems__item climate-systems__item--reverse">
+            <div class="climate-systems__img-block">
+              <img class="climate-systems__img" src="./images/content/ventilation-4.webp" alt="Промислова вентиляція та контроль мікроклімату">
+            </div>
+            <div class="climate-systems__content">
+              <div class="pretitle-box climate-systems__item-title-box wow animate__animated animate__fadeInUp">
+                <img class="climate-systems__pretitle-img" src="./images/icon/gear.svg" alt="Технологія сублімації">
+                <h3 class="climate-systems__item-title">Вентиляція та контроль мікроклімату</h3>
+              </div>
+              
+              <div class="climate-systems__item-descr">
+                Правильно розрахована система вентиляції забезпечує стабільний
+                повітрообмін, контроль температури та вологості відповідно до
+                санітарних і технологічних норм.
+              </div>
+              <ul class="climate-systems__list">
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Припливно-витяжні системи</h4>
+                </li>
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Регульована кратність повітрообміну</h4>
+                </li>
+                <li class="climate-systems__list-item">
+                  <img class="climate-systems__item-icon" src="./images/icon/choose-marker.svg"
+                  alt="Промислова вентиляція та повітрообмін">
+                  <h4 class="climate-systems__list-item-title">Інтеграція з автоматизованими системами управління</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- INTEGRATED APPROACH -->
+        <div class="climate-systems__integration">
+          <h3 class="climate-systems__integration-title title">Інтегрований підхід</h3>
+          <div class="climate-systems__integration-descr">
+            На великих промислових об'єктах <strong>холодильне обладнання на CO₂</strong> може
+            одночасно забезпечувати охолодження, кондиціювання та рекуперацію тепла.
+            Централізована система дозволяє мінімізувати втрати енергії та
+            забезпечити повний контроль через систему автоматизації.
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    <section class="climate-application">
+      <div class="container">
+        <div class="pretitle-box climate-application__pretitle wow animate__animated animate__fadeInUp">
+          <img class="climate-application__pretitle-img" src="./images/icon/service-icon.svg" alt="Сфери застосування">
+          <p class="climate-application__pretitle-title">
+            Сфери застосування
+          </p>
+        </div>
+        <h2 class="climate-application__title title">
+          Де застосовується промислове кліматичне обладнання
+        </h2>
+    
+        <div class="climate-application__descr">
+          <p>
+            Промислові кліматичні системи використовуються на об’єктах,
+            де необхідний точний контроль температури, вологості та повітрообміну.
+            Від стабільності мікроклімату залежить якість продукції,
+            безперервність виробничих процесів та енергоефективність підприємства.
+          </p>
+        </div>
+    
+        <div class="climate-application__grid">
+    
+          <div class="climate-application__item wow animate__animated animate__fadeIn" data-wow-delay=".1s">
+            <h3 class="climate-application__item-title">Склади та логістичні центри</h3>
+            <div class="climate-application__item-content">
+              <ul>
+                <li>Підтримання стабільного температурного режиму</li>
+                <li>Контроль відносної вологості</li>
+                <li>Захист продукції від конденсації та перегріву</li>
+              </ul>
+              <p>
+                Рішення для розподільчих центрів, складів глибокої заморозки
+                та логістичних хабів із централізованою системою холодопостачання.
+              </p>
+            </div>
+          </div>
+    
+          <div class="climate-application__item wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+            <h3 class="climate-application__item-title">Холодильні комплекси</h3>
+            <div class="climate-application__item-content">
+              <ul>
+                <li>Середньо- та низькотемпературні зони</li>
+                <li>Транскритичні CO₂ системи (R744)</li>
+                <li>Автоматизований контроль параметрів</li>
+              </ul>
+              <p>
+                Промислові холодильні комплекси для харчової,
+                фармацевтичної та переробної промисловості.
+              </p>
+            </div>
+          </div>
+    
+          <div class="climate-application__item wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+            <h3 class="climate-application__item-title">Виробничі підприємства</h3>
+            <div class="climate-application__item-content">
+              <ul>
+                <li>Стабільність технологічних процесів</li>
+                <li>Контроль температури та повітрообміну</li>
+                <li>Інтеграція вентиляції та рекуперації</li>
+              </ul>
+              <p>
+                Кліматичні рішення для промислових цехів,
+                енергетичних об’єктів та великих виробничих комплексів.
+              </p>
+            </div>
+          </div>
+    
+          <div class="climate-application__item wow animate__animated animate__fadeIn" data-wow-delay=".4s">
+            <h3 class="climate-application__item-title">Агро- та харчова промисловість</h3>
+            <div class="climate-application__item-content">
+              <ul>
+                <li>Контроль температури зберігання продукції</li>
+                <li>Підтримання нормативної вологості</li>
+                <li>Мінімізація втрат при зберіганні</li>
+              </ul>
+              <p>
+                Рішення для овочесховищ, м’ясопереробних підприємств,
+                молочних заводів та аграрних комплексів.
+              </p>
+            </div>
+          </div>
+    
+        </div>
+        <div class="climate-application__bottom-descr">
+          <p>
+            Комплексний підхід до проєктування та інтеграції кліматичних систем
+            дозволяє забезпечити стабільність виробництва, зменшити енерговитрати
+            та відповідати сучасним екологічним стандартам.
+          </p>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="tech-params">
+      <div class="container">
+    
+        <!-- PRETITLE -->
+        <div class="pretitle-box tech-params__pretitle wow animate__animated animate__fadeInUp">
+          <img class="tech-params__pretitle-img" src="./images/icon/service-icon.svg" alt="Технічні характеристики">
+          <p class="tech-params__pretitle-title">
+            Технічні характеристики
+          </p>
+        </div>
+    
+        <!-- TITLE -->
+        <h2 class="tech-params__title title">
+          Технічні параметри та робочі характеристики
+        </h2>
+    
+        <!-- INTRO -->
+        <div class="tech-params__descr">
+          Промислові системи холодопостачання розраховуються відповідно до теплового навантаження,
+          площі об’єкта та технологічних процесів. Централізовані CO₂ установки
+          забезпечують стабільну роботу в середньо- та низькотемпературних режимах.
+        </div>
+    
+        <!-- TECH TABLE / GRID -->
+        <div class="tech-params__specs">
+    
+          <div class="tech-params__row">
+            <h3 class="tech-params__label">Холодопродуктивність</h3>
+            <div class="tech-params__value">50 кВт – 2+ МВт</div>
+          </div>
+    
+          <div class="tech-params__row">
+            <h3 class="tech-params__label">Температурний діапазон</h3>
+            <div class="tech-params__value">
+              Середній: -5°C … +15°C <br>
+              Низький: -18°C … -40°C
+            </div>
+          </div>
+    
+          <div class="tech-params__row">
+            <h3 class="tech-params__label">Тип холодоагенту</h3>
+            <div class="tech-params__value">
+              CO₂ (R744), каскадні системи
+            </div>
+          </div>
+    
+          <div class="tech-params__row">
+            <h3 class="tech-params__label">Робочий тиск (CO₂)</h3>
+            <div class="tech-params__value">
+              до 120 бар (транскритичний режим)
+            </div>
+          </div>
+    
+          <div class="tech-params__row">
+            <h3 class="tech-params__label">Типи компресорів</h3>
+            <div class="tech-params__value">
+              Поршневі, гвинтові, спіральні (залежно від конфігурації)
+            </div>
+          </div>
+    
+          <div class="tech-params__row">
+            <h3 class="tech-params__label">Система керування</h3>
+            <div class="tech-params__value">
+              PLC-контролери, SCADA, інтеграція в BMS
+            </div>
+          </div>
+    
+        </div>
+    
+        <div class="tech-params__co2">
+    
+          <h3 class="tech-params__co2-title">
+            CO₂ системи (R744) для великих промислових об’єктів
+          </h3>
+
+          <div class="tech-params__co2-descr">
+            Транскритичні холодильні машини на CO₂ відзначаються високою продуктивністю
+            та дозволяють інтегрувати кондиціювання, вентиляцію та рекуперацію тепла
+            в єдину інженерну систему підприємства.
+          </div>
+          
+          <div class="tech-params__co2-content">
+            <ul>
+              <li>GWP = 1 (екологічно безпечний холодоагент)</li>
+              <li>Можливість паралельного стиснення</li>
+              <li>Утилізація тепла для ГВП та опалення</li>
+              <li>Оптимізація енерговитрат підприємства</li>
+            </ul>
+          </div>
+    
+        </div>
+    
+        <!-- PERFORMANCE BLOCK -->
+        <div class="tech-params__performance">
+    
+          <div class="tech-params__performance-item">
+            <span class="tech-params__big">COP до 4.0+</span>
+            <p class="tech-params__performance-label">Коефіцієнт енергоефективності</p>
+          </div>
+    
+          <div class="tech-params__performance-item">
+            <span class="tech-params__big">До 35%</span>
+            <p class="tech-params__performance-label">Економія енергії при рекуперації тепла</p>
+          </div>
+    
+          <div class="tech-params__performance-item">
+            <span class="tech-params__big">24/7</span>
+            <p class="tech-params__performance-label">Безперервний моніторинг системи</p>
+          </div>
+    
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="climate-advantages">
+      <div class="container">
+        <div class="pretitle-box climate-advantages__pretitle wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+          <img class="climate-advantages__pretitle-img" src="./images/icon/service-icon.svg"
+            alt="Промислові кліматичні системи">
+          <p class="climate-advantages__pretitle-title">Як ми працюємо</p>
+        </div>
+    
+        <div class="climate-advantages__title-box wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+          <h2 class="climate-advantages__title title wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+            Етапи впровадження промислових кліматичних систем
+          </h2>
+          <div class="climate-advantages__descr">
+            <p>
+              Реалізуємо комплексні рішення у сфері <strong>промислового кліматичного обладнання</strong>
+              для виробничих підприємств, складів, логістичних центрів та аграрного сектору.
+              Забезпечуємо повний цикл робіт — від теплотехнічного аудиту до автоматизації та сервісного супроводу.
+              Наш підхід гарантує енергоефективність, стабільність температурних режимів та оптимізацію експлуатаційних
+              витрат.
+            </p>
+          </div>
+        </div>
+    
+        <ul class="climate-advantages__list">
+    
+          <li class="climate-advantages__item wow animate__animated animate__fadeIn">
+            <img class="climate-advantages__item-icon" src="./images/icon/analitic.svg" alt="Теплотехнічний аудит об’єкта">
+            <h3 class="climate-advantages__item-title">Теплотехнічний аудит та аналіз навантажень</h3>
+            <div class="climate-advantages__item-text">
+              <p>
+                Аналіз виробничих процесів, розрахунок теплового навантаження, визначення зон температурного контролю та
+                вимог до повітрообміну.
+              </p>
+            </div>
+          </li>
+    
+          <li class="climate-advantages__item wow animate__animated animate__fadeIn" data-wow-delay=".1s">
+            <img class="climate-advantages__item-icon" src="./images/icon/project-icon-white.svg"
+              alt="Проєктування HVAC систем">
+            <h3 class="climate-advantages__item-title">Проєктування HVAC та CO₂ систем</h3>
+            <div class="climate-advantages__item-text">
+              <p>
+                Розробка інженерних рішень з урахуванням енергоефективності, вибір типу системи
+                (чилери, VRF, транскритичні CO₂ установки), моделювання робочих режимів.
+              </p>
+            </div>
+          </li>
+    
+          <li class="climate-advantages__item wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+            <img class="climate-advantages__item-icon" src="./images/icon/gear.svg" alt="Підбір обладнання">
+            <h3 class="climate-advantages__item-title">Підбір та постачання обладнання</h3>
+            <div class="climate-advantages__item-text">
+              <p>
+                Компресорні агрегати (поршневі, гвинтові, спіральні*), теплообмінники, системи рекуперації тепла,
+                автоматика, вентиляційні установки та елементи диспетчеризації.
+              </p>
+            </div>
+          </li>
+    
+          <li class="climate-advantages__item wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+            <img class="climate-advantages__item-icon" src="./images/icon/worker.svg" alt="Монтаж та запуск">
+            <h3 class="climate-advantages__item-title">Монтаж та пусконалагодження</h3>
+            <div class="climate-advantages__item-text">
+              <p>
+                Інсталяція обладнання, інтеграція з існуючими системами холодопостачання,
+                тестування під навантаженням та оптимізація параметрів роботи.
+              </p>
+            </div>
+          </li>
+    
+          <li class="climate-advantages__item wow animate__animated animate__fadeIn" data-wow-delay=".4s">
+            <img class="climate-advantages__item-icon" src="./images/icon/cpu.svg" alt="Автоматизація та моніторинг">
+            <h3 class="climate-advantages__item-title">Автоматизація та диспетчеризація</h3>
+            <div class="climate-advantages__item-text">
+              <p>
+                Інтеграція PLC, SCADA та BMS систем, дистанційний моніторинг параметрів,
+                контроль енергоспоживання та аварійних сценаріїв.
+              </p>
+            </div>
+          </li>
+    
+          <li class="climate-advantages__item wow animate__animated animate__fadeIn" data-wow-delay=".4s">
+            <img class="climate-advantages__item-icon" src="./images/icon/tool-kit.svg" alt="Сервісне обслуговування">
+            <h3 class="climate-advantages__item-title">Сервіс та технічна підтримка</h3>
+            <div class="climate-advantages__item-text">
+              <p>
+                Регламентне обслуговування, оптимізація режимів роботи, модернізація систем
+                та оперативне реагування для мінімізації простоїв підприємства.
+              </p>
+            </div>
+          </li>
+    
+        </ul>
+      </div>
+    </section>
+
+  <section class="hvac-automation">
+    <div class="container">
+  
+      <div class="pretitle-box hvac-automation__pretitle wow animate__animated animate__fadeInUp">
+        <img class="hvac-automation__pretitle-img" src="./images/icon/service-icon.svg" alt="Інтеграція та автоматизація">
+        <p class="hvac-automation__pretitle-title">Інтеграція та автоматизація</p>
+      </div>
+  
+      <div class="hvac-automation__wrapper">
+        <div class="hvac-automation__content">
+          <h2 class="hvac-automation__title title">
+            Автоматизація HVAC та CO₂ систем на базі PLC, SCADA та BMS
+          </h2>
+          <div class="hvac-automation__descr">
+            <p>
+              Ми виконуємо комплексну <strong>автоматизацію промислових холодильних установок,
+                вентиляційних систем та CO₂ рішень</strong> із повною інтеграцією в BMS підприємства.
+              Це забезпечує централізований контроль, зниження енергоспоживання
+              та стабільну роботу обладнання в будь-яких режимах навантаження.
+            </p>
+  
+            <p>
+              Як <strong>офіційний партнер Carel</strong>, ми впроваджуємо сучасні контролери
+              та системи управління для транскритичних CO₂ установок,
+              середньо- та низькотемпературних систем холодопостачання.
+            </p>
+  
+            <p>
+              Детальніше про рішення з автоматизації ви можете ознайомитись
+              на окремій сторінці —
+              <a href="/automation">системи автоматизації та диспетчеризації</a>.
+            </p>
+          </div>
+  
+        </div>
+  
+        <!-- RIGHT COLUMN -->
+        <div class="hvac-automation__architecture">
+  
+          <div class="hvac-automation__block">
+            <h3 class="hvac-automation__block-title">Контролери та автоматика</h3>
+            <div class="hvac-automation__block-content">
+              <ul>
+                <li>Carel (офіційний партнер)</li>
+                <li>Siemens</li>
+                <li>Schneider Electric</li>
+                <li>Danfoss</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="hvac-automation__block">
+            <h3 class="hvac-automation__block-title">Промислові протоколи зв’язку</h3>
+            <div class="hvac-automation__block-content">
+              <ul>
+                <li>Modbus RTU / TCP</li>
+                <li>BACnet</li>
+                <li>CAN-bus</li>
+                <li>Ethernet / VPN</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="hvac-automation__block">
+            <h3 class="hvac-automation__block-title">Функціональні можливості</h3>
+            <div class="hvac-automation__block-content">
+              <ul>
+                <li>Диспетчеризація та SCADA</li>
+                <li>Моніторинг температур і тиску</li>
+                <li>Аналіз енергоспоживання</li>
+                <li>Рекуперація тепла CO₂</li>
+                <li>Дистанційний сервіс та діагностика</li>
+              </ul>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+
+  <section class="business-impact">
+    <div class="container">
+      <div class="pretitle-box business-impact__pretitle wow animate__animated animate__fadeInUp">
+        <img class="business-impact__pretitle-img" src="./images/icon/service-icon.svg" alt="Переваги для бізнесу">
+        <p class="business-impact__pretitle-title">Переваги для бізнесу</p>
+      </div>
+      <h2 class="business-impact__title title">
+        Енергоефективні HVAC та CO₂ рішення для промислових підприємств
+      </h2>
+      <div class="business-impact__descr">
+        <p>
+          Впровадження сучасних систем холодопостачання та автоматизації дозволяє підприємствам
+          знизити витрати на електроенергію, оптимізувати експлуатаційні процеси та забезпечити
+          безперервність виробництва. Інтеграція в BMS та SCADA створює єдину екосистему
+          керування вентиляцією, охолодженням та рекуперацією тепла.
+        </p>
+
+        <p>
+          CO₂ (R744) системи відповідають сучасним екологічним стандартам,
+          мають мінімальний показник GWP та дозволяють реалізувати
+          комплексні рішення для логістичних центрів, виробничих підприємств
+          та комерційної нерухомості.
+        </p>
+
+        <p>
+          Комплексний підхід до проєктування, автоматизації та сервісного обслуговування
+          забезпечує прогнозовану окупність інвестицій та довгострокову стабільність роботи обладнання.
+        </p>
+      </div>
+  
+      <!-- KPI PART -->
+      <div class="business-impact__kpi">
+  
+        <div class="business-impact__kpi-item">
+          <h3 class="business-impact__number">20–35%</h3>
+          <span class="business-impact__label">
+            Скорочення енергоспоживання
+          </span>
+        </div>
+  
+        <div class="business-impact__kpi-item">
+          <h3 class="business-impact__number">24/7</h3>
+          <span class="business-impact__label">
+            Моніторинг через SCADA та BMS
+          </span>
+        </div>
+  
+        <div class="business-impact__kpi-item">
+          <h3 class="business-impact__number">GWP = 1</h3>
+          <span class="business-impact__label">
+            Екологічна відповідність CO₂
+          </span>
+        </div>
+  
+        <div class="business-impact__kpi-item">
+          <h3 class="business-impact__number">2–4 роки</h3>
+          <span class="business-impact__label">
+            Середній термін окупності
+          </span>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="pretitle-box faq__pretitle wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+          <img class="faq__pretitle-img" src="./images/icon/service-icon.svg" alt="Найчастіші питання про CO2">
+          <p class="faq__pretitle-title">Найчастіші питання</p>
+        </div>
+        <h2 class="faq__title title wow animate__animated animate__fadeInUp" data-wow-delay=".3s">Питання та відповіді
+        </h2>
+        <ul class="faq__list">
+          <li class="faq__item" data-accordion>
+            <button class="faq__button" type="button" aria-expanded="false" data-button>
+              <span class="visually-hidden">
+                open/close the accordion
+              </span>
+              <h3 class="faq__subtitle">
+                Яке промислове кліматичне обладнання підходить для великих виробничих підприємств ?
+              </h3>
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <path
+                  d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                  fill="" />
+              </svg>
+            </button>
+            <div class="faq__inner" data-accordion-content>
+              <div class="faq__answer">
+                <p>
+                  Підбір промислового кліматичного обладнання виконується на основі:
+                </p>
+                <ul>
+                  <li>
+                    Теплового навантаження об’єкта
+                  </li>
+                  <li>
+                    Технологічних процесів
+                  </li>
+                  <li>
+                    Необхідних температурних режимів
+                  </li>
+                  <li>
+                    Вимог до вологості та повітрообміну
+                  </li>
+                </ul>
+                <p>
+                  Для великих підприємств зазвичай застосовуються:
+                </p>
+                <ul>
+                  <li>
+                    Центральні холодильні установки (зокрема CO₂ R744)
+                  </li>
+                  <li>
+                    Чилерні системи
+                  </li>
+                  <li>
+                    Припливно-витяжна вентиляція
+                  </li>
+                  <li>
+                    Системи рекуперації теплау
+                  </li>
+                  <li>
+                    Автоматизовані системи керування (PLC, SCADA, BMS)
+                  </li>
+                </ul>
+                <p>
+                  Комплексне рішення дозволяє створити єдину енергоефективну інженерну систему.
+                </p>
+              </div>
+            </div>
+
+          </li>
+          <li class="faq__item" data-accordion>
+            <button class="faq__button" type="button" aria-expanded="false" data-button>
+              <span class="visually-hidden">
+                open/close the accordion
+              </span>
+              <h3 class="faq__subtitle">
+                У чому переваги CO₂ (R744) холодильних систем ?
+              </h3>
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <path
+                  d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                  fill="" />
+              </svg>
+            </button>
+            <div class="faq__inner" data-accordion-content>
+              <div class="faq__answer">
+                <p>
+                  CO₂ (R744) — це природний холодоагент з показником GWP = 1, що відповідає сучасним екологічним нормам та регламентам
+                  F-Gas.
+                </p>
+                <p>
+                  Основні переваги:
+                </p>
+                <ul>
+                  <li>
+                    Висока холодопродуктивність
+                  </li>
+                  <li>
+                    Стабільна робота при змінних навантаженнях
+                  </li>
+                  <li>
+                    Можливість інтеграції кондиціювання
+                  </li>
+                  <li>
+                    Ефективна рекуперація тепла
+                  </li>
+                  <li>
+                    Мінімальний вплив на довкілля
+                  </li>
+                </ul>
+                <p>
+                  Транскритичні CO₂ системи можуть використовуватись як базова енергетична платформа для всього підприємства.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item" data-accordion>
+            <button class="faq__button" type="button" aria-expanded="false" data-button>
+              <span class="visually-hidden">
+                open/close the accordion
+              </span>
+              <h3 class="faq__subtitle">
+                Чи можна інтегрувати вентиляцію та кондиціювання до центральної холодильної машини ?
+              </h3>
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <path
+                  d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                  fill="" />
+              </svg>
+            </button>
+            <div class="faq__inner" data-accordion-content>
+              <div class="faq__answer">
+                <p>
+                  Так. На великих промислових об’єктах системи вентиляції, кондиціювання та рекуперації можуть працювати від однієї
+                  центральної холодильної установки.
+                </p>
+                <p>
+                  Це дозволяє:
+                </p>
+                <ul>
+                  <li>
+                    Зменшити капітальні витрати
+                  </li>
+                  <li>
+                    оптимізувати енергоспоживання
+                  </li>
+                  <li>
+                    Централізовано керувати температурою
+                  </li>
+                  <li>
+                    Контролювати мікроклімат через систему автоматизації
+                  </li>
+                </ul>
+                <p>
+                  Такий підхід підвищує загальну енергоефективність об'єкта.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item" data-accordion>
+            <button class="faq__button" type="button" aria-expanded="false" data-button>
+              <span class="visually-hidden">
+                open/close the accordion
+              </span>
+              <h3 class="faq__subtitle">
+                Які технічні параметри враховуються при проєктуванні HVAC систем ?
+              </h3>
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <path
+                  d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                  fill="" />
+              </svg>
+            </button>
+            <div class="faq__inner" data-accordion-content>
+              <div class="faq__answer">
+                <p>
+                  Проєктування промислових HVAC систем базується на:
+                </p>
+                <ul>
+                  <li>
+                    Розрахунку повітрообміну
+                  </li>
+                  <li>
+                    Визначенні теплового навантаження
+                  </li>
+                  <li>
+                    Температурному діапазоні (-40°C … +20°C залежно від задачі)
+                  </li>
+                  <li>
+                    Рівні відносної вологості
+                  </li>
+                  <li>
+                    Типі виробничого процесу
+                  </li>
+                </ul>
+                <p>
+                  Додатково враховується можливість інтеграції в SCADA або BMS для постійного моніторингу та аналітики роботи обладнання.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item" data-accordion>
+            <button class="faq__button" type="button" aria-expanded="false" data-button>
+              <span class="visually-hidden">
+                open/close the accordion
+              </span>
+              <h3 class="faq__subtitle">
+                Наскільки енергоефективними є промислові CO₂ системи ?
+              </h3>
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <path
+                  d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                  fill="" />
+              </svg>
+            </button>
+            <div class="faq__inner" data-accordion-content>
+              <div class="faq__answer">
+                <p>
+                  Сучасні CO₂ установки демонструють високий коефіцієнт продуктивності (COP) та дозволяють зменшити енергоспоживання на
+                  20–35% у порівнянні з традиційними рішеннями
+                </p>
+                <p>
+                  Додаткову економію забезпечує:
+                </p>
+                <ul>
+                  <li>
+                    Рекуперація тепла 
+                  </li>
+                  <li>
+                    Інверторне керування компресорами
+                  </li>
+                  <li>
+                    Оптимізація навантаження
+                  </li>
+                  <li>
+                    Погодозалежне регулюванн
+                  </li>
+                </ul>
+                <p>
+                  Завдяки автоматизації досягається стабільна робота та швидка окупність інвестицій.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item" data-accordion>
+            <button class="faq__button" type="button" aria-expanded="false" data-button>
+              <span class="visually-hidden">
+                open/close the accordion
+              </span>
+              <h3 class="faq__subtitle">
+                Чи можливе впровадження систем “під ключ” ?
+              </h3>
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <path
+                  d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                  fill="" />
+              </svg>
+            </button>
+            <div class="faq__inner" data-accordion-content>
+              <div class="faq__answer">
+                <p>
+                  Так. Ми реалізуємо повний цикл впровадження промислових кліматичних систем:
+                </p>
+                <ul>
+                  <li>
+                    Технічний аудит об’єкта
+                  </li>
+                  <li>
+                    Інженерні розрахунки
+                  </li>
+                  <li>
+                    Проєктування
+                  </li>
+                  <li>
+                    Постачання обладнання
+                  </li>
+                  <li>
+                    Монтаж та пусконалагодження
+                  </li>
+                  <li>
+                    Інтеграція з системами автоматизації
+                  </li>
+                  <li>
+                    Сервісне обслуговування
+                  </li>
+                </ul>
+                <p>
+                  Такий підхід гарантує відповідність нормам, стабільність роботи та довгострокову експлуатацію обладнання.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects " id="projects">
+      <div class="container container--style">
+        <div class="projects__title-box">
+          <div class="pretitle-box projects__pretitle">
+            <img class="projects__pretitle-img" src="./images/icon/service-icon.svg" alt="Галерея проєктів">
+            <p class="projects__pretitle-title">
+              Галерея проєктів
+            </p>
+          </div>
+          <h2 class="title projects__title">Наші Проєкти</h2>
+        </div>
+        <div class="projects__inner">
+          <a class="projects__item wow animate__animated animate__fadeIn" href="#" target="_blank">
+            <img class="projects__img" src="./images/project/bitzer-agregat.webp" alt="фабрика">
+            <div class="projects__descr">
+              <h4 class="projects__descr-title">Fiber cable change</h4>
+              <p class="projects__descr-text">Шокова разоморозка риби</p>
+            </div>
+          </a>
+          <a class="projects__item wow animate__animated animate__fadeIn" href="#" target="_blank" data-wow-delay=".1s">
+            <img class="projects__img" src="./images/project/compressor-stansion-bock-3.webp" alt="завод">
+            <div class="projects__descr">
+              <h4 class="projects__descr-title">Fiber cable change</h4>
+              <p class="projects__descr-text">Склад зберігання</p>
+            </div>
+          </a>
+          <a class="projects__item wow animate__animated animate__fadeIn" href="#" target="_blank" data-wow-delay=".3s">
+            <img class="projects__img" src="./images/project/bitzer-stantions.webp" alt="склад">
+            <div class="projects__descr">
+              <h4 class="projects__descr-title">Fiber cable change</h4>
+              <p class="projects__descr-text">Ягода</p>
+            </div>
+          </a>
+          <a class="projects__item wow animate__animated animate__fadeIn" href="#" target="_blank" data-wow-delay=".4s">
+            <img class="projects__img" src="./images/project/project-4.webp" alt="магазин">
+            <div class="projects__descr">
+              <h4 class="projects__descr-title">Fiber cable change</h4>
+              <p class="projects__descr-text">Овочі</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="clients wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+      <div class="container">
+        <div class="clients__inner">
+          <div class="clients__title-box">
+            <div class="pretitle-box clients__pretitle">
+              <img class="clients__pretitle-img" src="./images/icon/service-icon.svg" alt="клієнти">
+              <p class="clients__pretitle-title">
+                Наші клієнти
+              </p>
+            </div>
+            <h2 class="clients__title title">Нам довіряють</h2>
+          </div>
+          <div class="swiper clients-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" lazy="true">
+                <div class="clients-slider__slide">
+                  <img src="./images/clients/silpo_logo.webp" alt="Сільпо">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="clients-slider__slide">
+                  <img src="./images/clients/yahotinske_logo1.webp" alt="Яготинське">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="clients-slider__slide">
+                  <img src="./images/clients/yatran_logo_png.webp" alt="Ятрань">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="clients-slider__slide">
+                  <img src="./images/clients/femra_logo.webp" alt="Ферма">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="clients-slider__slide">
+                  <img src="./images/clients/universal_fish_company.webp" alt="Рибна компанія">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="clients-slider__slide">
+                  <img src="./images/clients/brusilovskie_kolbasy1.webp" alt="Брусилівські ковбаси">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="clients-slider__slide">
+                  <img src="./images/clients/boss_berries.webp" alt="Ягода">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="clients-slider__slide">
+                  <img src="./images/clients/sarnu_holod1.webp" alt="Сарни холод">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="partner wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+      <div class="container">
+        <div class="partner__inner">
+          <div class="partner__title-box">
+            <div class="pretitle-box partner__pretitle">
+              <img class="partner__pretitle-img" src="./images/icon/service-icon.svg" alt="Партнери">
+              <p class="partner__pretitle-title">
+                Наші партнери
+              </p>
+            </div>
+            <h2 class="partner__title title">З нами працюють</h2>
+          </div>
+          <div class="swiper partner-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="partner-slider__slide">
+                  <img src="./images/partner/unidex.webp" alt="Юнідекс">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="partner-slider__slide">
+                  <img src="./images/partner/carel.webp" alt="Карел">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="partner-slider__slide">
+                  <img src="./images/partner/castel-2.webp" alt="Кастел">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="partner-slider__slide">
+                  <img src="./images/partner/guntner-1.svg" alt="Гюнтнер">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="partner-slider__slide">
+                  <img src="./images/partner/binzer.webp" loading="lazy" alt="Біцер">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="partner-slider__slide">
+                  <img src="./images/partner/bock.png" loading="lazy" alt="Циль Абегг">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="partner-slider__slide">
+                  <img src="./images/partner/k_flex.webp" loading="lazy" alt="К-Флекс">
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="partner-slider__slide">
+                  <img src="./images/partner/alco_controls.webp" loading="lazy" alt="Алко Контролс">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="contact" id="question">
+      <div class="container">
+        <div class="contact__inner">
+
+          <div class="contact__content wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+            <div class="contact__title-box">
+              <div class="pretitle-box contact__pretitle">
+                <img class="contact__pretitle-img" src="./images/icon/service-icon.svg" alt="Контакти">
+                <p class="contact__pretitle-title">
+                  Відгуки
+                </p>
+              </div>
+              <h2 class="contact__title title">Враження клієнтів</h2>
+            </div>
+            <div class="testmemorail">
+              <div class="testmemorail__inner">
+                <div class="swiper testmemorail__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="testmemorail__slide">
+                        <div class="testmemorail__slide-title-block">
+                          <img class="testmemorail__avatar" src="./images/content/avatar.jpg" alt="Замовник">
+                          <div class="testmemorail__slide-title-box">
+                            <h6 class="testmemorail__name">Olena</h6>
+                            <p class="testmemorail__city">Kiyv</p>
+                          </div>
+                        </div>
+                        <div class="testmemorail__text">
+                          <p>
+                            We have had several good experiences with Blue Collar team. Most recently, they replaced our
+                            20-year-old HVAC system
+                            with a new, modern, and more efficient system & it worked fine.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testmemorail__slide">
+                        <div class="testmemorail__slide-title-block">
+                          <img class="testmemorail__avatar" src="./images/content/avatar.jpg" alt="Замовник 2">
+                          <div class="testmemorail__slide-title-box">
+                            <h6 class="testmemorail__name">Olena</h6>
+                            <p class="testmemorail__city">Kiyv</p>
+                          </div>
+                        </div>
+                        <div class="testmemorail__text">
+                          <p>
+                            We have had several good experiences with Blue Collar team. Most recently, they replaced our
+                            20-year-old HVAC system
+                            with a new, modern, and more efficient system & it worked fine.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testmemorail__nav">
+                  <div class="testmemorail__prev">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                        fill="#F4F4F4" />
+                      <path d="M28.8108 19.23L22.6081 25.4327L28.8108 31.6353" stroke="#1C2752" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="testmemorail__next">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                        fill="#F4F4F4" />
+                      <path d="M22.1892 31.9459L28.3919 25.7432L22.1892 19.5405" stroke="#1C2752" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact__info">
+              <div class="contact__title-box">
+                <div class="pretitle-box contact__pretitle-info">
+                  <img class="contact__pretitle-img" src="./images/icon/service-icon.svg" alt="Запитання">
+                  <p class="contact__pretitle-title">
+                    Залишись питання ?
+                  </p>
+                </div>
+                <h2 class="contact__title title">99,9% Задоволених Клієнтів</h2>
+              </div>
+              <div class="contact__info-text">
+                <p>
+                  Якщо у вас залишись питання або потрібна допомога, телефонуйте або надішліть нам запит
+                </p>
+              </div>
+              <a class="contact__link" href="tel:+380966258089">
+                <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                    fill="" />
+                  <path
+                    d="M45.2509 40.8062C44.3347 39.8832 42.1158 38.5361 41.0393 37.9933C39.6373 37.2871 39.5219 37.2294 38.42 38.0481C37.6849 38.5944 37.1963 39.0824 36.3361 38.899C35.4759 38.7155 33.6066 37.6811 31.9698 36.0497C30.333 34.4182 29.2386 32.4948 29.0545 31.6376C28.8705 30.7803 29.3667 30.2974 29.9078 29.5607C30.6705 28.5223 30.6129 28.3492 29.9609 26.9474C29.4526 25.857 28.0663 23.6591 27.1397 22.7476C26.1485 21.7686 26.1485 21.9416 25.5098 22.207C24.9899 22.4258 24.4911 22.6917 24.0196 23.0014C23.0965 23.6146 22.5842 24.124 22.2259 24.8896C21.8676 25.6551 21.7067 27.4499 23.5569 30.8109C25.4071 34.1719 26.7053 35.8905 29.3921 38.5696C32.0788 41.2487 34.1449 42.6892 37.1651 44.383C40.9014 46.4754 42.3345 46.0675 43.1024 45.7098C43.8703 45.3522 44.382 44.8445 44.9965 43.9215C45.307 43.4508 45.5735 42.9526 45.7926 42.4331C46.0586 41.7967 46.2317 41.7967 45.2509 40.8062Z"
+                    stroke="#1C2752" stroke-width="2" stroke-miterlimit="10" />
+                </svg>
+                <span>+38 (096) 625-80-89</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact__form wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+            <div class="contact__title-box contact__title-box--form">
+              <div class="pretitle-box contact__pretitle">
+                <img class="contact__pretitle-img" src="./images/icon/service-icon.svg" alt="напишіть нам">
+                <p class="contact__pretitle-title">
+                  Контакт з нами
+                </p>
+              </div>
+              <h2 class="contact__title title">Відпавте нам запит</h2>
+            </div>
+            <div class="contact__form-wrap">
+              <form class="form" action="#">
+                <label class="form__label">
+                  <input class="form__input form__input--name" type="text" placeholder="Ім'я">
+                </label>
+                <label class="form__label">
+                  <input class="form__input form__input--tel" type="tel" placeholder="+38 (___)-___-__-__">
+                </label>
+                <label class="form__label">
+                  <input class="form__input form__input--email" type="email" placeholder="Email">
+                </label>
+                <textarea class="form__textarea" placeholder="Повідомлення"></textarea>
+                <button class="form__submit" type="button">Відправити</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content wow animate__animated animate__fadeInLeft" data-wow-delay=".3s">
+          <a href="#" class="footer__logo ">
+            <img class="footer__logo-img" src="./images/icon/logo-white.svg" alt="Коріел Груп лого">
+          </a>
+          <div class="footer__logo-text">
+            <p>
+              Якісні та ефективні рішення для вашого бізнесу.
+            </p>
+          </div>
+        </div>
+        <div class="footer__social-box footer__style-item">
+          <h4 class="footer__contact-title wow animate__animated animate__fadeIn" data-wow-delay=".1s">Ми в соц.мережах
+          </h4>
+          <ul class="footer__social-list">
+            <li class="footer__social-item wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+              <a href="#" class="footer__social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                  height="19px" viewBox="0 0 20 19" version="1.1">
+                  <path
+                    style=" stroke:none;fill-rule:evenodd;fill:rgb(10.980392%,15.294118%,32.156864%);fill-opacity:1;"
+                    d="M 19.488281 10.035156 C 19.488281 5.03125 15.289062 0.976562 10.105469 0.976562 C 4.925781 0.976562 0.726562 5.03125 0.726562 10.035156 C 0.726562 14.558594 4.15625 18.304688 8.640625 18.984375 L 8.640625 12.65625 L 6.257812 12.65625 L 6.257812 10.035156 L 8.640625 10.035156 L 8.640625 8.039062 C 8.640625 5.769531 10.042969 4.515625 12.183594 4.515625 C 13.210938 4.515625 14.285156 4.691406 14.285156 4.691406 L 14.285156 6.921875 L 13.101562 6.921875 C 11.9375 6.921875 11.574219 7.621094 11.574219 8.335938 L 11.574219 10.035156 L 14.175781 10.035156 L 13.757812 12.65625 L 11.574219 12.65625 L 11.574219 18.988281 C 16.058594 18.304688 19.488281 14.558594 19.488281 10.035156 Z M 19.488281 10.035156 " />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+              <a href="#" class="footer__social-link">
+                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.6268 2.35469C13.6109 2.35752 14.5539 2.73524 15.2498 3.40535C15.9456 4.07546 16.3379 4.98351 16.3408 5.93119V13.0834C16.3379 14.0311 15.9456 14.9392 15.2498 15.6093C14.5539 16.2794 13.6109 16.6571 12.6268 16.6599H5.19944C4.21532 16.6571 3.27234 16.2794 2.57645 15.6093C1.88057 14.9392 1.48832 14.0311 1.48539 13.0834V5.93119C1.48832 4.98351 1.88057 4.07546 2.57645 3.40535C3.27234 2.73524 4.21532 2.35752 5.19944 2.35469H12.6268ZM12.6268 0.924316H5.19944C2.33969 0.924316 0 3.17735 0 5.93119V13.0834C0 15.8373 2.33969 18.0903 5.19944 18.0903H12.6268C15.4865 18.0903 17.8262 15.8373 17.8262 13.0834V5.93119C17.8262 3.17735 15.4865 0.924316 12.6268 0.924316Z"
+                    fill="#1C2752" />
+                  <path
+                    d="M13.7409 5.93139C13.5205 5.93139 13.3051 5.86847 13.1219 5.75058C12.9387 5.63269 12.7959 5.46513 12.7116 5.26909C12.6272 5.07305 12.6052 4.85733 12.6482 4.64921C12.6912 4.44109 12.7973 4.24993 12.9531 4.09988C13.1089 3.94984 13.3074 3.84766 13.5235 3.80626C13.7397 3.76486 13.9637 3.78611 14.1673 3.86731C14.3708 3.94852 14.5448 4.08603 14.6673 4.26246C14.7897 4.4389 14.855 4.64632 14.855 4.85852C14.8553 4.9995 14.8267 5.13914 14.7709 5.26945C14.715 5.39975 14.6329 5.51815 14.5294 5.61783C14.4259 5.71752 14.3029 5.79653 14.1676 5.85034C14.0323 5.90415 13.8873 5.9317 13.7409 5.93139ZM8.9131 6.64639C9.50074 6.64639 10.0752 6.81419 10.5638 7.12857C11.0524 7.44296 11.4332 7.8898 11.6581 8.41261C11.883 8.93541 11.9418 9.51069 11.8272 10.0657C11.7125 10.6207 11.4296 11.1305 11.014 11.5306C10.5985 11.9308 10.0691 12.2033 9.49274 12.3137C8.91639 12.4241 8.31899 12.3674 7.77608 12.1508C7.23317 11.9343 6.76914 11.5676 6.44266 11.0971C6.11619 10.6266 5.94193 10.0734 5.94193 9.50751C5.94277 8.74894 6.25608 8.02168 6.81309 7.48529C7.37011 6.9489 8.12535 6.6472 8.9131 6.64639ZM8.9131 5.21602C8.03167 5.21602 7.17005 5.46771 6.43717 5.93926C5.70429 6.41082 5.13309 7.08106 4.79578 7.86523C4.45847 8.6494 4.37022 9.51227 4.54218 10.3447C4.71413 11.1772 5.13858 11.9419 5.76184 12.5421C6.3851 13.1422 7.17918 13.551 8.04367 13.7165C8.90815 13.8821 9.80422 13.7972 10.6185 13.4723C11.4329 13.1475 12.1289 12.5975 12.6186 11.8917C13.1083 11.186 13.3696 10.3563 13.3696 9.50751C13.3696 8.36934 12.9001 7.27778 12.0644 6.47297C11.2286 5.66815 10.095 5.21602 8.9131 5.21602Z"
+                    fill="#1C2752" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item wow animate__animated animate__fadeIn" data-wow-delay=".7s">
+              <a href="#" class="footer__social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                  height="18px" viewBox="0 0 20 18" version="1.1">
+                  <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
+                    d="M 19.085938 4.363281 C 18.871094 3.53125 18.226562 2.875 17.410156 2.65625 C 15.933594 2.25 10.003906 2.25 10.003906 2.25 C 10.003906 2.25 4.074219 2.25 2.59375 2.65625 C 1.777344 2.875 1.136719 3.53125 0.917969 4.363281 C 0.519531 5.871094 0.519531 9.015625 0.519531 9.015625 C 0.519531 9.015625 0.519531 12.15625 0.917969 13.664062 C 1.136719 14.496094 1.777344 15.125 2.59375 15.34375 C 4.074219 15.75 10.003906 15.75 10.003906 15.75 C 10.003906 15.75 15.933594 15.75 17.414062 15.34375 C 18.230469 15.125 18.871094 14.496094 19.089844 13.664062 C 19.484375 12.15625 19.484375 9.015625 19.484375 9.015625 C 19.484375 9.015625 19.484375 5.871094 19.089844 4.363281 Z M 8.0625 11.867188 L 8.0625 6.160156 L 13.015625 9.015625 Z M 8.0625 11.867188 " />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact-box footer__style-item">
+          <h4 class="footer__contact-title wow animate__animated animate__fadeIn" data-wow-delay=".1s">Контакти</h4>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+              <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                  fill="#232d55" />
+                <path
+                  d="M44.5 24H23.5C22.1193 24 21 25.1193 21 26.5V41.5C21 42.8807 22.1193 44 23.5 44H44.5C45.8807 44 47 42.8807 47 41.5V26.5C47 25.1193 45.8807 24 44.5 24Z"
+                  stroke="#232d55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M25 28L34 35L43 28" stroke="#232d55" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+              <div class="footer__contact-box">
+                <h4 class="footer__contact-name">Email</h4>
+                <a class="footer__contact-link" href="mailto:kelenakiev@gmail.com">kelenakiev@gmail.com</a>
+              </div>
+            </li>
+            <li class="footer__contact-item wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+              <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                  fill="#FFB342" />
+                <path
+                  d="M45.2509 40.8062C44.3347 39.8832 42.1158 38.5361 41.0393 37.9933C39.6373 37.2871 39.5219 37.2294 38.42 38.0481C37.6849 38.5944 37.1963 39.0824 36.3361 38.899C35.4759 38.7155 33.6066 37.6811 31.9698 36.0497C30.333 34.4182 29.2386 32.4948 29.0545 31.6376C28.8705 30.7803 29.3667 30.2974 29.9078 29.5607C30.6705 28.5223 30.6129 28.3492 29.9609 26.9474C29.4526 25.857 28.0663 23.6591 27.1397 22.7476C26.1485 21.7686 26.1485 21.9416 25.5098 22.207C24.9899 22.4258 24.4911 22.6917 24.0196 23.0014C23.0965 23.6146 22.5842 24.124 22.2259 24.8896C21.8676 25.6551 21.7067 27.4499 23.5569 30.8109C25.4071 34.1719 26.7053 35.8905 29.3921 38.5696C32.0788 41.2487 34.1449 42.6892 37.1651 44.383C40.9014 46.4754 42.3345 46.0675 43.1024 45.7098C43.8703 45.3522 44.382 44.8445 44.9965 43.9215C45.307 43.4508 45.5735 42.9526 45.7926 42.4331C46.0586 41.7967 46.2317 41.7967 45.2509 40.8062Z"
+                  stroke="#1C2752" stroke-width="2" stroke-miterlimit="10" />
+              </svg>
+              <div class="footer__contact-box">
+                <h4 class="footer__contact-name">Телефон</h4>
+                <a class="footer__contact-link" href="tel:+380966258089">(096) 625-80-89</a>
+              </div>
+            </li>
+            <li class="footer__contact-item wow animate__animated animate__fadeIn" data-wow-delay=".7s">
+              <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                  fill="#FFB342" />
+                <path
+                  d="M34 19C28.4792 19 24 23.4274 24 28.8803C24 35.1546 30.6667 45.0977 33.1146 48.532C33.2162 48.677 33.3494 48.7949 33.5032 48.8763C33.6571 48.9576 33.8273 49 34 49C34.1727 49 34.3429 48.9576 34.4968 48.8763C34.6506 48.7949 34.7838 48.677 34.8854 48.532C37.3333 45.0991 44 35.1597 44 28.8803C44 23.4274 39.5208 19 34 19Z"
+                  stroke="#1C2752" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M34 34C36.2091 34 38 32.2091 38 30C38 27.7909 36.2091 26 34 26C31.7909 26 30 27.7909 30 30C30 32.2091 31.7909 34 34 34Z"
+                  stroke="#1C2752" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <div class="footer__contact-box">
+                <h4 class="footer__contact-name">Адреса</h4>
+                <a class="footer__contact-link" href="#">вулиця Січнева, 1, Бориспіль</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom wow animate__animated animate__fadeInLeft" data-wow-delay=".7s">
+        <p>Copyright @ 2025 ТОВ "Коріел Груп"</p>
+        <div class="footer__bottom-author-box">
+          <p class="footer__bottom-author-title">Developed:</p>
+          <a class="footer__bottom-author-link" href="https://freelancehunt.com/freelancer/NovemberMan90.html "
+            target="_blank" rel="noopener noreferrer">Ivashchenko</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <a class="go-top" href="#header" data-scroll>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px"
+      viewBox="0 0 22 22" version="1.1">
+      <path
+        d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+        fill="" />
+    </svg>
+  </a>
+
+  <div class="contact-wiget">
+    <a class="contact-wiget__link-item" href="mailto:kelenakiev@gmail.com">
+      <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+          fill="#232d55" />
+        <path
+          d="M44.5 24H23.5C22.1193 24 21 25.1193 21 26.5V41.5C21 42.8807 22.1193 44 23.5 44H44.5C45.8807 44 47 42.8807 47 41.5V26.5C47 25.1193 45.8807 24 44.5 24Z"
+          stroke="#232d55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M25 28L34 35L43 28" stroke="#232d55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+    <a class="contact-wiget__link-item" href="tel:+380966258089">
+      <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+          fill="#FFB342" />
+        <path
+          d="M45.2509 40.8062C44.3347 39.8832 42.1158 38.5361 41.0393 37.9933C39.6373 37.2871 39.5219 37.2294 38.42 38.0481C37.6849 38.5944 37.1963 39.0824 36.3361 38.899C35.4759 38.7155 33.6066 37.6811 31.9698 36.0497C30.333 34.4182 29.2386 32.4948 29.0545 31.6376C28.8705 30.7803 29.3667 30.2974 29.9078 29.5607C30.6705 28.5223 30.6129 28.3492 29.9609 26.9474C29.4526 25.857 28.0663 23.6591 27.1397 22.7476C26.1485 21.7686 26.1485 21.9416 25.5098 22.207C24.9899 22.4258 24.4911 22.6917 24.0196 23.0014C23.0965 23.6146 22.5842 24.124 22.2259 24.8896C21.8676 25.6551 21.7067 27.4499 23.5569 30.8109C25.4071 34.1719 26.7053 35.8905 29.3921 38.5696C32.0788 41.2487 34.1449 42.6892 37.1651 44.383C40.9014 46.4754 42.3345 46.0675 43.1024 45.7098C43.8703 45.3522 44.382 44.8445 44.9965 43.9215C45.307 43.4508 45.5735 42.9526 45.7926 42.4331C46.0586 41.7967 46.2317 41.7967 45.2509 40.8062Z"
+          stroke="#1C2752" stroke-width="2" stroke-miterlimit="10" />
+      </svg>
+    </a>
+  </div>
+
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>

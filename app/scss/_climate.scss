@@ -1,0 +1,1226 @@
+@use 'vars' as *;
+@use 'fonts' as *;
+
+.climat-hero {
+  padding: 100px 0 100px;
+  position: relative;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+        rgba(15, 25, 60, 0.75) 0%,
+        rgba(15, 25, 60, 0.55) 50%,
+        rgba(15, 25, 60, 0.35) 100%);
+    z-index: 1;
+  }
+
+  &__inner {
+    position: relative;
+    max-width: 860px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow:
+      inset -1.75px -2.5px rgba(255, 255, 255, 0.5),
+      inset 1.75px 0.5px rgba(255, 255, 255, 0.075),
+      inset 0px 0px 10px 5px rgba(255, 255, 255, 0.095);
+    z-index: 2;
+    color: $white;
+    background-color: rgba($white, 0.08);
+  }
+
+  &__title {
+    font-size: 40px;
+    @include Rubik-600;
+    margin-bottom: 20px;
+  }
+
+  &__sub-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+}
+.climate-about {
+  padding: 100px 0 100px;
+  background-color: $white;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $semi-white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__img-block {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__content-pretitle {
+    margin-bottom: 25px;
+    background-color: $white;
+  }
+
+  &__content-pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 20px;
+  }
+
+  &__item {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  &__item-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+
+  &__item-title {
+    @include Rubik-500;
+    font-size: 20px;
+    color: $dark-blue;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    color: $grey;
+    font-size: 18px;
+  }
+}
+
+.climate-systems {
+  padding: 100px 0 100px;
+  background-color: $semi-white;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__wrapper {
+    margin-bottom: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  &__item-title-box {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+  }
+
+  &__img-block {
+    flex: 1 1 50%;
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__item-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  /* list */
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  &__list-item-title {
+    font-size: 18px;
+    @include Rubik-500;
+  }
+  &__integration-title {
+    margin-bottom: 20px;
+  }
+  &__integration-descr {
+    margin-bottom: 0;
+    font-size: 18px;
+    
+    p {
+      margin-bottom: 20px;
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.climate-application {
+  padding: 100px 0 100px;
+  background-color: $white;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $semi-white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  &__item {
+    max-width: 100%;
+    width: 100%;
+    padding: 25px;
+    background-color: $semi-white;
+    border: 1px solid #5d98d8;
+  }
+  &__item-title {
+    font-size: 20px;
+    @include Rubik-500;
+    margin-bottom: 15px;
+  }
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    color: $dark-blue;
+    margin-bottom: 10px;
+    ul {
+      margin: 0;
+      padding-left: 30px;
+      li{
+        font-size: 18px;
+        color: $dark-blue;
+        margin-bottom: 10px;
+        &::marker {
+          color: $blue;
+        }
+      }
+    }
+  }
+  &__bottom-descr {
+    font-size: 18px;
+    
+    p {
+      margin-bottom: 20px;
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.tech-params {
+  padding: 100px 0 100px;
+  background-color: $dark-blue;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: $white;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: $white;
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__specs {
+    border-top: 1px solid $grey-300;
+    margin-bottom: 50px;
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 24px 0;
+    border-bottom: 1px solid $grey-300;
+    gap: 40px;
+  }
+  &__label {
+    @include Rubik-500;
+    color: $white;
+    font-size: 20px;
+  }
+  &__value {
+    color: $white;
+    line-height: 1.4;
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__co2 {
+    padding: 50px;
+    background: $grey-200;
+    margin-bottom: 50px;
+  }
+  &__co2-title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  &__co2-descr {
+    margin-bottom: 20px;
+    color: $dark-blue;
+    font-size: 18px;
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__co2-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    color: $dark-blue;
+    ul {
+      margin: 0;
+      padding-left: 30px;
+      li {
+        font-size: 18px;
+        color: $dark-blue;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &::marker {
+          color: $blue;
+        }
+      }
+    }
+  }
+  &__performance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  &__performance-item {
+    text-align: center;
+  }
+  &__performance-label {
+    font-size: 20px;
+    color: $white;
+  }
+  &__big {
+    display: block;
+    font-size: 42px;
+    @include Rubik-600;
+    margin-bottom: 10px;
+    color: $blue;
+  }
+}
+.climate-advantages {
+  padding: 100px 0 100px;
+
+  &__title-box {
+    margin: 0 auto 50px auto;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $semi-white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__list {
+    display: grid;
+    align-self: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    max-width: 100%;
+    width: 100%;
+    min-height: 165px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    background-color: $dark-blue;
+  }
+
+  &__item-title {
+    @include Rubik-400;
+    font-size: 22px;
+    color: $blue;
+  }
+
+  &__item-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__item-text {
+    color: $white;
+  }
+}
+
+.hvac-automation {
+  padding: 100px 0;
+  background: $semi-white;
+  &__pretitle {
+    margin-bottom: 50px;
+    background: $white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-self: start;
+  }
+  &__content {
+    max-width: 640px;
+  }
+  &__title {
+    margin-bottom: 25px;
+    color: $dark-blue;
+  }
+  &__descr {
+    line-height: 1.7;
+    font-size: 16px;
+    p {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    strong {
+      @include Rubik-500;
+    }
+    a {
+      color: $blue;
+      text-decoration: none;
+      @include Rubik-500;
+      border-bottom: 1px solid transparent;
+      transition: 0.3s ease;
+      &:hover {
+        border-bottom: 1px solid $blue;
+      }
+    }
+  }
+  &__architecture {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__block {
+    padding-left: 25px;
+    border-left: 2px solid $grey-100;
+    transition: 0.3s ease;
+    &:hover {
+      border-left: 2px solid $blue;
+    }
+    ul {
+      padding-left: 30px;
+      margin: 0;
+      li {
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: $grey-700;
+
+        &::marker {
+          color: $blue;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__block-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    @include Rubik-500;
+    color: $dark-blue;
+  }
+}
+
+.business-impact {
+  padding: 100px 0;
+  background: $white;
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $semi-white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: $dark-blue;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__kpi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-top: 50px;
+    border-top: 1px solid $grey-100;
+  }
+  
+  &__kpi-item {
+    text-align: center;
+  }
+  
+  &__number {
+    font-size: 36px;
+    @include Rubik-600;
+    margin-bottom: 12px;
+    color: $blue;
+  }
+  
+  &__label {
+    font-size: 16px;
+    color: $grey-700;
+    line-height: 1.5;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .climate-systems {
+    &__item {
+      gap: 20px;
+    }
+  }
+  .climate-advantages {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 1064px) {
+  .hvac-automation {
+    &__wrapper {
+      gap: 30px;
+    }
+    &__title {
+      font-size: 36px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .climate-systems {
+    &__item {
+      flex-direction: column-reverse;
+    }
+    &__img-block,
+    &__content {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  .climate-application {
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 30px;
+    }
+  }
+  .tech-params {
+    &__performance {
+      gap: 20px;
+    }
+    &__big {
+      font-size: 32px;
+    }
+  }
+  .hvac-automation {
+    &__pretitle {
+      margin: 0 auto 25px auto;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
+    &__desct {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    &__architecture {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    &__block {
+      padding-left: 15px;
+      &:first-child {
+        padding-left: 0;
+        border: none;
+        &:hover {
+          border: none;
+        }
+      }
+      ul {
+        padding-left: 20px;
+      }
+    }
+  }
+  .business-impact {
+    &__kpi {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .tech-params {
+    &__performance {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    &__big {
+      font-size: 36px;
+    }
+    &__co2 {
+      padding: 40px 30px;
+    }
+  }
+  .climate-advantages {
+    &__item-title {
+      font-size: 20px;
+    }
+
+    &__item {
+      padding: 20px;
+    }
+  }
+  .hvac-automation {
+    &__architecture {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__block {
+      padding-left: 30px;
+
+      &:first-child {
+        border-left: 2px solid $grey-100;
+        padding-left: 30px;
+       &:hover {
+         border-left: 2px solid $blue;
+        }
+      }
+
+      ul {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 578px) {
+  .climat-hero {
+    padding: 50px 0;
+    &__inner {
+      padding: 15px;
+    }
+    &__title {
+      font-size: 36px;
+    }
+    &__sub-title {
+      font-size: 16px;
+    }
+  }
+  .climate-about {
+    padding: 50px 0;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__descr {
+      font-size: 16px;
+    }
+
+    &__item-title {
+      font-size: 18px;
+    }
+
+    &__item-text {
+      font-size: 16px;
+    }
+  }
+  .climate-systems {
+    padding: 50px 0;
+
+    &__title,
+    &__integration-title {
+      font-size: 28px;
+    }
+
+    &__descr,
+    &__item-descr,
+    &__integration-descr {
+      font-size: 16px;
+    }
+  }
+  .climate-application {
+    padding: 50px 0;
+    &__title {
+      font-size: 28px;
+    }
+    &__descr,
+    &__bottom-descr {
+      font-size: 16px;
+    }
+    &__item-content {
+      font-size: 16px;
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .tech-params {
+    padding: 50px 0;
+    &__title {
+      font-size: 28px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+    &__row {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 20px 0;
+    }
+    &__label {
+      color: $blue;
+    }
+    &__value {
+      font-size: 16px;
+    }
+    &__co2-title {
+      font-size: 28px;
+    }
+    &__co2-descr {
+      font-size: 16px;
+    }
+    &__co2 {
+      padding: 30px 20px;
+    }
+    &__co2-content {
+      font-size: 16px;
+      ul {
+        padding-left: 20px;
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .climate-advantages {
+    padding: 50px 0 50px;
+
+    &__title-box {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+
+    &__item {
+      min-height: auto;
+    }
+  }
+  .hvac-automation {
+    padding: 50px 0;
+
+    &__wrapper {
+      gap: 30px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__descr {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+
+    &__block-title {
+      font-size: 18px;
+    }
+
+    &__block li {
+      font-size: 14px;
+    }
+  }
+  .business-impact {
+    padding: 50px 0;
+    &__title {
+      font-size: 28px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+
+    &__number {
+      font-size: 28px;
+    }
+
+    &__label {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .climat-hero {
+    &__title {
+      font-size: 30px;
+    }
+  }
+  .climate-about {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__pretitle-title {
+      font-size: 16px;
+    }
+  }
+  .climate-systems {
+    &__title,
+    &__integration-title {
+      font-size: 24px;
+    }
+    &__pretitle-title {
+      font-size: 16px;
+    }
+    &__item-title {
+      font-size: 16px;
+    }
+    &__list-item-title {
+      font-size: 16px;
+    }
+  }
+  .climate-application {
+    &__title {
+      font-size: 24px;
+    }
+    &__pretitle-title {
+      font-size: 16px;
+    }
+    &__item {
+      padding: 15px;
+    }
+    &__item-title {
+      font-size: 18px;
+    }
+  }
+  .tech-params {
+    &__pretitle-title {
+      font-size: 16px;
+    }
+    &__title,
+    &__co2-title {
+      font-size: 24px;
+    }
+    &__big {
+      font-size: 27px;
+    }
+    &__performance {
+      gap: 30px;
+    }
+    &__performance-label {
+      font-size: 16px;
+    }
+  }
+  .climate-advantages {
+    &__title {
+      font-size: 24px;
+      text-align: left;
+    }
+    &__pretitle-title {
+      font-size: 16px;
+    }
+
+    &__item {
+      text-align: left;
+      align-items: flex-start;
+    }
+  }
+  .hvac-automation {
+    &__pretitle-title {
+      font-size: 16px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+  }
+  .business-impact {
+    &__title {
+      font-size: 24px;
+    }
+  
+    &__pretitle-title {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 365px) {
+  .climate-about {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+
+    &__item-title {
+      font-size: 16px;
+    }
+
+    &__item-text {
+      font-size: 14px;
+    }
+
+    &__descr {
+      font-size: 14px;
+    }
+  }
+  .climate-systems {
+    &__pretitle-title,
+    &__list-item-title {
+      font-size: 14px;
+    }
+    &__descr,
+    &__item-descr,
+    &__integration-descr {
+      font-size: 14px;
+    }
+  }
+  .climate-application {
+    &__grid {
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    &__pretitle-title {
+      font-size: 14px;
+    }
+
+    &__item-title {
+      font-size: 16px;
+    }
+    &__descr,
+    &__bottom-descr {
+      font-size: 14px;
+    }
+    &__item-content {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .tech-params {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+    &__descr,
+    &__co2-descr {
+      font-size: 14px;
+    }
+    &__label {
+      font-size: 16px;
+    }
+    &__value {
+      font-size: 14px;
+    }
+    &__co2 {
+      padding: 20px 10px;
+    }
+    &__co2-content {
+      font-size: 14px;
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .climate-advantages {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+
+    &__sub-title {
+      font-size: 14px;
+    }
+
+    &__item-title {
+      font-size: 16px;
+    }
+
+    &__item-text {
+      font-size: 14px;
+    }
+  }
+  .hvac-automation {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+    &__block {
+      padding-left: 15px;
+      &:first-child {
+        padding-left: 15px;
+      }
+    }
+    &__block-title {
+      font-size: 16px;
+    }
+  }
+  .business-impact {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+  
+    &__descr {
+      font-size: 14px;
+    }
+    &__kpi {
+      padding-top: 30px;
+    }
+    &__number {
+      font-size: 24px;
+    }
+  }
+}
+
