@@ -273,6 +273,10 @@
 
   &__item-text {
     color: $white;
+    line-height: 1.4;
+    strong {
+      @include Rubik-500;
+    }
   }
 }
 .equipment-drying {
@@ -397,7 +401,7 @@
     margin-bottom: 30px;
   }
 
-  &__wrapper {
+  &__table-wrapper {
     width: 100%;
   }
 
@@ -436,14 +440,37 @@
   }
 
   tbody tr {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid $grey;
     transition: background 0.3s ease;
   }
 
   tbody tr:hover {
     background: rgba($dark-blue, 0.5);
   }
+  &__conclusion {
+    font-size: 18px;
+    color: $dark-blue;
+    margin-bottom: 30px;
 
+    p {
+      margin-bottom: 20px;
+      line-height: 1.4;
+
+      strong {
+        @include Rubik-600;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__cta {
+    font-size: 16px;
+    p {
+      margin-bottom: 20px;
+    }
+  }
 }
 .specs {
   padding: 100px 0 100px;
@@ -735,6 +762,9 @@
     &__title {
       font-size: 28px;
     }
+    &__table-wrapper {
+      margin-bottom: 30px;
+    }
     &__table tr {
       padding: 25px 20px;
     }
@@ -749,6 +779,9 @@
       p {
         padding-left: 10px;
       }
+    }
+    &__conclusion {
+      font-size: 16px;
     }
   }
 }
@@ -830,6 +863,10 @@
         padding-left: 10px;
         font-size: 14px;
       }
+    }
+    &__cta-btn {
+      width: 100%;
+      text-align: center;
     }
   }
 }
@@ -926,6 +963,15 @@
     &__table-data p {
       padding-left: 0;
       color: $white;
+    }
+    &__conclusion {
+      font-size: 14px;
+    }
+    &__cta {
+      font-size: 14px;
+      p {
+        margin-bottom: 20px;
+      }
     }
   }
 }

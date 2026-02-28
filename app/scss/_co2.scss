@@ -94,10 +94,9 @@
     min-height: 165px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
     padding: 30px;
-    text-align: center;
     background-color: $dark-blue;
   }
   &__item-title {
@@ -279,7 +278,7 @@
   &__descr {
     line-height: 1.5;
     font-size: 16px;
-    margin: 20px;
+    margin-bottom: 20px;
 
     p {
       margin-bottom: 20px;
@@ -290,7 +289,7 @@
     }
 
     strong {
-      @include Rubik-500;
+      @include Rubik-600;
     }
 
     a {
@@ -419,6 +418,124 @@
     color: $white;
   }
 }
+.co2-comparison {
+  padding: 100px 0;
+  background-color: $dark-blue;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $semi-white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+    color: $dark-blue;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: $white;
+  }
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: $white;
+    p {
+      margin-bottom: 20px;
+      line-height: 1.4;
+      strong {
+        @include Rubik-600;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__table-wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+
+  &__thead {
+    background-color: $semi-white;
+  }
+
+  &__table-label {
+    @include Rubik-400;
+    font-size: 22px;
+    color: $dark-blue;
+    padding: 18px 20px;
+    text-align: left;
+    border-right: 1px solid $grey;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__table-data {
+    padding: 18px 20px;
+    color: $white;
+    border-right: 1px solid $grey;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  tbody tr {
+    border-bottom: 1px solid $grey;
+    transition: background 0.3s ease;
+  }
+
+  tbody tr:hover {
+    background: rgba($dark-blue, 0.5);
+  }
+  &__conclusion {
+    font-size: 18px;
+    color: $white;
+    margin-bottom: 30px;
+  
+    p {
+      margin-bottom: 20px;
+      line-height: 1.4;
+  
+      strong {
+        @include Rubik-600;
+      }
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__cta {
+    font-size: 16px;
+    color: $white;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  &__cta-btn {
+    background-color: $white;
+    color: $dark-blue;
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+}
 
 
 @media (max-width: 1200px) {
@@ -541,6 +658,9 @@
     }
   }
   .co2-target {
+    &__descr {
+      font-size: 18px;
+    }
     &__architecture {
       display: flex;
       flex-direction: column;
@@ -549,7 +669,7 @@
 
     &__block {
       padding-left: 30px;
-
+      
       border-left: 2px solid $grey-100;
       padding-left: 30px;
       &:hover {
@@ -558,7 +678,75 @@
 
       ul {
         padding-left: 30px;
+        li {
+          font-size: 16px;
+        }
       }
+    }
+  }
+  .co2-implementation {
+    &__descr {
+      font-size: 18px;
+    }
+    &__item {
+      padding: 20px;
+    }
+    &__item-title {
+      font-size: 20px;
+    }
+  }
+  .co2-comparison {
+    &__thead {
+      display: none;
+    }
+
+    &__table-data {
+      color: $grey;
+    }
+
+    tbody tr:hover {
+      background: rgba($dark-blue, 0.85);
+      td {
+        color: $blue;
+        &::before {
+          color: $white;
+        }
+      }
+    }
+
+    &__table,
+    &__table tbody,
+    &__table tr,
+    &__table td {
+      display: block;
+      width: 100%;
+
+    }
+
+    &__table tr {
+      margin-bottom: 20px;
+      padding: 18px;
+      background-color: $semi-white;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__table td {
+      position: relative;
+      padding-left: 48%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border: none;
+    }
+
+    &__table td::before {
+      content: attr(data-label)':';
+      position: absolute;
+      left: 18px;
+      top: 12px;
+      width: 45%;
+      color: $dark-blue;
     }
   }
 }
@@ -615,8 +803,12 @@
       font-size: 18px;
     }
 
-    &__block li {
-      font-size: 14px;
+    &__block  {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
     }
   }
   .co2-implementation {
@@ -641,6 +833,42 @@
 
     &__item {
       min-height: auto;
+    }
+    &__item-title {
+      font-size: 18px;
+    }
+  }
+  .co2-comparison {
+    padding: 50px 0;
+
+    &__title {
+      font-size: 28px;
+    }
+    &__descr,
+    &__conclusion {
+      font-size: 16px;
+    }
+    &__table-wrapper {
+      margin-bottom: 30px;
+    }
+
+    &__table tr {
+      padding: 25px 20px;
+    }
+
+    &__table td {
+      padding-right: 5px;
+
+      &::before {
+        top: 10px;
+        left: 0;
+      }
+    }
+
+    &__table-data {
+      p {
+        padding-left: 10px;
+      }
     }
   }
   .faq {
@@ -759,6 +987,35 @@
     &__item {
       text-align: left;
       align-items: flex-start;
+      padding: 10px;
+    }
+    &__item-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .co2-comparison {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__pretitle-title {
+      font-size: 16px;
+    }
+
+    &__table td::before {
+      font-size: 15px;
+    }
+
+    &__table-data {
+      p {
+        padding-left: 10px;
+        font-size: 14px;
+      }
+    }
+    &__cta-btn {
+      width: 100%;
+      text-align: center;
     }
   }
   .faq {
@@ -834,7 +1091,7 @@
       font-size: 14px;
     }
 
-    &__sub-title {
+    &__descr {
       font-size: 14px;
     }
 
@@ -844,6 +1101,43 @@
 
     &__item-text {
       font-size: 14px;
+    }
+  }
+  .co2-comparison {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+    &__descr,
+    &__conclusion {
+      font-size: 14px;
+    }
+
+    &__table td {
+      padding-left: 0;
+      padding-top: 15px;
+    }
+
+    &__table td::before {
+      position: static;
+      display: block;
+      width: 100%;
+      margin-bottom: 6px;
+      font-size: 16px;
+      @include Rubik-500;
+    }
+
+    &__table tr {
+      padding: 14px;
+    }
+
+    &__table-data p {
+      padding-left: 0;
+    }
+    &__cta {
+      font-size: 14px;
+      p {
+        margin-bottom: 20px;
+      }
     }
   }
   .faq {
