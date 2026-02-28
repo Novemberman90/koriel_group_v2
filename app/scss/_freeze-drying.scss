@@ -403,6 +403,7 @@
 
   &__table-wrapper {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   &__table {
@@ -445,7 +446,7 @@
   }
 
   tbody tr:hover {
-    background: rgba($dark-blue, 0.5);
+    background: rgba($dark-blue, 0.085);
   }
   &__conclusion {
     font-size: 18px;
