@@ -1,0 +1,663 @@
+@use 'vars' as *;
+@use 'fonts' as *;
+
+.recuperation-hero {
+  padding: 100px 0 100px;
+  position: relative;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+        rgba(15, 25, 60, 0.75) 0%,
+        rgba(15, 25, 60, 0.55) 50%,
+        rgba(15, 25, 60, 0.35) 100%);
+    z-index: 1;
+  }
+
+  &__inner {
+    position: relative;
+    max-width: 860px;
+    padding: 30px;
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow:
+      inset -1.75px -2.5px rgba(255, 255, 255, 0.5),
+      inset 1.75px 0.5px rgba(255, 255, 255, 0.075),
+      inset 0px 0px 10px 5px rgba(255, 255, 255, 0.095);
+    z-index: 2;
+    color: $white;
+    background-color: rgba($white, 0.08);
+  }
+
+  &__title {
+    font-size: 40px;
+    @include Rubik-600;
+    margin-bottom: 20px;
+  }
+
+  &__sub-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+}
+
+.recuperation-about {
+  padding: 100px 0 100px;
+  background-color: $white;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $semi-white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__img-block {
+    max-width: 860px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__content-pretitle {
+    margin-bottom: 25px;
+    background-color: $white;
+  }
+
+  &__content-pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 20px;
+  }
+
+  &__item {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  &__item-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+
+  &__item-title {
+    @include Rubik-500;
+    font-size: 20px;
+    color: $dark-blue;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    color: $grey;
+    font-size: 18px;
+  }
+}
+.recuperation-economy {
+  padding: 100px 0;
+  background: $semi-white;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: $dark-blue;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: $dark-blue;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__kpi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-top: 50px;
+    border-top: 1px solid $blue;
+    margin-bottom: 50px;
+  }
+
+  &__kpi-item {
+    text-align: center;
+  }
+
+  &__number {
+    font-size: 36px;
+    @include Rubik-600;
+    margin-bottom: 12px;
+    color: $blue;
+    display: flex;
+    align-items: center;
+  }
+
+  &__label {
+    font-size: 16px;
+    color: $grey-700;
+    line-height: 1.5;
+  }
+  &__conclusion {
+    font-size: 18px;
+    margin-bottom: 30px;
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.4;
+
+      strong {
+        @include Rubik-600;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__cta {
+    font-size: 16px;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__cta-btn {
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+.recuperation-work {
+  padding: 100px 0;
+  background: $white;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $semi-white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: $dark-blue;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: $dark-blue;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  &__step {
+    padding: 20px;
+    background-color: $dark-blue;
+  }
+  &__number {
+    display: inline-block;
+    @include Rubik-600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: $white;
+  }
+  &__step-title {
+    @include Rubik-500;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: $blue;
+  }
+  &__step-text {
+    color: $white;
+  }
+  &__img-block {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.recuperation-use {
+  padding: 100px 0 100px;
+  background-color: $semi-white;
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    align-self: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    background-color: $dark-blue;
+  }
+
+  &__item-title {
+    @include Rubik-400;
+    font-size: 22px;
+    color: $blue;
+  }
+
+  &__item-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__item-text {
+    color: $white;
+  }
+}
+
+@media (max-width: 1200px) {
+  .recuperation-work {
+    &__steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .recuperation-use {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1064px) {
+
+}
+
+@media (max-width: 992px) {
+  .recuperation-economy {
+    &__kpi {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .recuperation-work {
+    &__steps {
+      grid-template-columns: 1fr;
+    }
+  }
+  .recuperation-use {
+    &__descr {
+      font-size: 18px;
+    }
+
+    &__item {
+      padding: 20px;
+    }
+
+    &__item-title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .recuperation-hero {
+    padding: 50px 0;
+
+    &__inner {
+      padding: 15px;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__sub-title {
+      font-size: 16px;
+    }
+  }
+  .recuperation-about {
+    padding: 50px 0;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__descr {
+      font-size: 16px;
+    }
+
+    &__item-title {
+      font-size: 18px;
+    }
+
+    &__item-text {
+      font-size: 16px;
+    }
+  }
+  .recuperation-economy {
+    padding: 50px 0;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__descr,
+    &__conclusion {
+      font-size: 16px;
+    }
+
+    &__number {
+      font-size: 28px;
+    }
+
+    &__label {
+      font-size: 14px;
+    }
+  }
+  .recuperation-work {
+    padding: 50px 0;
+    
+    &__title {
+      font-size: 28px;
+    }
+  
+    &__descr {
+      font-size: 16px;
+    }
+  }
+  .recuperation-use {
+    padding: 50px 0 50px;
+
+    &__title-box {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__descr {
+      font-size: 16px;
+    }
+
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+
+    &__item-title {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media (max-width: 440px) {
+  .recuperation-hero {
+    &__title {
+      font-size: 30px;
+    }
+  }
+  .recuperation-about {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__pretitle-title {
+      font-size: 16px;
+    }
+  }
+  .recuperation-economy {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__pretitle-title {
+      font-size: 16px;
+    }
+    &__kpi {
+      gap: 20px;
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
+    &__cta-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .recuperation-work {
+    &__title {
+      font-size: 24px;
+    }
+  
+    &__pretitle-title {
+      font-size: 16px;
+    }
+    &__number {
+      font-size: 16px;
+    }
+  }
+  .recuperation-use {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__pretitle-title {
+      font-size: 16px;
+    }
+
+    &__item {
+      padding: 15px;
+    }
+
+    &__item-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+}
+
+@media (max-width: 365px) {
+  .recuperation-about {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+
+    &__item-title {
+      font-size: 16px;
+    }
+
+    &__item-text {
+      font-size: 14px;
+    }
+
+    &__descr {
+      font-size: 14px;
+    }
+  }
+  .recuperation-economy {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+
+    &__descr,
+    &__conclusion {
+      font-size: 14px;
+    }
+
+    &__number {
+      font-size: 24px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__cta {
+      font-size: 14px;
+    }
+  }
+  .recuperation-work {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+  
+    &__descr,
+    &__number,
+    &__step-text {
+      font-size: 14px;
+    }
+    &__step-title {
+      font-size: 16px;
+    }
+  }
+  .recuperation-use {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+
+    &__descr {
+      font-size: 14px;
+    }
+
+    &__item-title {
+      font-size: 16px;
+    }
+
+    &__item-text {
+      font-size: 14px;
+    }
+  }
+}

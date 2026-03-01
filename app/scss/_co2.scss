@@ -395,7 +395,6 @@
   &__item {
     max-width: 100%;
     width: 100%;
-    min-height: 165px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -830,10 +829,6 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
-
-    &__item {
-      min-height: auto;
-    }
     &__item-title {
       font-size: 18px;
     }
@@ -985,9 +980,7 @@
     }
 
     &__item {
-      text-align: left;
-      align-items: flex-start;
-      padding: 10px;
+      padding: 15px;
     }
     &__item-icon {
       width: 40px;

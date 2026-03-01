@@ -90,6 +90,9 @@ body {
   background-color: $dark-blue;
   color: $white;
   transition: all 0.3s;
+  &::first-letter {
+    text-transform: uppercase;
+  }
 
   &:hover {
     color: $dark-blue;
@@ -141,6 +144,9 @@ body {
 @media (max-width: 440px) {
   .container {
     padding: 0 20px;
+  }
+  .cta {
+    padding: 20px;
   }
 }
 @media (max-width: 395px) {
