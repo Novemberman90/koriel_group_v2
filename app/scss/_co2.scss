@@ -487,6 +487,7 @@
     padding: 18px 20px;
     color: $white;
     border-right: 1px solid $grey;
+    transition: all .3s;
 
     &:last-child {
       border-right: none;
@@ -500,6 +501,13 @@
 
   tbody tr:hover {
     background: rgba($dark-blue, 0.5);
+   td {
+      color: $blue;
+  
+      &::before {
+        color: $white;
+      }
+    }
   }
   &__conclusion {
     font-size: 18px;
