@@ -805,7 +805,9 @@
       font-size: 16px;
       line-height: 1.2;
     }
-
+    &__block {
+      padding-left: 20px;
+    }
     &__block-title {
       font-size: 18px;
     }
