@@ -972,6 +972,15 @@
     &__block-title {
       font-size: 18px;
     }
+    &__block {
+      padding-left: 15px;
+      &:first-child {
+        padding-left: 15px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+    }
 
     &__block li {
       font-size: 14px;

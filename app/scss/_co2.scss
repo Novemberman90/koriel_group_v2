@@ -806,18 +806,17 @@
       line-height: 1.2;
     }
     &__block {
-      padding-left: 20px;
-    }
-    &__block-title {
-      font-size: 18px;
-    }
-
-    &__block  {
-      ul {
+      padding-left: 15px;
+       ul {
+        padding-left: 20px;
+    
         li {
           font-size: 14px;
         }
       }
+    }
+    &__block-title {
+      font-size: 18px;
     }
   }
   .co2-implementation {
