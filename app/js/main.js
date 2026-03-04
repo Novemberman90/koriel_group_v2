@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
   const navLink = document.querySelectorAll('a[href^="#"], [data-scroll]');
   navLink.forEach(link => {
     link.addEventListener('click', (e)=>{
-      //e.preventDefault();
+     // e.preventDefault();
        const targetId = link.dataset.scroll || link.getAttribute('href').substring(1);
        
        if(!link.classList.contains('go-top')) {
@@ -45,7 +45,6 @@ window.addEventListener('DOMContentLoaded', ()=>{
     if(!targetElement) return;
 
     const headerHeght = document.querySelector('#header').offsetHeight;
-   // const top = targetElement.getBoundingClientRect().top + window.scrollY - headerHeght;
     const top = targetElement.getBoundingClientRect().height + headerHeght;
 
       window.scrollTo({
