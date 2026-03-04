@@ -224,10 +224,18 @@
   &__formula {
     font-size: 20px;
     margin-bottom: 15px;
-    p strong {
-      @include Rubik-600;
-      display: flex;
-      gap: 5px;
+    p {
+      margin-bottom: 20px;
+  
+      strong {
+        @include Rubik-600;
+        display: flex;
+        gap: 5px;
+      }
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
   &__formula-list {
@@ -235,6 +243,11 @@
     ul {
       li {
         margin-bottom: 15px;
+        
+        strong {
+          @include Rubik-600;
+        }
+      
         &:last-child {
           margin-bottom: 0;
         }
@@ -624,14 +637,13 @@
   }
 }
 
-@media (max-width: 1064px) {
-
-}
-
 @media (max-width: 992px) {
   .recuperation-economy {
     &__kpi {
       grid-template-columns: repeat(2, 1fr);
+    }
+    &__formula {
+      font-size: 18px;
     }
   }
   .recuperation-advantages {
@@ -639,15 +651,10 @@
       grid-template-columns: 1fr;
     }
   }
-  .recuperation-economy {
-    &__formula {
-      font-size: 18px;
-    }
-  }
 }
 
 @media (max-width: 768px) {
-.recuperation-economy {
+  .recuperation-economy {
     &__formula {
       font-size: 16px;
       p strong {
