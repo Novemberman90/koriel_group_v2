@@ -727,7 +727,7 @@
     }
 
     &__title {
-      font-size: 32px;
+      font-size: 30px;
     }
 
     &__list {
@@ -828,10 +828,22 @@
       font-size: 24px;
       text-align: left;
     }
+    &__pretitle-title {
+      font-size: 16px;
+    }
+    &__sub-title {
+      font-size: 16px;
+    }
 
     &__item {
       text-align: left;
       align-items: flex-start;
+    }
+    &__item-title {
+      font-size: 18px;
+    }
+    &__item-text {
+      font-size: 16px;
     }
   }
   .equipment-drying {

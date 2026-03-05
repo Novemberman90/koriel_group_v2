@@ -1,6 +1,7 @@
 @use 'vars' as *;
 @use 'fonts' as *;
 
+
 .fr-hero {
   padding: 100px 0 100px;
   position: relative;
@@ -11,6 +12,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
   &::after {
     content: "";
     position: absolute;
@@ -21,6 +23,7 @@
         rgba(15, 25, 60, 0.35) 100%);
     z-index: 1;
   }
+
   &__inner {
     position: relative;
     max-width: 860px;
@@ -34,19 +37,121 @@
     z-index: 2;
     color: $white;
   }
+
   &__title {
     font-size: 40px;
     @include Rubik-600;
     margin-bottom: 20px;
   }
+
   &__sub-title {
     font-size: 20px;
     margin-bottom: 20px;
   }
 }
-.freezing {
+.fr-intro {
+  padding: 100px 0 100px;
+  background-color: $white;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $semi-white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__descr,
+  &__conclusion {
+    margin-bottom: 30px;
+    font-size: 18px;
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    strong {
+      @include Rubik-600;
+    }
+  }
+  &__inner {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+    align-items: stretch;
+  }
+  &__img-block {
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__content {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__content-title {
+    font-size: 24px;
+    @include Rubik-500;
+    margin-bottom: 25px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  &__item-title {
+    font-size: 18px;
+    @include Rubik-400;
+  }
+  &__content-text {
+    margin-top: 30px;
+    font-size: 18px;
+    p {
+      margin-bottom: 20px;
+      strong {
+        @include Rubik-600;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__subtitle {
+    @include Rubik-500;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+.shock-freezing {
   padding: 100px 0 100px;
   background-color: $semi-white;
+
   &__pretitle {
     margin: 0 auto 25px auto;
     background-color: $white;
@@ -62,84 +167,168 @@
     font-size: 40px;
     margin-bottom: 30px;
   }
-  &__descr {
+
+  &__descr,
+  &__conclusion {
     margin-bottom: 30px;
     font-size: 18px;
+    line-height: 1.4;
+
     p {
       margin-bottom: 20px;
+
       &:last-child {
         margin-bottom: 0;
       }
     }
-  }
-  &__inner {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 30px;
-  }
-  &__content {
-    max-width: 50%;
-    width: 100%;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    strong {
+      @include Rubik-600;
+    }
   }
-
+  &__lists {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
   &__item {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 20px;
+    flex: 1;
+  }
+  &__list {
+    padding-left: 25px;
+    border-left: 2px solid $grey-100;
+    transition: 0.3s ease;
+
+    &:hover {
+      border-left: 2px solid $blue;
+    }
+
+    ul {
+      padding-left: 30px;
+      margin: 0;
+
+      li {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: $grey-700;
+
+        &::marker {
+          color: $blue;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
-  &__item-title {
-    font-size: 20px;
+  &__content-title {
+    margin-bottom: 15px;
+    font-size: 22px;
     @include Rubik-500;
-    margin-bottom: 10px;
+    color: $dark-blue;
   }
-
-  &__item-text {
-    color: $grey;
-    font-size: 18px;
-  }
+  
   &__img-block {
-    max-width: 50%;
+    max-width: 100%;
     width: 100%;
     height: auto;
+    margin-bottom: 50px;
   }
-
+  
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-}
-.frz-advantages {
-  padding: 100px 0 100px;
-
-  &__title-box {
-    margin: 0 auto 50px auto;
+  
+  &__caption {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.7;
   }
 
-  &__title {
+  &__table-wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__table-title {
     @include Rubik-500;
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 24px;
+    margin-bottom: 30px;
   }
 
-  &__sub-title {
-    font-size: 18px;
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
   }
+
+  &__thead {
+    background-color: $dark-blue;
+  }
+
+  &__table-label {
+    color: $white;
+    @include Rubik-400;
+    font-size: 22px;
+    color: $white;
+    padding: 18px 20px;
+    text-align: left;
+    border-right: 1px solid $grey;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__table-data {
+    padding: 18px 20px;
+    color: $dark-blue;
+    border-right: 1px solid $grey;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  tbody tr {
+    border-bottom: 1px solid $grey;
+    transition: background 0.3s ease;
+  }
+
+  tbody tr:hover {
+    background: rgba($dark-blue, 0.085);
+  }
+
+  &__conclusion {
+    margin-bottom: 0;
+  }
+    &__descr,
+  &__conclusion {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.4;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    strong {
+      @include Rubik-600;
+    }
+  }
+
+}
+.freeze-tunnel {
+  padding: 100px 0;
+  background-color: $white;
 
   &__pretitle {
     margin: 0 auto 25px auto;
@@ -151,15 +340,284 @@
     @include Rubik-500;
   }
 
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.4;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    strong {
+      @include Rubik-600;
+    }
+  }
+  &__content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  &__col {
+    flex: 1;
+  }
+  &__co-title,
+  &__steps-title {
+    margin-bottom: 15px;
+    font-size: 22px;
+    @include Rubik-500;
+    color: $dark-blue;
+  }
+
   &__list {
+    padding-left: 25px;
+    border-left: 2px solid $grey-100;
+    transition: 0.3s ease;
+
+    &:hover {
+      border-left: 2px solid $blue;
+    }
+
+    ul {
+      padding-left: 30px;
+      margin: 0;
+
+      li {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: $grey-700;
+        &::first-letter {
+          text-transform: uppercase;
+        }
+
+        &::marker {
+          color: $blue;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__steps-list {
+    counter-reset: benefit;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__step-item {
+    counter-increment: benefit;
+    position: relative;
+    padding: 0px 0px 0px 35px;
+    font-size: 18px;
+    line-height: 1.66;
+
+    &::before {
+      content: counter(benefit);
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 30px;
+      line-height: 1;
+      @include Rubik-600;
+      color: $blue;
+      opacity: 0.5;
+    }
+  }
+  &__img-block {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    align-self: stretch;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__table-wrapper {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__table-title {
+    @include Rubik-500;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+
+  &__thead {
+    background-color: $dark-blue;
+  }
+
+  &__table-label {
+    color: $white;
+    @include Rubik-400;
+    font-size: 22px;
+    color: $white;
+    padding: 18px 20px;
+    text-align: left;
+    border-right: 1px solid $grey;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__table-data {
+    padding: 18px 20px;
+    color: $dark-blue;
+    border-right: 1px solid $grey;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  tbody tr {
+    border-bottom: 1px solid $grey;
+    transition: background 0.3s ease;
+  }
+
+  tbody tr:hover {
+    background: rgba($dark-blue, 0.085);
+  }
+}
+.iqf-freezing {
+  padding: 100px 0;
+  background-color: $semi-white;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $white;
+  }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
+  &__title {
+    @include Rubik-500;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.4;
+
+    p {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    strong {
+      @include Rubik-600;
+    }
+  }
+  &__img-block {
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+ &__subtitle {
+  margin: 50px 0 30px;
+ }
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    counter-reset: benefit;
+  }
+
+  &__feature-item {
+    max-width: 100%;
+    width: 100%;
+    min-height: 140px;
+    padding: 50px 20px 20px 20px;
+    background-color: $white;
+    border: 1px solid $blue;
+    counter-increment: benefit;
+    position: relative;
+
+    &::before {
+      content: counter(benefit);
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      font-size: 30px;
+      line-height: 1;
+      @include Rubik-600;
+      color: $blue;
+      opacity: 0.5;
+    }
+  }
+  &__feature-item-title {
+    @include Rubik-500;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  &__feature-item-txt {
+    font-size: 18px;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__grid {
     display: grid;
     align-self: stretch;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-bottom: 30px;
   }
 
-  &__item {
+  &__card {
     max-width: 100%;
     width: 100%;
     min-height: 165px;
@@ -170,191 +628,146 @@
     background-color: $dark-blue;
   }
 
-  &__item-title {
+  &__card-title {
     @include Rubik-400;
     font-size: 22px;
     color: $blue;
   }
 
-  &__item-icon {
+  &__card-icon {
     width: 50px;
     height: 50px;
   }
 
-  &__item-text {
+  &__card-text {
     color: $white;
+    font-size: 18px;
   }
 }
-.storage {
-  padding: 100px 0 100px;
-  background-color: $semi-white;
-  &__title-box {
-    margin: 0 auto 50px auto;
+.freeze-tech {
+  padding: 100px 0;
+  background-color: $dark-blue;
+
+  &__pretitle {
+    margin: 0 auto 25px auto;
+    background-color: $white;
   }
+
+  &__pretitle-title {
+    font-size: 20px;
+    @include Rubik-500;
+  }
+
   &__title {
     @include Rubik-500;
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    color: $white;
   }
 
-  &__descr {
+  &__descr,
+  &__conclusion {
+    margin-bottom: 30px;
     font-size: 18px;
+    line-height: 1.4;
+    color: $white;
+
     p {
       margin-bottom: 20px;
+
       &:last-child {
         margin-bottom: 0;
       }
     }
-  }
 
-  &__pretitle {
-    margin: 0 auto 25px auto;
-    background-color: $white;
-  }
-
-  &__pretitle-title {
-    font-size: 20px;
-    @include Rubik-500;
-  }
-  &__inner {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 30px;
-  }
-  &__img-block {
-    max-width: 50%;
-    width: 100%;
-    height: auto;
-  }
-
-  &__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  &__content {
-    max-width: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  &__content-pretitle {
-    margin-bottom: 25px;
-    background-color: $white;
-  }
-
-  &__content-pretitle-title {
-    font-size: 20px;
-    @include Rubik-500;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-    gap: 20px;
-  }
-
-  &__item {
-    max-width: 100%;
-    width: 100%;
-    display: flex;
-    gap: 10px;
-  }
-
-  &__item-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  &__item-title {
-    @include Rubik-500;
-    font-size: 20px;
-    color: $dark-blue;
-    margin-bottom: 10px;
-  }
-
-  &__item-text {
-    color: $grey;
-    font-size: 18px;
-  }
-}
-.industries {
-  padding: 100px 0 100px;
-
-  &__title-box {
-    margin: 0 auto 50px auto;
-  }
-
-  &__title {
-    @include Rubik-500;
-    font-size: 40px;
-    margin-bottom: 15px;
-  }
-
-  &__sub-title {
-    font-size: 18px;
-  }
-
-  &__pretitle {
-    margin: 0 auto 25px auto;
-    background-color: $semi-white;
-  }
-
-  &__pretitle-title {
-    font-size: 20px;
-    @include Rubik-500;
-  }
-
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-self: stretch;
-    gap: 30px;
-  }
-
-  &__item {
-    max-width: 100%;
-    width: 100%;
-    min-height: 165px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 25px;
-    background-color: $semi-white;
-  }
-
-  &__item-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  &__item-title {
-    @include Rubik-500;
-    font-size: 22px;
-    color: $dark-blue;
-    margin-bottom: 10px;
-  }
-
-  &__item-text {
-    color: $grey;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .freezing {
-    &__content {
-      padding-left: 0;
+    strong {
+      @include Rubik-600;
     }
   }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  &__item-title {
+    @include Rubik-500;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: $blue;
+  }
+  &__item-descr {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: $white;
+    &:first-child {
+      text-transform: uppercase;
+    }
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    strong {
+      @include Rubik-600;
+    }
+  }
+  &__list {
+   // padding-bottom: 25px;
+   // border-bottom: 2px solid $grey-100;
+   // transition: 0.3s ease;
+   // &:hover {
+   //   border-bottom: 2px solid $blue;
+   // }
   
-  .industries,
-  .frz-advantages {
-    &__list {
+    ul {
+      padding-left: 20px;
+      margin: 0;
+  
+      li {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: $grey-100;
+  
+        &::first-letter {
+          text-transform: uppercase;
+        }
+  
+        &::marker {
+          color: $blue;
+        }
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &__cta {
+    color: $white;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  &__cta-btn {
+    background-color: $white;
+    color: $dark-blue;
+  }
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .fr-intro {
+    &__inner {
+      gap: 30px;
+    }
+  }
+  .iqf-freezing {
+    &__grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -363,46 +776,188 @@
   .fr-hero {
     padding: 0;
   }
-  .freezing {
-    &__inner {
-      flex-direction: column-reverse;
+}
+@media (max-width: 992px) {
+  .freeze-tunnel {
+    &__steps-list {
+      gap: 5px;
     }
+    &__co-title,
+    &__steps-title {
+      font-size: 20px;
+    }
+  }
+  .freeze-tech {
+    &__grid {
+      gap: 20px;
+    }
+    &__item-title {
+      font-size: 22px;
+    }
+    &__item-descr {
+      font-size: 16px;
+    }
+    &__list {
+      ul {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 860px) {
+  .fr-intro {
+    &__inner {
+      flex-direction: column;
+    }
+
     &__content {
       max-width: 100%;
     }
+
     &__img-block {
       max-width: 100%;
     }
   }
-  .storage {
-    &__content-pretitle {
-      margin: 0 auto 25px auto;
-    }
-    &__img-block {
-      display: none;
-    }
-    &__content {
-      max-width: 100%;
+  .freeze-tunnel {
+    &__info {
+      grid-template-columns: 1fr;
     }
   }
 }
 @media (max-width: 768px) {
-  .frz-advantages {
-    &__item-title {
+  .shock-freezing {
+    &__lists {
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    &__content-title,
+    &__table-title {
       font-size: 20px;
+    }
+    &__thead {
+      display: none;
     }
 
-    &__item {
-      padding: 20px;
+    &__table-data {
+      color: $blue;
+    }
+
+    tbody tr:hover {
+      background: rgba($dark-blue, 0.85);
+    }
+
+    &__table,
+    &__table tbody,
+    &__table tr,
+    &__table td {
+      display: block;
+      width: 100%;
+
+    }
+
+    &__table tr {
+      margin-bottom: 20px;
+      padding: 18px;
+      background-color: $dark-blue;
+    }
+
+    &__table td {
+      position: relative;
+      padding-left: 48%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border: none;
+    }
+
+    &__table td::before {
+      content: attr(data-label)':';
+      position: absolute;
+      left: 18px;
+      top: 12px;
+      width: 45%;
+      color: $white;
     }
   }
-  .industries {
-    &__item-title {
+  .freeze-tunnel {
+    &__info {
+      margin-bottom: 30px;
+    }
+    &__content {
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    &__table-title {
       font-size: 20px;
     }
-  
-    &__item {
+    &__thead {
+      display: none;
+    }
+
+    &__table-data {
+      color: $blue;
+    }
+
+    tbody tr:hover {
+      background: rgba($dark-blue, 0.85);
+    }
+
+    &__table,
+    &__table tbody,
+    &__table tr,
+    &__table td {
+      display: block;
+      width: 100%;
+
+    }
+
+    &__table tr {
+      margin-bottom: 20px;
+      padding: 18px;
+      background-color: $dark-blue;
+    }
+
+    &__table td {
+      position: relative;
+      padding-left: 48%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border: none;
+    }
+
+    &__table td::before {
+      content: attr(data-label)':';
+      position: absolute;
+      left: 18px;
+      top: 12px;
+      width: 45%;
+      color: $white;
+    }
+  }
+  .iqf-freezing {
+    &__feature-item-title {
+      font-size: 20px;
+    }
+    &__feature-item-txt {
+      font-size: 16px;
+    }
+    &__card {
       padding: 20px;
+    }
+    &__card-text {
+      font-size: 16px;
+    }
+  }
+  .freeze-tech {
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    &__item-title {
+      font-size: 20px;
     }
   }
 }
@@ -420,64 +975,187 @@
       margin-bottom: 10px;
     }
   }
-  .freezing {
+  .fr-intro {
     padding: 50px 0;
+
     &__title {
-      font-size: 28px;
+      font-size: 30px;
     }
-    &__descr {
+
+    &__descr,
+    &__conclusion {
       font-size: 16px;
+
       p {
-        padding-bottom: 10px;
+        margin-bottom: 10px;
       }
     }
-    &__item-title {
-      font-size: 18px;
+    &__inner {
+      margin-bottom: 30px;
     }
-    &__item-text {
-      font-size: 16px;
+    &__list {
+      margin-bottom: 20px;
     }
-  }
-  .storage {
-    padding: 50px 0;
-    
-    &__title {
-      font-size: 28px;
-    }
-  
-    &__descr {
-      font-size: 16px;
-    }
-  
-    &__item-title {
-      font-size: 18px;
-    }
-  
-    &__item-text {
-      font-size: 16px;
-    }
-  }
-  .frz-advantages,
-  .industries {
-    padding: 50px 0 50px;
 
-    &__title-box {
+    &__item-title {
+      font-size: 18px;
+    }
+    &__content-text {
+      font-size: 16px;
+    }
+  }
+  .shock-freezing {
+    padding: 50px 0;
+
+    &__title {
+      font-size: 30px;
+    }
+    &__descr,
+    &__conclusion {
+      font-size: 16px;
+      line-height: 1.2;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    &__list {
+      padding-left: 20px;
+      ul {
+        padding-left: 20px;
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+    &__img-block {
       margin-bottom: 30px;
     }
 
-    &__title {
-      font-size: 32px;
+    &__table-wrapper {
+      margin-bottom: 30px;
     }
 
+    &__table tr {
+      padding: 25px 20px;
+    }
+
+    &__table td {
+      padding-right: 5px;
+
+      &::before {
+        top: 10px;
+        left: 0;
+      }
+    }
+
+    &__table-data {
+      p {
+        padding-left: 10px;
+      }
+    }
+
+    &__conclusion {
+      font-size: 16px;
+    }
+  }
+  .freeze-tunnel {
+    padding: 50px 0;
+
+    &__title {
+      font-size: 30px;
+    }
+    &__descr {
+      font-size: 16px;
+      line-height: 1.2;
+      p {
+        margin-bottom: 10px;
+      }
+    }
     &__list {
+      padding-left: 20px;
+      ul {
+        padding-left: 20px;
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+    &__step-item {
+      font-size: 16px;
+    }
+    &__img-block {
+      margin-bottom: 30px;
+    }
+
+    &__table-wrapper {
+      margin-bottom: 30px;
+    }
+
+    &__table tr {
+      padding: 25px 20px;
+    }
+
+    &__table td {
+      padding-right: 5px;
+
+      &::before {
+        top: 10px;
+        left: 0;
+      }
+    }
+
+    &__table-data {
+      p {
+        padding-left: 10px;
+      }
+    }
+
+    &__conclusion {
+      font-size: 16px;
+    }
+  }
+  .iqf-freezing {
+    padding: 50px 0px;
+
+    &__title,
+    &__subtitle {
+      font-size: 30px;
+    }
+
+    &__descr {
+      font-size: 16px;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__grid,
+    &__features {
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
-    &__item {
+    &__card-title {
+      font-size: 20px;
+    }
+
+    &__item,
+    &__card {
       min-height: auto;
     }
   }
-  
+  .freeze-tech {
+    padding: 50px 0px;
+    &__title {
+      font-size: 30px;
+    }
+    &__descr,
+    &__conclusion {
+      font-size: 16px;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 @media (max-width: 440px) {
   .fr-hero {
@@ -491,119 +1169,281 @@
       font-size: 14px;
     }
   }
-  .frz-advantages{
-    &__title{
-      font-size: 24px;
-      text-align: left;
-    }
-    &__item {
-      text-align: left;
-      align-items: flex-start;
-    }
-  }
-  .freezing {
+  .fr-intro {
     &__title {
       font-size: 24px;
-      text-align: left;
     }
-    &__pretitle-title {
-      font-size: 16px;
-    }
-    &__descr {
-      text-align: left;
-    }
-  }
-  .storage {
-    &__title {
-      font-size: 24px;
-      text-align: left;
-    }
-        
-    &__pretitle-title {
-      font-size: 16px;
-    }
-    &__descr {
-      text-align: left;
-      p {
-        padding-bottom: 0;
-      }
-    }
-  }
-  .industries {
-    &__title-box {
-      margin-bottom: 20px;
-    }
-
-    &__pretitle-title {
-      font-size: 16px;
-    }
-
-    &__title {
-      font-size: 24px;
-      text-align: left;
-    }
-
-    &__sub-title {
-      font-size: 16px;
-      text-align: left;
-    }
-
-    &__item {
-      padding: 10px;
-    }
-
     &__item-title {
+      font-size: 16px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__content-title {
+      font-size: 20px;
+    }
+  }
+  .shock-freezing {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__pretitle-title {
+      font-size: 16px;
+    }
+    &__content-title {
       font-size: 18px;
     }
 
-    &__item-icon {
+    &__list {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &__table td::before {
+      font-size: 15px;
+    }
+
+    &__table-data {
+      p {
+        padding-left: 10px;
+        font-size: 14px;
+      }
+    }
+
+    &__cta-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .freeze-tunnel {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__pretitle-title {
+      font-size: 16px;
+    }
+    &__co-title,
+    &__steps-title {
+      font-size: 18px;
+    }
+
+    &__list {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+    &__step-item {
+      &::before {
+        font-size: 26px;
+      }
+    }
+
+    &__table td::before {
+      font-size: 15px;
+    }
+
+    &__table-data {
+      p {
+        padding-left: 10px;
+        font-size: 14px;
+      }
+    }
+    &__content {
+      margin-bottom: 30px;
+    }
+
+    &__cta-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .iqf-freezing {
+    &__title,
+    &__subtitle {
+      font-size: 24px;
+    }
+    &__pretitle-title {
+      font-size: 16px;
+    }
+    &__feature-item-title,
+    &__card-title {
+      font-size: 18px;
+    }
+    &__feature-item {
+      padding-top: 40px;
+      &::before {
+        font-size: 24px;
+      }
+    }
+    &__feature-item-txt,
+    &__card-text {
+      font-size: 16px;
+    }
+    &__card-icon {
       width: 40px;
       height: 40px;
     }
-
-    &__item-text {
+  }
+  .freeze-tech {
+    &__title {
+      font-size: 24px;
+    }
+  
+    &__pretitle-title {
       font-size: 16px;
     }
   }
 }
 @media (max-width: 365px) {
-  .freezing,
-  .storage {
-    &__pretitle-title {
+  .fr-intro {
+    &__pretitle-title,
+    &__descr,
+    &__conclusion,
+    &__item-title,
+    &__content-text {
       font-size: 14px;
     }
 
-    &__item-title {
+    &__subtitle {
       font-size: 16px;
-    }
-
-    &__item-text {
-      font-size: 14px;
-    }
-    &__descr {
-      font-size: 14px;
-    }
-    &__item-icon {
-      width: 30px;
-      height: 30px;
     }
   }
-  .frz-advantages,
-  .industries {
-    &__pretitle-title {
+  .shock-freezing {
+    &__pretitle-title
+    &__descr,
+    &__conclusion {
       font-size: 14px;
     }
-
-    &__sub-title {
-      font-size: 14px;
-    }
-
-    &__item-title {
+    &__content-title {
       font-size: 16px;
     }
+    &__table-title {
+      font-size: 18px;
+    }
 
-    &__item-text {
+    &__table td {
+      padding-left: 0;
+      padding-top: 15px;
+    }
+
+    &__table td::before {
+      position: static;
+      display: block;
+      width: 100%;
+      margin-bottom: 6px;
+      font-size: 16px;
+      color: $blue;
+      @include Rubik-500;
+    }
+
+    &__table tr {
+      padding: 14px;
+    }
+
+    &__table-data p {
+      padding-left: 0;
+      color: $white;
+    }
+
+    &__conclusion {
       font-size: 14px;
+    }
+
+    &__cta {
+      font-size: 14px;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .freeze-tunnel {
+    &__pretitle-title,
+    &__descr{
+      font-size: 14px;
+    }
+    &__co-title,
+    &__steps-title {
+      font-size: 16px;
+    }
+    &__table-title {
+      font-size: 18px;
+    }
+    &__step-item {
+      font-size: 14px;
+      &::before {
+        line-height: 23px;
+      }
+    }
+
+    &__table td {
+      padding-left: 0;
+      padding-top: 15px;
+    }
+
+    &__table td::before {
+      position: static;
+      display: block;
+      width: 100%;
+      margin-bottom: 6px;
+      font-size: 16px;
+      color: $blue;
+      @include Rubik-500;
+    }
+
+    &__table tr {
+      padding: 14px;
+    }
+
+    &__table-data p {
+      padding-left: 0;
+      color: $white;
+    }
+
+    &__conclusion {
+      font-size: 14px;
+    }
+
+    &__cta {
+      font-size: 14px;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .iqf-freezing {
+    &__pretitle-title,
+    &__descr,
+    &__feature-item-txt,
+    &__card-text {
+      font-size: 14px;
+    }
+
+    &__feature-item-title,
+    &__card-title {
+      font-size: 16px;
+    }
+  }
+  .freeze-tech {
+    &__pretitle-title,
+    &__descr,
+    &__item-descr {
+      font-size: 14px;
+    }
+    &__list {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
