@@ -1195,14 +1195,6 @@
       font-size: 18px;
     }
 
-    &__list {
-      ul {
-        li {
-          font-size: 14px;
-        }
-      }
-    }
-
     &__table td::before {
       font-size: 15px;
     }
@@ -1232,13 +1224,6 @@
       font-size: 18px;
     }
 
-    &__list {
-      ul {
-        li {
-          font-size: 14px;
-        }
-      }
-    }
     &__step-item {
       &::before {
         font-size: 26px;
@@ -1324,6 +1309,13 @@
     &__content-title {
       font-size: 16px;
     }
+    &__list {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
     &__table-title {
       font-size: 18px;
     }
@@ -1375,6 +1367,13 @@
     }
     &__table-title {
       font-size: 18px;
+    }
+    &__list {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
     }
     &__step-item {
       font-size: 14px;
