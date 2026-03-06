@@ -137,68 +137,7 @@
   }
 }
 
-.frz-advantages {
-  padding: 100px 0 100px;
 
-  &__title-box {
-    margin: 0 auto 50px auto;
-  }
-
-  &__title {
-    @include Rubik-500;
-    font-size: 40px;
-    margin-bottom: 15px;
-  }
-
-  &__sub-title {
-    font-size: 18px;
-  }
-
-  &__pretitle {
-    margin: 0 auto 25px auto;
-    background-color: $semi-white;
-  }
-
-  &__pretitle-title {
-    font-size: 20px;
-    @include Rubik-500;
-  }
-
-  &__list {
-    display: grid;
-    align-self: stretch;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-
-  &__item {
-    max-width: 100%;
-    width: 100%;
-    min-height: 165px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 30px;
-    background-color: $dark-blue;
-  }
-
-  &__item-title {
-    @include Rubik-400;
-    font-size: 22px;
-    color: $blue;
-  }
-
-  &__item-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  &__item-text {
-    color: $white;
-    font-size: 18px;
-  }
-}
 
 .storage {
   padding: 100px 0 100px;
@@ -386,8 +325,7 @@
     }
   }
 
-  .industries,
-  .frz-advantages {
+  .industries {
     &__list {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -511,7 +449,7 @@
     }
   }
 
-  .frz-advantages,
+
   .industries {
     padding: 50px 0 50px;
 
@@ -547,18 +485,6 @@
 
     &__sub-title {
       font-size: 14px;
-    }
-  }
-
-  .frz-advantages {
-    &__title {
-      font-size: 24px;
-      text-align: left;
-    }
-
-    &__item {
-      text-align: left;
-      align-items: flex-start;
     }
   }
 
@@ -660,7 +586,6 @@
     }
   }
 
-  .frz-advantages,
   .industries {
     &__pretitle-title {
       font-size: 14px;
