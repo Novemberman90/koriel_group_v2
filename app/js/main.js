@@ -200,6 +200,32 @@ var testmemorailSlider = new Swiper(".testmemorail__slider", {
   },
 });
 
+var projectSlider = new Swiper(".project-slider", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  pagination: {
+    el: ".project-slider__pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".project-slider__btn--next",
+    prevEl: ".project-slider__btn--prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1199: {
+      slidesPerView: 4,
+    }
+  }
+});
 var newsSlider = new Swiper(".news-slider", {
   slidesPerView: 2,
   spaceBetween: 30,
