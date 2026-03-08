@@ -230,7 +230,7 @@ var newsSlider = new Swiper(".news-slider", {
   slidesPerView: 2,
   spaceBetween: 30,
   pagination: {
-    el: ".news-slider .news-slider__pagination",
+    el: ".news-slider__pagination",
     clickable: true,
   },
   navigation: {
