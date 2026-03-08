@@ -12,6 +12,17 @@
   flex-direction: column;
   justify-content: center;
 
+  overflow: hidden;
+  position: relative;
+  &__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+
+    transform: scale(1);
+  }
+
   &__content {
     max-width: 720px;
     width: 100%;

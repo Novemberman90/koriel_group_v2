@@ -347,5 +347,22 @@ document.querySelectorAll('#hero, #about, #offer, #projects, #service, #contact,
   /* Анимация */
   new WOW().init();
 
+  /* Parallax */
+  window.addEventListener("scroll", () => {
 
+  const scrolled = window.pageYOffset;
+
+  document.querySelectorAll(".hero-parallax").forEach(bg => {
+
+    const speed = 0.3;
+
+    if (bg.classList.contains("hero-parallax--no-scale")) {
+      bg.style.transform = `translate3d(0, ${scrolled * speed}px, 0)`;
+    } else {
+      bg.style.transform = `translate3d(0, ${scrolled * speed}px, 0) scale(1.15)`;
+    }
+
+  });
+
+});
 })

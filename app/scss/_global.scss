@@ -98,6 +98,9 @@ body {
     color: $dark-blue;
     background-color: $blue;
   }
+  &--style {
+    border: 1px solid $blue;
+  }
 }
 
 @media (max-width: 1298px) {

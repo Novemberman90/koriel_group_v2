@@ -1,55 +1,7 @@
 @use 'vars' as *;
 @use 'fonts' as *;
 
-.frzd-hero {
-  padding: 100px 0 100px;
-  position: relative;
-  min-height: 550px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg,
-        rgba(15, 25, 60, 0.75) 0%,
-        rgba(15, 25, 60, 0.55) 50%,
-        rgba(15, 25, 60, 0.35) 100%);
-    z-index: 1;
-  }
-
-  &__inner {
-    position: relative;
-    max-width: 860px;
-    padding: 30px;
-    backdrop-filter: blur(16px);
-    border-radius: 12px;
-    box-shadow:
-      inset -1.75px -2.5px rgba(255, 255, 255, 0.5),
-      inset 1.75px 0.5px rgba(255, 255, 255, 0.075),
-      inset 0px 0px 10px 5px rgba(255, 255, 255, 0.095);
-    z-index: 2;
-    color: $white;
-    background-color: rgba($dark-blue, 0.08);
-  }
-
-  &__title {
-    font-size: 40px;
-    @include Rubik-600;
-    margin-bottom: 20px;
-  }
-
-  &__sub-title {
-    font-size: 18px;
-    margin-bottom: 20px;
-    line-height: 1.4;
-  }
-}
 
 .sublimation-process {
   padding: 100px 0 100px;
@@ -549,9 +501,6 @@
 }
 
 @media (max-width: 1064px) {
-  .frzd-hero {
-    padding: 0;
-  }
   .sublimation-benefits {
     &__inner {
       flex-direction: row-reverse;
@@ -683,21 +632,6 @@
 }
 
 @media (max-width: 578px) {
-  .frzd-hero {
-    &__inner {
-      padding: 20px;
-    }
-
-    &__title {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    &__sub-title {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-  }
   .sublimation-process {
     padding: 50px 0;
     &__title {
@@ -788,20 +722,6 @@
 }
 
 @media (max-width: 440px) {
-  .frzd-hero {
-    background-position: center left;
-    &__inner {
-      padding: 15px;
-    }
-
-    &__title {
-      font-size: 24px;
-    }
-
-    &__sub-title {
-      font-size: 14px;
-    }
-  }
   .sublimation-process {
     &__title {
       font-size: 24px;
