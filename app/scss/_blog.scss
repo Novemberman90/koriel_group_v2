@@ -1,0 +1,145 @@
+@use 'vars' as *;
+@use 'fonts' as *;
+
+
+.blog {
+
+  padding: 100px 0;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__pagination-item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $dark-blue;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &--active {
+      background: $dark-blue;
+      color: $white;
+    }
+
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  }
+
+}
+
+.blog-card {
+
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid $blue;
+
+  &__img-box {
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    transition: 0.4s;
+  }
+
+  &:hover &__img {
+    transform: scale(1.05);
+  }
+
+  &__content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__meta {
+    font-size: 14px;
+    color: $grey;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    a {
+      color: inherit;
+    }
+  }
+
+  &__text {
+    color: $grey;
+  }
+
+  &__link {
+    color: $dark-blue;
+    font-size: 16px;
+    transition: all .3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+
+    &:hover {
+      color: $grey-700;
+
+      .projects__link-icon {
+        transform: translateX(5px) rotate(90deg);
+
+        path {
+          fill: $grey-700;
+        }
+      }
+    }
+
+    &:active {
+      opacity: .7;
+    }
+  }
+
+  &__link-icon {
+    position: relative;
+    transform: rotate(90deg);
+    transition: transform .3s ease, fill .3s ease;
+
+    path {
+      fill: $dark-blue;
+      transition: fill .3s ease;
+    }
+  }
+
+}
+@media (max-width: 992px) {
+
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .blog__grid {
+    grid-template-columns: 1fr;
+  }
+
+}
