@@ -820,7 +820,7 @@
   }
 }
 
-.solutions {
+.freeze-solutions {
   padding: 100px 0;
   background-color: $semi-white;
 
@@ -896,7 +896,7 @@
     background-color: $white;
     &:hover {
       background-color: $dark-blue;
-      .solutions__card-text {
+      .freeze-solutions__card-text {
         color: $white;
       }
     }
@@ -1051,7 +1051,7 @@
       font-size: 20px;
     }
   }
-  .solutions {
+  .freeze-solutions {
     &__stats {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -1227,7 +1227,7 @@
       font-size: 20px;
     }
   }
-  .solutions {
+  .freeze-solutions {
     &__stats,
     &__grid {
       gap: 20px;
@@ -1439,7 +1439,7 @@
       }
     }
   }
-  .solutions {
+  .freeze-solutions {
     padding: 50px 0;
     &__title {
       font-size: 30px;
@@ -1630,7 +1630,7 @@
       font-size: 14px;
     }
   }
-  .solutions {
+  .freeze-solutions {
     &__title {
       font-size: 24px;
     }
@@ -1834,7 +1834,7 @@
     }
     
   }
-  .solutions {
+  .freeze-solutions {
     &__pretitle-title,
     &__descr,
     &__stat-text,
