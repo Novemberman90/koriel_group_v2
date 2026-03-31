@@ -2,7 +2,7 @@
 @use 'fonts' as *;
 
 .privacy-policy {
-  padding: 200px 0 100px;
+  padding: 100px 0;
   background-color: $semi-white;
   &__text {
     display: flex;
@@ -29,6 +29,6 @@
 
 @media (max-width: 576px) {
   .privacy-policy {
-    padding: 180px 0 50px;
+    padding: 50px 0;
   }
 }
