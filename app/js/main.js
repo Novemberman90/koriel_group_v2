@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', ()=>{
+window.addEventListener('DOMContentLoaded', () => {
   const MENUBTN = document.querySelector('.menu__btn');
   const MENUWRAP = document.querySelector('.menu__wrap');
   const goTop = document.querySelector('.go-top');
@@ -54,9 +54,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
   }
 
 
-/* При скроле меняется хедер и активация кнопки НА ВЕРХ */
-let isScrolled = false;
-const headerScroll = () => {
+  /* При скроле меняется хедер и активация кнопки НА ВЕРХ */
+  let isScrolled = false;
+  const headerScroll = () => {
   const header = document.querySelector('.header');
   const headerHeght = header.offsetHeight;
   const scrollPosition = window.scrollY || document.documentElement.scrollTop;
@@ -108,7 +108,7 @@ const headerScroll = () => {
   }
   
 }
-window.addEventListener('scroll', headerScroll);
+  window.addEventListener('scroll', headerScroll);
 
 
   // tabs
@@ -139,9 +139,9 @@ window.addEventListener('scroll', headerScroll);
 
   });
 
-/* clients-slider */
+  /* clients-slider */
 
-var clientsSlider = new Swiper(".clients-slider", {
+  var clientsSlider = new Swiper(".clients-slider", {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
@@ -164,8 +164,8 @@ var clientsSlider = new Swiper(".clients-slider", {
       slidesPerView: 4,
     },
   },
-});
-var partnerSlider = new Swiper(".partner-slider", {
+  });
+  var partnerSlider = new Swiper(".partner-slider", {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
@@ -188,19 +188,19 @@ var partnerSlider = new Swiper(".partner-slider", {
       slidesPerView: 4,
     },
   },
-});
+  });
 
 
-var testmemorailSlider = new Swiper(".testmemorail__slider", {
+  var testmemorailSlider = new Swiper(".testmemorail__slider", {
   slidesPerView: 1,
   loop: true,
   navigation: {
     nextEl: ".testmemorail__next",
     prevEl: ".testmemorail__prev",
   },
-});
+  });
 
-var projectSlider = new Swiper(".project-slider", {
+  var projectSlider = new Swiper(".project-slider", {
   slidesPerView: 4,
   spaceBetween: 30,
   pagination: {
@@ -225,91 +225,91 @@ var projectSlider = new Swiper(".project-slider", {
       slidesPerView: 4,
     }
   }
-});
-var newsSlider = new Swiper(".news-slider", {
-  slidesPerView: 2,
-  spaceBetween: 30,
-  pagination: {
-    el: ".news-slider__pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".news-slider__btn--next",
-    prevEl: ".news-slider__btn--prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
+  });
+  var newsSlider = new Swiper(".news-slider", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    pagination: {
+      el: ".news-slider__pagination",
+      clickable: true,
     },
-    880: {
-      slidesPerView: 2,
+    navigation: {
+      nextEl: ".news-slider__btn--next",
+      prevEl: ".news-slider__btn--prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      880: {
+        slidesPerView: 2,
+      }
     }
+  });
+
+
+  /* Счетчик */
+  const startAddonNumber = (elements)=> {
+    const time = 2000;  // Общее время анимации в миллисекундах
+      
+      elements.forEach(item => {
+          let startTime;
+          let num = parseInt(item.dataset.projectDone) || 0;
+
+          const updateNumber = (timestamp) => {
+              if (!startTime) startTime = timestamp;
+              let progress = Math.min((timestamp - startTime) / time, 1);
+              item.textContent = Math.floor(progress * num);
+
+              if (progress < 1) {
+                  requestAnimationFrame(updateNumber);
+              }
+          };
+
+          requestAnimationFrame(updateNumber);
+      });
   }
-});
 
+  /* Слежу когда счетчик попадёт в поле видимости, чтобы его запустить */
+  const addonElement = document.querySelector('.project-done'); 
+    if (addonElement) { 
+      const observer = new IntersectionObserver((entries, observer) => { 
+        entries.forEach(entry => { 
 
-/* Счетчик */
-const startAddonNumber = (elements)=> {
-  const time = 2000;  // Общее время анимации в миллисекундах
-    
-    elements.forEach(item => {
-        let startTime;
-        let num = parseInt(item.dataset.projectDone) || 0;
+        if (entry.isIntersecting) { 
+            const elements = document.querySelectorAll('.project-done__num'); 
+            startAddonNumber(elements); 
+            observer.disconnect(); // Отключаем после первого срабатывания 
+          }
+      });
 
-        const updateNumber = (timestamp) => {
-            if (!startTime) startTime = timestamp;
-            let progress = Math.min((timestamp - startTime) / time, 1);
-            item.textContent = Math.floor(progress * num);
-
-            if (progress < 1) {
-                requestAnimationFrame(updateNumber);
-            }
-        };
-
-        requestAnimationFrame(updateNumber);
-    });
-}
-
-/* Слежу когда счетчик попадёт в поле видимости, чтобы его запустить */
-const addonElement = document.querySelector('.project-done'); 
-  if (addonElement) { 
-    const observer = new IntersectionObserver((entries, observer) => { 
-      entries.forEach(entry => { 
-
-      if (entry.isIntersecting) { 
-          const elements = document.querySelectorAll('.project-done__num'); 
-          startAddonNumber(elements); 
-          observer.disconnect(); // Отключаем после первого срабатывания 
-         }
-     });
-
-     }, { threshold: 0.25 }); 
-     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы 
-    
-  }
+      }, { threshold: 0.25 }); 
+      observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы 
+      
+    }
 
   // Создаем IntersectionObserver, который будет следить за элементами на странице
-const observer = new IntersectionObserver((entries)=> {
-  entries.forEach(entry => {
-    const activeId = entry.target.id;
-    const adctivLink = document.querySelector(`.menu__link[href="#${activeId}"]`);
+  const observer = new IntersectionObserver((entries)=> {
+    entries.forEach(entry => {
+      const activeId = entry.target.id;
+      const adctivLink = document.querySelector(`.menu__link[href="#${activeId}"]`);
 
-    if (!adctivLink) return;
+      if (!adctivLink) return;
 
-    if(entry.isIntersecting) {
-      adctivLink.classList.add('menu__link--active');
-    } else {
-      adctivLink.classList.remove('menu__link--active');
-    }
+      if(entry.isIntersecting) {
+        adctivLink.classList.add('menu__link--active');
+      } else {
+        adctivLink.classList.remove('menu__link--active');
+      }
 
-  });
-}, {rootMargin: '-50% 0px -50% 0px',threshold: 0} ); // Observer срабатывает, когда 50% элемента в зоне видимости
+    });
+  }, {rootMargin: '-50% 0px -50% 0px',threshold: 0} ); // Observer срабатывает, когда 50% элемента в зоне видимости
 
 // Находим все элементы, за которыми будем следить, и подключаем их к Observer'у
 
-document.querySelectorAll('#hero, #about, #offer, #projects, #service, #contact, #news, #question').forEach(element => {
-  observer.observe(element)
-});
+  document.querySelectorAll('#hero, #about, #offer, #projects, #service, #contact, #news, #question').forEach(element => {
+    observer.observe(element)
+  });
 
 
   const accordeons = document.querySelectorAll("[data-accordion]");
@@ -364,5 +364,28 @@ document.querySelectorAll('#hero, #about, #offer, #projects, #service, #contact,
 
   });
 
+ });
+
+    const cookie = document.getElementById('cookie');
+
+  if (cookie) {
+    const acceptBtn = cookie.querySelector('.cookie__button--accept');
+    const closeBtn = cookie.querySelector('.cookie__button--decline');
+    const COOKIE_KEY = 'cookieConsent';
+
+    if (localStorage.getItem(COOKIE_KEY) === null) {
+      setTimeout(() => cookie.classList.add('is-show'), 4000);
+    }
+
+    acceptBtn?.addEventListener('click', () => {
+      localStorage.setItem(COOKIE_KEY, 'true');
+      cookie.classList.remove('is-show');
+    });
+
+    closeBtn?.addEventListener('click', () => {
+      localStorage.setItem(COOKIE_KEY, 'false');
+      cookie.classList.remove('is-show');
+    });
+  }
+
 });
-})
