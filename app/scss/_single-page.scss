@@ -4,6 +4,7 @@
 //стилі для постів
 
 .article {
+  padding: 100px 0; 
   &__title {
     @include Rubik-600;
     font-size: 40px;
@@ -47,6 +48,7 @@
 
 @media (max-width: 576px) {
   .article {
+    padding: 50px 0;
     &__title {
       font-size: 28px;
     }
