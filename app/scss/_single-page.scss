@@ -5,6 +5,7 @@
 
 .article {
   padding: 100px 0; 
+  background-color: $semi-white;
   &__title {
     @include Rubik-600;
     font-size: 40px;
