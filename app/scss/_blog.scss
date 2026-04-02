@@ -52,10 +52,14 @@
 
   &__img-box {
     overflow: hidden;
+    display: flex;  
+    align-items: stretch;
+    justify-content: center;
   }
 
   &__img {
     width: 100%;
+    height: auto;
     aspect-ratio: 4/3;
     object-fit: cover;
     transition: 0.4s;
