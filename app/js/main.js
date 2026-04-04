@@ -46,11 +46,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const headerHeght = document.querySelector('#header').offsetHeight;
     //const top = targetElement.getBoundingClientRect().top + window.scrollY - headerHeght;
-    let top = targetElement.offsetTop - headerHeght
-      window.scrollTo({
-        top: top,
-        behavior:'smooth',
-      })
+ 
+     setTimeout(() => {
+      //const top = targetElement.offsetTop - headerHeght;
+      const top = targetElement.getBoundingClientRect().top + window.scrollY - headerHeght;
+    window.scrollTo({
+      top: top,
+      behavior: 'smooth',
+    });
+  }, 500);
   }
 
 
