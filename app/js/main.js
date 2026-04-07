@@ -277,7 +277,7 @@ window.addEventListener('DOMContentLoaded', () => {
   /* Слежу когда счетчик попадёт в поле видимости, чтобы его запустить */
   const addonElement = document.querySelector('.project-done'); 
     if (addonElement) { 
-      const observer = new IntersectionObserver((entries, observer) => { 
+      const counterObserver = new IntersectionObserver((entries, observer) => { 
         entries.forEach(entry => { 
 
         if (entry.isIntersecting) { 
@@ -288,7 +288,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
 
       }, { threshold: 0.25 }); 
-      observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы 
+      counterObserver.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы 
       
     }
 
