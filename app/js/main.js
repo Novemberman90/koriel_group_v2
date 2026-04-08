@@ -296,7 +296,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries)=> {
     entries.forEach(entry => {
       const activeId = entry.target.id;
-      const adctivLink = document.querySelector(`.menu__link[href="#${activeId}"]`);
+      const adctivLink = document.querySelector(`.menu__link[href$="#${activeId}"]`);
 
       if (!adctivLink) return;
 
