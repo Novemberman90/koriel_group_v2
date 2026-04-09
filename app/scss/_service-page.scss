@@ -26,6 +26,14 @@
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 1.4;
+    a {
+      color: $blue;
+      transition: 0.3s ease;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
 
     p {
       margin-bottom: 20px;
