@@ -58,175 +58,118 @@
     </div>
   </header>
   <main class="main">
-    <section class="hero hero--style" id="hero">
-      <div class="hero__bg" style="background-image: url('./images/header-bg.avif');"></div>
+    <section class="post">
       <div class="container">
-        <div class="hero__content">
-          <p class="hero__title hero__title--style animate__animated animate__fadeIn">Блог</p>
-          <h1 class="hero__subtitle">Студия архитектуры, дизайна и 3D-визуализаций ArchiViz</h1>
+    
+        <h1 class="post__title">Квартира у Харкові — мінімалізм та функціональність</h1>
+    
+        <!-- Мета-данные -->
+        <div class="project-meta">
+          <div class="project-meta__item">
+            <span class="project-meta__label">Площа</span>
+            <span class="project-meta__value">85 м²</span>
+          </div>
+          <div class="project-meta__item">
+            <span class="project-meta__label">Стиль</span>
+            <span class="project-meta__value">Мінімалізм</span>
+          </div>
+          <div class="project-meta__item">
+            <span class="project-meta__label">Місто</span>
+            <span class="project-meta__value">Харків</span>
+          </div>
+          <div class="project-meta__item">
+            <span class="project-meta__label">Рік</span>
+            <span class="project-meta__value">2024</span>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="blog-lead">
-      <div class="container">
-        <div class="blog-lead__text">
-          Ділимося корисними порадами з дизайну інтер'єру, розповідаємо про завершені проєкти
-          та актуальні тенденції в архітектурі. Тут ви знайдете відповіді на питання,
-          які виникають до, під час та після створення вашого простору.
+    
+        <!-- Обложка -->
+        <div class="post__image-box">
+          <img class="post__img" src="./images/projects/project-1.jpg" alt="Квартира у Харкові — мінімалізм"
+            loading="eager">
         </div>
-      </div>
-    </section>
-    <div class="style-line"></div>
-    <section class="blog">
-      <div class="container">
     
-        <div class="blog__grid">
+        <!-- Описание -->
+        <div class="post__content">
+          <h2>Про проєкт</h2>
+          <p>Завдання — створити функціональний та стильний інтер'єр для молодої пари...</p>
     
-          <article class="blog-card">
-    
-            <a href="./single-page.html" class="blog-card__img-box">
-              <img class="blog-card__img" src="./images/gallery/gallary-1.jpg" alt="CO2 холодильні системи">
-            </a>
-    
-            <div class="blog-card__content">
-    
-              <div class="blog-card__meta">
-                <span class="blog-card__date">12 березня 2026</span>
-                <span class="blog-card__author">Koriel Group</span>
-              </div>
-    
-              <h3 class="blog-card__title">
-                <a href="./single-page.html">
-                  Чому CO₂ холодильні системи стають стандартом у Європі
-                </a>
-              </h3>
-    
-              <p class="blog-card__text">
-                Використання природного холодоагенту CO₂ дозволяє значно
-                знизити енергоспоживання та зробити холодильні системи
-                екологічнішими.
-              </p>
-    
-              <a class="blog-card__link" href="./single-page.html">
-                <span>Читати статтю</span>
-                <svg class="blog-card__link-icon" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
-                  <path
-                    d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
-                    fill="" />
-                </svg>
-    
-              </a>
-    
-            </div>
-          </article>
-          <article class="blog-card">
-    
-            <a href="./single-page.html" class="blog-card__img-box">
-              <img class="blog-card__img" src="./images/gallery/gallary-1.jpg" alt="CO2 холодильні системи">
-            </a>
-    
-            <div class="blog-card__content">
-    
-              <div class="blog-card__meta">
-                <span class="blog-card__date">12 березня 2026</span>
-                <span class="blog-card__author">Koriel Group</span>
-              </div>
-    
-              <h3 class="blog-card__title">
-                <a href="./single-page.html">
-                  Чому CO₂ холодильні системи стають стандартом у Європі
-                </a>
-              </h3>
-    
-              <p class="blog-card__text">
-                Використання природного холодоагенту CO₂ дозволяє значно
-                знизити енергоспоживання та зробити холодильні системи
-                екологічнішими.
-              </p>
-    
-              <a class="blog-card__link" href="./single-page.html">
-                <span>Читати статтю</span>
-                <svg class="blog-card__link-icon" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
-                  <path
-                    d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
-                    fill="" />
-                </svg>
-    
-              </a>
-    
-            </div>
-          </article>
-          <article class="blog-card">
-    
-            <a href="./single-page.html" class="blog-card__img-box">
-              <img class="blog-card__img" src="./images/gallery/gallary-1.jpg" alt="CO2 холодильні системи">
-            </a>
-    
-            <div class="blog-card__content">
-    
-              <div class="blog-card__meta">
-                <span class="blog-card__date">12 березня 2026</span>
-                <span class="blog-card__author">Koriel Group</span>
-              </div>
-    
-              <h3 class="blog-card__title">
-                <a href="./single-page.html">
-                  Чому CO₂ холодильні системи стають стандартом у Європі
-                </a>
-              </h3>
-    
-              <p class="blog-card__text">
-                Використання природного холодоагенту CO₂ дозволяє значно
-                знизити енергоспоживання та зробити холодильні системи
-                екологічнішими.
-              </p>
-    
-              <a class="blog-card__link" href="./single-page.html">
-                <span>Читати статтю</span>
-                <svg class="blog-card__link-icon" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
-                  <path
-                    d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
-                    fill="" />
-                </svg>
-    
-              </a>
-    
-            </div>
-          </article>
+          <h2>Рішення</h2>
+          <p>Ми запропонували відкрите планування з чітким зонуванням...</p>
+        </div>
 
+        <!-- Галерея внутри контента -->
+        <div class="project-gallery">
+          <div class="project-gallery__item">
+            <img src="./images/projects/project-1.jpg" alt="Вітальня" class="project-gallery__img" loading="lazy">
+          </div>
+          <div class="project-gallery__item">
+            <img src="./images/projects/project-1.jpg" alt="Кухня" class="project-gallery__img" loading="lazy">
+          </div>
+          <div class="project-gallery__item">
+            <img src="./images/projects/project-1.jpg" alt="Спальня" class="project-gallery__img" loading="lazy">
+          </div>
+          <div class="project-gallery__item">
+            <img src="./images/projects/project-1.jpg" alt="Спальня" class="project-gallery__img" loading="lazy">
+          </div>
         </div>
     
-        <nav class="pagination" aria-label="Навігація по сторінках">
-        
-          <!-- Кнопка "Попередня" -->
-          <a class="pagination__item pagination__arrow pagination__arrow--prev pagination__arrow--disabled"
-            aria-label="Попередня сторінка" aria-disabled="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
+        <!-- CTA вместо блока автора -->
+        <div class="cta">
+          <h4 class="cta__title">Подобається цей проєкт ?</h4>
+          <p class="cta__text">Розробимо індивідуальне рішення для вашого простору</p>
+          <a class="cta__btn" href="#contact">Замовити схожий проєкт</a>
+        </div>
+    
+        <!-- Навигация между проектами -->
+        <nav class="post-nav" aria-label="Навігація між проєктами">
+          <a href="#" class="post-nav__item post-nav__item--prev">
+            <span class="post-nav__label"> 
+              <svg class="post-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <path
+                  d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                  fill="" />
+              </svg>
+              <span>Попередній проєкт</span>
+            </span>
+            <span class="post-nav__title">Будинок в Ізраїлі</span>
+          </a>
+          <a href="#" class="post-nav__item post-nav__item--next">
+            <span class="post-nav__label">
+              Наступний проєкт
+          </span>
+            <span class="post-nav__title">Офіс у Києві</span>
+            <svg class="post-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+              <path
+                d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                fill="" />
             </svg>
           </a>
-        
-          <!-- Номера страниц -->
-          <a class="pagination__item pagination__item--active" aria-current="page">1</a>
-          <a class="pagination__item">2</a>
-          <a class="pagination__item">3</a>
-        
-          <!-- Кнопка "Наступна" -->
-          <a class="pagination__item pagination__arrow pagination__arrow--next" aria-label="Наступна сторінка">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-        
         </nav>
     
       </div>
     </section>
+    <div class="style-line"></div>
+
+    <section class="order-form" id="contact">
+      <div class="container">
+        <h3 class="title-accent wow animate__fadeInLeft">Залиште заявку</h3>
+        <form class="form" action="#">
+          <label class="form__label">
+            <input class="form__input form__input--name" type="text" placeholder="Ім'я">
+          </label>
+          <label class="form__label">
+            <input class="form__input form__input--email" type="email" placeholder="Email">
+            <input class="form__input form__input--tel" type="tel" placeholder="+380">
+          </label>
+          <textarea class="form__textarea" placeholder="Повідомлення"></textarea>
+          <button class="form__submit" type="button">Відправити</button>
+        </form>
+      </div>
+    </section>
+
     <div class="style-line"></div>
   </main>
   <footer class="footer">
