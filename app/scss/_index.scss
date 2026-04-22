@@ -131,6 +131,15 @@
       span {
         color: $dark-blue;
       }
+      a {
+        color: $dark-blue;
+        text-decoration: underline;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $blue;
+        }
+      }
     }
   }
 
@@ -224,6 +233,15 @@
 
       span {
         color: $dark-blue;
+      }
+    }
+    a {
+      color: $dark-blue;
+      text-decoration: underline;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
       }
     }
   }
