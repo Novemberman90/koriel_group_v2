@@ -1,82 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автоматизація та диспетчеризація інженерних систем | Carel Україна</title>
+  <meta name="description" content="">
   <link rel="stylesheet" href="./css/styles.min.css">
-  <title>ArchiViz | Контакти</title>
 </head>
 
 <body>
   <header class="header" id="header">
-    <div class="header__wrapper">
-      <div class="container">
-        <div class="header__inner">
-          <a class="header__logo" href="./index.html">
-            <img class="header__logo-img" src="./images/icon/header-logo.svg" alt="logo archiviz">
+    <div class="container header__content">
+      <div class="header__inner">
+        <div class="header__info">
+          <a class="header__logo" href="#">
+            <img class="header__logo-img" src="./images/icon/logo.svg" alt="koriel group logo">
           </a>
-          <nav class="menu">
-            <button class="menu__btn">
-            </button>
-            <div class="menu__block">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="./index.html" class="menu__link">Головна</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./about.html" class="menu__link">Про нас</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./services.html" class="menu__link">Послуги</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./projects.html" class="menu__link ">Проєкти</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#contact" class="menu__link">Контакти</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./blog.html" class="menu__link menu__link--active">Блог</a>
-                </li>
-              </ul>
-              <ul class="menu__lang-list">
-                <li class="menu__lang-item">
-                  <a href="#" class="menu__lang-link menu__lang-link--active">Ua</a>
-                </li>
-                <li class="menu__lang-item">
-                  <a href="#" class="menu__lang-link">En</a>
-                </li>
-                <li class="menu__lang-item">
-                  <a href="#" class="menu__lang-link">Ru</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <ul class="header__contact-list">
+            <li class="header__contact-item">
+              <a class="header__contact-link" href="mailto:korielsales@gmail.com">
+                <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                    fill="#232d55" />
+                  <path
+                    d="M44.5 24H23.5C22.1193 24 21 25.1193 21 26.5V41.5C21 42.8807 22.1193 44 23.5 44H44.5C45.8807 44 47 42.8807 47 41.5V26.5C47 25.1193 45.8807 24 44.5 24Z"
+                    stroke="#232d55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M25 28L34 35L43 28" stroke="#232d55" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div class="header__contact-box">
+                  <p class="header__contact-name">Email</p>
+                  <p class="header__contact-text">korielsales@gmail.com</p>
+                </div>
+              </a>
+            </li>
+            <li class="header__contact-item">
+              <a class="header__contact-link" href="tel:+380673560410">
+                <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                    fill="#FFB342" />
+                  <path
+                    d="M45.2509 40.8062C44.3347 39.8832 42.1158 38.5361 41.0393 37.9933C39.6373 37.2871 39.5219 37.2294 38.42 38.0481C37.6849 38.5944 37.1963 39.0824 36.3361 38.899C35.4759 38.7155 33.6066 37.6811 31.9698 36.0497C30.333 34.4182 29.2386 32.4948 29.0545 31.6376C28.8705 30.7803 29.3667 30.2974 29.9078 29.5607C30.6705 28.5223 30.6129 28.3492 29.9609 26.9474C29.4526 25.857 28.0663 23.6591 27.1397 22.7476C26.1485 21.7686 26.1485 21.9416 25.5098 22.207C24.9899 22.4258 24.4911 22.6917 24.0196 23.0014C23.0965 23.6146 22.5842 24.124 22.2259 24.8896C21.8676 25.6551 21.7067 27.4499 23.5569 30.8109C25.4071 34.1719 26.7053 35.8905 29.3921 38.5696C32.0788 41.2487 34.1449 42.6892 37.1651 44.383C40.9014 46.4754 42.3345 46.0675 43.1024 45.7098C43.8703 45.3522 44.382 44.8445 44.9965 43.9215C45.307 43.4508 45.5735 42.9526 45.7926 42.4331C46.0586 41.7967 46.2317 41.7967 45.2509 40.8062Z"
+                    stroke="#1C2752" stroke-width="2" stroke-miterlimit="10" />
+                </svg>
+
+                <div class="header__contact-box">
+                  <p class="header__contact-name">Телефон</p>
+                  <p class="header__contact-text">+38 (067) 356-04-10</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
+        <nav class="menu">
+          <button class="menu__btn" type="button"></button>
+          <div class="menu__wrap">
+            <img class="menu__img" src="./images/icon/logo-white.svg" alt="">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="index.html#hero" class="menu__link" data-scroll>Головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#about" class="menu__link" data-scroll>Про Нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="co2.html" class="menu__link" data-scroll>CO₂</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#offer" class="menu__link" data-scroll>Послуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="#projects" class="menu__link" data-scroll>Проєкти</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#service" class="menu__link" data-scroll>Рішення</a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#news" class="menu__link" data-scroll>Новини</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contact" class="menu__link" data-scroll>Контакти</a>
+              </li>
+              <li class="menu__item">
+                <a href="blog.html" class="menu__link">Блог</a>
+              </li>
+            </ul>
+            <ul class="lang-menu">
+              <li class="lang-menu__item">
+                <a class="lang-menu__link lang-menu__link--active" href="#">Ua</a>
+              </li>
+              <li class="lang-menu__item">
+                <a class="lang-menu__link" href="#">En</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
   </header>
+
   <main class="main">
-    <section class="hero hero--style" id="hero">
-      <div class="hero__bg" style="background-image: url('./images/header-bg.avif');"></div>
+    <section class="top">
       <div class="container">
-        <div class="hero__content">
-          <p class="hero__title hero__title--style animate__animated animate__fadeIn">Блог</p>
-          <h1 class="hero__subtitle">Студия архитектуры, дизайна и 3D-визуализаций ArchiViz</h1>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="./">
+                Головна
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="blog.html">
+                Блог
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-    <section class="blog-lead">
+    <section class="global-hero">
+      <div class="global-hero__bg hero-parallax" style="background-image: url(./images/content/hero-story.webp);"></div>
       <div class="container">
-        <div class="blog-lead__text">
-          Ділимося корисними порадами з дизайну інтер'єру, розповідаємо про завершені проєкти
-          та актуальні тенденції в архітектурі. Тут ви знайдете відповіді на питання,
-          які виникають до, під час та після створення вашого простору.
+        <div class="global-hero__inner global-hero__inner--avtomat">
+
+          <h1 class="global-hero__title">
+            Блог про холодильні системи
+          </h1>
+
+          <p class="global-hero__sub-title">
+            Статті про проєктування холодильних складів, камер заморозки, системи на СО2, рекуперацію тепла та сучасні технології холодопостачання
+          </p>
+
+          <a class="cta" href="#question" data-scroll>
+            отримати консультацію
+          </a>
+
         </div>
       </div>
     </section>
-    <div class="style-line"></div>
+
     <section class="blog">
       <div class="container">
     
@@ -84,8 +149,8 @@
     
           <article class="blog-card">
     
-            <a href="./single-page.html" class="blog-card__img-box">
-              <img class="blog-card__img" src="./images/gallery/gallary-1.jpg" alt="CO2 холодильні системи">
+            <a href="#" class="blog-card__img-box">
+              <img class="blog-card__img" src="./images/content/yagodki2.webp" alt="CO2 холодильні системи">
             </a>
     
             <div class="blog-card__content">
@@ -96,7 +161,7 @@
               </div>
     
               <h3 class="blog-card__title">
-                <a href="./single-page.html">
+                <a href="#">
                   Чому CO₂ холодильні системи стають стандартом у Європі
                 </a>
               </h3>
@@ -107,221 +172,506 @@
                 екологічнішими.
               </p>
     
-              <a class="blog-card__link" href="./single-page.html">
+              <a class="blog-card__link" href="#">
                 <span>Читати статтю</span>
-                <svg class="blog-card__link-icon" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <svg class="projects__link-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
                   <path
                     d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
                     fill="" />
                 </svg>
+              
+              </a>
     
+            </div>
+          </article>
+    
+          <!-- card -->
+          <article class="blog-card">
+            <a href="#" class="blog-card__img-box">
+              <img class="blog-card__img" src="./images/content/yagodki2.webp" alt="рекуперація тепла">
+            </a>
+    
+            <div class="blog-card__content">
+    
+              <div class="blog-card__meta">
+                <span class="blog-card__date">05 березня 2026</span>
+                <span class="blog-card__author">Koriel Group</span>
+              </div>
+    
+              <h3 class="blog-card__title">
+                <a href="#">
+                  Як працює рекуперація тепла у холодильних установках
+                </a>
+              </h3>
+    
+              <p class="blog-card__text">
+                Система рекуперації дозволяє використовувати тепло
+                компресорів для опалення або гарячої води.
+              </p>
+    
+              <a class="blog-card__link" href="#">
+                <span>Читати статтю</span>
+                <svg class="projects__link-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                  <path
+                    d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                    fill="" />
+                </svg>
+              
               </a>
     
             </div>
           </article>
           <article class="blog-card">
-    
-            <a href="./single-page.html" class="blog-card__img-box">
-              <img class="blog-card__img" src="./images/gallery/gallary-1.jpg" alt="CO2 холодильні системи">
+            <a href="#" class="blog-card__img-box">
+              <img class="blog-card__img" src="./images/content/recuperation-hero.webp" alt="рекуперація тепла">
             </a>
     
             <div class="blog-card__content">
     
               <div class="blog-card__meta">
-                <span class="blog-card__date">12 березня 2026</span>
+                <span class="blog-card__date">05 березня 2026</span>
                 <span class="blog-card__author">Koriel Group</span>
               </div>
     
               <h3 class="blog-card__title">
-                <a href="./single-page.html">
-                  Чому CO₂ холодильні системи стають стандартом у Європі
+                <a href="#">
+                  Як працює рекуперація тепла у холодильних установках
                 </a>
               </h3>
     
               <p class="blog-card__text">
-                Використання природного холодоагенту CO₂ дозволяє значно
-                знизити енергоспоживання та зробити холодильні системи
-                екологічнішими.
+                Система рекуперації дозволяє використовувати тепло
+                компресорів для опалення або гарячої води.
               </p>
     
-              <a class="blog-card__link" href="./single-page.html">
+              <a class="blog-card__link" href="#">
                 <span>Читати статтю</span>
-                <svg class="blog-card__link-icon" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <svg class="projects__link-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
                   <path
                     d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
                     fill="" />
                 </svg>
-    
+              
               </a>
     
             </div>
           </article>
-          <article class="blog-card">
     
-            <a href="./single-page.html" class="blog-card__img-box">
-              <img class="blog-card__img" src="./images/gallery/gallary-1.jpg" alt="CO2 холодильні системи">
-            </a>
-    
-            <div class="blog-card__content">
-    
-              <div class="blog-card__meta">
-                <span class="blog-card__date">12 березня 2026</span>
-                <span class="blog-card__author">Koriel Group</span>
-              </div>
-    
-              <h3 class="blog-card__title">
-                <a href="./single-page.html">
-                  Чому CO₂ холодильні системи стають стандартом у Європі
-                </a>
-              </h3>
-    
-              <p class="blog-card__text">
-                Використання природного холодоагенту CO₂ дозволяє значно
-                знизити енергоспоживання та зробити холодильні системи
-                екологічнішими.
-              </p>
-    
-              <a class="blog-card__link" href="./single-page.html">
-                <span>Читати статтю</span>
-                <svg class="blog-card__link-icon" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
-                  <path
-                    d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
-                    fill="" />
-                </svg>
-    
-              </a>
-    
-            </div>
-          </article>
-
         </div>
     
-        <nav class="pagination" aria-label="Навігація по сторінках">
-        
-          <!-- Кнопка "Попередня" -->
-          <a class="pagination__item pagination__arrow pagination__arrow--prev pagination__arrow--disabled"
-            aria-label="Попередня сторінка" aria-disabled="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-        
-          <!-- Номера страниц -->
-          <a class="pagination__item pagination__item--active" aria-current="page">1</a>
-          <a class="pagination__item">2</a>
-          <a class="pagination__item">3</a>
-        
-          <!-- Кнопка "Наступна" -->
-          <a class="pagination__item pagination__arrow pagination__arrow--next" aria-label="Наступна сторінка">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-        
-        </nav>
+        <div class="blog__pagination">
+    
+          <a class="blog__pagination-item blog__pagination-item--active">1</a>
+          <a class="blog__pagination-item">2</a>
+          <a class="blog__pagination-item">3</a>
+    
+        </div>
     
       </div>
     </section>
-    <div class="style-line"></div>
+
+
+
+    <section class="projects " id="projects">
+      <div class="container container--style">
+        <div class="projects__title-box">
+          <div class="pretitle-box projects__pretitle">
+            <img class="projects__pretitle-img" src="./images/icon/service-icon.svg" alt="Галерея проєктів">
+            <p class="projects__pretitle-title">
+              Галерея проєктів
+            </p>
+          </div>
+          <h2 class="title projects__title">Наші Проєкти</h2>
+        </div>
+        <div class="projects__inner">
+          <div class="swiper project-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide project-slider__slide">
+                <div class="projects__item">
+                  <img class="projects__img" src="./images/project/bitzer-agregat.webp" alt="фабрика">
+                  <div class="projects__descr">
+                    <h4 class="projects__descr-title">Fiber cable change</h4>
+                    <p class="projects__descr-text">Шокова разоморозка риби</p>
+                  </div>
+                  <a class="projects__link" href="#" target="_blank">
+                    <span>Дізнатись більше</span>
+                    <svg class="projects__link-icon" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22"
+                      version="1.1">
+                      <path
+                        d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                        fill="" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide project-slider__slide">
+                <div class="projects__item">
+                  <img class="projects__img" src="./images/project/compressor-stansion-bock-3.webp" alt="завод">
+                  <div class="projects__descr">
+                    <h4 class="projects__descr-title">Fiber cable change</h4>
+                    <p class="projects__descr-text">Склад зберігання</p>
+                  </div>
+                  <a class="projects__link" href="#" target="_blank">
+                    <span>Дізнатись більше</span>
+                    <svg class="projects__link-icon" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22"
+                      version="1.1">
+                      <path
+                        d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                        fill="" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide project-slider__slide">
+                <div class="projects__item">
+                  <img class="projects__img" src="./images/project/bitzer-stantions.webp" alt="склад">
+                  <div class="projects__descr">
+                    <h4 class="projects__descr-title">Fiber cable change</h4>
+                    <p class="projects__descr-text">Ягода</p>
+                  </div>
+                  <a class="projects__link" href="#" target="_blank">
+                    <span>Дізнатись більше</span>
+                    <svg class="projects__link-icon" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22"
+                      version="1.1">
+                      <path
+                        d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                        fill="" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide project-slider__slide">
+                <div class="projects__item">
+                  <img class="projects__img" src="./images/project/project-4.webp" alt="магазин">
+                  <div class="projects__descr">
+                    <h4 class="projects__descr-title">Fiber cable change</h4>
+                    <p class="projects__descr-text">Овочі</p>
+                  </div>
+                  <a class="projects__link" href="#" target="_blank">
+                    <span>Дізнатись більше</span>
+                    <svg class="projects__link-icon" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22"
+                      version="1.1">
+                      <path
+                        d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                        fill="" />
+                    </svg>
+
+                  </a>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="swiper-slide project-slider__slide">
+                <div class="projects__item">
+                  <img class="projects__img" src="./images/project/compressor-stansion-bock-3.webp" alt="магазин">
+                  <div class="projects__descr">
+                    <h4 class="projects__descr-title">Fiber cable change</h4>
+                    <p class="projects__descr-text">Овочі</p>
+                  </div>
+                  <a class="projects__link" href="#" target="_blank">
+                    <span>Дізнатись більше</span>
+                    <svg class="projects__link-icon" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22"
+                      version="1.1">
+                      <path
+                        d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                        fill="" />
+                    </svg>
+
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-slider__nav">
+              <button class="project-slider__btn project-slider__btn--prev swiper-button-disabled">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                    fill="#F4F4F4" />
+                  <path d="M28.8108 19.23L22.6081 25.4327L28.8108 31.6353" stroke="#1C2752" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="project-slider__btn project-slider__btn--next">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                    fill="#F4F4F4" />
+                  <path d="M22.1892 31.9459L28.3919 25.7432L22.1892 19.5405" stroke="#1C2752" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="project-slider__pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="question">
+      <div class="container">
+        <div class="contact__inner">
+
+          <div class="contact__content wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+            <div class="contact__title-box">
+              <div class="pretitle-box contact__pretitle">
+                <img class="contact__pretitle-img" src="./images/icon/service-icon.svg" alt="Контакти">
+                <p class="contact__pretitle-title">
+                  Відгуки
+                </p>
+              </div>
+              <h2 class="contact__title title">Враження клієнтів</h2>
+            </div>
+            <div class="testmemorail">
+              <div class="testmemorail__inner">
+                <div class="swiper testmemorail__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="testmemorail__slide">
+                        <div class="testmemorail__slide-title-block">
+                          <img class="testmemorail__avatar" src="./images/content/avatar.jpg" alt="Замовник">
+                          <div class="testmemorail__slide-title-box">
+                            <h6 class="testmemorail__name">Olena</h6>
+                            <p class="testmemorail__city">Kiyv</p>
+                          </div>
+                        </div>
+                        <div class="testmemorail__text">
+                          <p>
+                            We have had several good experiences with Blue Collar team. Most recently, they replaced our
+                            20-year-old HVAC system
+                            with a new, modern, and more efficient system & it worked fine.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testmemorail__slide">
+                        <div class="testmemorail__slide-title-block">
+                          <img class="testmemorail__avatar" src="./images/content/avatar.jpg" alt="Замовник 2">
+                          <div class="testmemorail__slide-title-box">
+                            <h6 class="testmemorail__name">Olena</h6>
+                            <p class="testmemorail__city">Kiyv</p>
+                          </div>
+                        </div>
+                        <div class="testmemorail__text">
+                          <p>
+                            We have had several good experiences with Blue Collar team. Most recently, they replaced our
+                            20-year-old HVAC system
+                            with a new, modern, and more efficient system & it worked fine.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testmemorail__nav">
+                  <div class="testmemorail__prev">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                        fill="#F4F4F4" />
+                      <path d="M28.8108 19.23L22.6081 25.4327L28.8108 31.6353" stroke="#1C2752" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="testmemorail__next">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25Z"
+                        fill="#F4F4F4" />
+                      <path d="M22.1892 31.9459L28.3919 25.7432L22.1892 19.5405" stroke="#1C2752" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact__info">
+              <div class="contact__title-box">
+                <div class="pretitle-box contact__pretitle-info">
+                  <img class="contact__pretitle-img" src="./images/icon/service-icon.svg" alt="Запитання">
+                  <p class="contact__pretitle-title">
+                    Залишись питання ?
+                  </p>
+                </div>
+                <h2 class="contact__title title">99,9% Задоволених Клієнтів</h2>
+              </div>
+              <div class="contact__info-text">
+                <p>
+                  Якщо у вас залишись питання або потрібна допомога, телефонуйте або надішліть нам запит
+                </p>
+              </div>
+              <a class="contact__link" href="tel:+380966258089">
+                <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                    fill="" />
+                  <path
+                    d="M45.2509 40.8062C44.3347 39.8832 42.1158 38.5361 41.0393 37.9933C39.6373 37.2871 39.5219 37.2294 38.42 38.0481C37.6849 38.5944 37.1963 39.0824 36.3361 38.899C35.4759 38.7155 33.6066 37.6811 31.9698 36.0497C30.333 34.4182 29.2386 32.4948 29.0545 31.6376C28.8705 30.7803 29.3667 30.2974 29.9078 29.5607C30.6705 28.5223 30.6129 28.3492 29.9609 26.9474C29.4526 25.857 28.0663 23.6591 27.1397 22.7476C26.1485 21.7686 26.1485 21.9416 25.5098 22.207C24.9899 22.4258 24.4911 22.6917 24.0196 23.0014C23.0965 23.6146 22.5842 24.124 22.2259 24.8896C21.8676 25.6551 21.7067 27.4499 23.5569 30.8109C25.4071 34.1719 26.7053 35.8905 29.3921 38.5696C32.0788 41.2487 34.1449 42.6892 37.1651 44.383C40.9014 46.4754 42.3345 46.0675 43.1024 45.7098C43.8703 45.3522 44.382 44.8445 44.9965 43.9215C45.307 43.4508 45.5735 42.9526 45.7926 42.4331C46.0586 41.7967 46.2317 41.7967 45.2509 40.8062Z"
+                    stroke="#1C2752" stroke-width="2" stroke-miterlimit="10" />
+                </svg>
+                <span>+38 (096) 625-80-89</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact__form wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+            <div class="contact__title-box contact__title-box--form">
+              <div class="pretitle-box contact__pretitle">
+                <img class="contact__pretitle-img" src="./images/icon/service-icon.svg" alt="напишіть нам">
+                <p class="contact__pretitle-title">
+                  Контакт з нами
+                </p>
+              </div>
+              <h2 class="contact__title title">Відпавте нам запит</h2>
+            </div>
+            <div class="contact__form-wrap">
+              <form class="form" action="#">
+                <label class="form__label">
+                  <input class="form__input form__input--name" type="text" placeholder="Ім'я">
+                </label>
+                <label class="form__label">
+                  <input class="form__input form__input--tel" type="tel" placeholder="+38 (___)-___-__-__">
+                </label>
+                <label class="form__label">
+                  <input class="form__input form__input--email" type="email" placeholder="Email">
+                </label>
+                <textarea class="form__textarea" placeholder="Повідомлення"></textarea>
+                <button class="form__submit" type="button">Відправити</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
       <div class="footer__inner">
-        <a class="footer__logo" href="#">
-          <img class="footer__logo-img" src="./images/icon/header-logo.svg" alt="archiviz logo">
-        </a>
-        <div class="footer__item footer__social">
-          <h4 class="footer__item-title">Ми в соц.мережах:</h4>
+        <div class="footer__content wow animate__animated animate__fadeInLeft" data-wow-delay=".3s">
+          <a href="#" class="footer__logo ">
+            <img class="footer__logo-img" src="./images/icon/logo-white.svg" alt="Коріел Груп лого">
+          </a>
+          <div class="footer__logo-text">
+            <p>
+              Якісні та ефективні рішення для вашого бізнесу.
+            </p>
+          </div>
+        </div>
+        <div class="footer__social-box footer__style-item">
+          <h4 class="footer__contact-title wow animate__animated animate__fadeIn" data-wow-delay=".1s">Ми в соц.мережах
+          </h4>
           <ul class="footer__social-list">
-            <li class="footer__social-item wow animate__fadeInUp">
-              <a class="footer__social-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
-                  height="26px" viewBox="0 0 26 26" version="1.1">
+            <li class="footer__social-item wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+              <a href="#" class="footer__social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                  height="19px" viewBox="0 0 20 19" version="1.1">
                   <path
-                    d="M 8.449219 2.167969 L 17.550781 2.167969 C 21.019531 2.167969 23.832031 4.980469 23.832031 8.449219 L 23.832031 17.550781 C 23.832031 21.019531 21.019531 23.832031 17.550781 23.832031 L 8.449219 23.832031 C 4.980469 23.832031 2.167969 21.019531 2.167969 17.550781 L 2.167969 8.449219 C 2.167969 4.980469 4.980469 2.167969 8.449219 2.167969 Z M 8.234375 4.332031 C 6.078125 4.332031 4.332031 6.078125 4.332031 8.234375 L 4.332031 17.765625 C 4.332031 19.921875 6.078125 21.667969 8.234375 21.667969 L 17.765625 21.667969 C 19.921875 21.667969 21.667969 19.921875 21.667969 17.765625 L 21.667969 8.234375 C 21.667969 6.078125 19.921875 4.332031 17.765625 4.332031 Z M 18.6875 5.957031 C 19.433594 5.957031 20.042969 6.566406 20.042969 7.3125 C 20.042969 8.058594 19.433594 8.667969 18.6875 8.667969 C 17.941406 8.667969 17.332031 8.058594 17.332031 7.3125 C 17.332031 6.566406 17.941406 5.957031 18.6875 5.957031 Z M 13 7.582031 C 15.992188 7.582031 18.417969 10.007812 18.417969 13 C 18.417969 15.992188 15.992188 18.417969 13 18.417969 C 10.007812 18.417969 7.582031 15.992188 7.582031 13 C 7.582031 10.007812 10.007812 7.582031 13 7.582031 Z M 13 9.75 C 11.203125 9.75 9.75 11.207031 9.75 13 C 9.75 14.796875 11.203125 16.25 13 16.25 C 14.796875 16.25 16.25 14.796875 16.25 13 C 16.25 11.207031 14.796875 9.75 13 9.75 Z M 13 9.75 "
-                    fill="" />
+                    style=" stroke:none;fill-rule:evenodd;fill:rgb(10.980392%,15.294118%,32.156864%);fill-opacity:1;"
+                    d="M 19.488281 10.035156 C 19.488281 5.03125 15.289062 0.976562 10.105469 0.976562 C 4.925781 0.976562 0.726562 5.03125 0.726562 10.035156 C 0.726562 14.558594 4.15625 18.304688 8.640625 18.984375 L 8.640625 12.65625 L 6.257812 12.65625 L 6.257812 10.035156 L 8.640625 10.035156 L 8.640625 8.039062 C 8.640625 5.769531 10.042969 4.515625 12.183594 4.515625 C 13.210938 4.515625 14.285156 4.691406 14.285156 4.691406 L 14.285156 6.921875 L 13.101562 6.921875 C 11.9375 6.921875 11.574219 7.621094 11.574219 8.335938 L 11.574219 10.035156 L 14.175781 10.035156 L 13.757812 12.65625 L 11.574219 12.65625 L 11.574219 18.988281 C 16.058594 18.304688 19.488281 14.558594 19.488281 10.035156 Z M 19.488281 10.035156 " />
                 </svg>
               </a>
             </li>
-            <li class="footer__social-item wow animate__fadeInUp" data-wow-delay=".1s">
-              <a class="footer__social-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
-                  height="24px" viewBox="0 0 15 24" version="1.1">
+            <li class="footer__social-item wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+              <a href="#" class="footer__social-link">
+                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M 3.75 14.03125 L 3.75 24 L 9.1875 24 L 9.1875 14.03125 L 13.242188 14.03125 L 14.085938 9.445312 L 9.1875 9.445312 L 9.1875 7.824219 C 9.1875 5.398438 10.140625 4.472656 12.59375 4.472656 C 13.359375 4.472656 13.972656 4.492188 14.328125 4.527344 L 14.328125 0.371094 C 13.660156 0.1875 12.019531 0 11.070312 0 C 6.0625 0 3.75 2.367188 3.75 7.472656 L 3.75 9.445312 L 0.65625 9.445312 L 0.65625 14.03125 Z M 3.75 14.03125 "
-                    fill="" />
+                    d="M12.6268 2.35469C13.6109 2.35752 14.5539 2.73524 15.2498 3.40535C15.9456 4.07546 16.3379 4.98351 16.3408 5.93119V13.0834C16.3379 14.0311 15.9456 14.9392 15.2498 15.6093C14.5539 16.2794 13.6109 16.6571 12.6268 16.6599H5.19944C4.21532 16.6571 3.27234 16.2794 2.57645 15.6093C1.88057 14.9392 1.48832 14.0311 1.48539 13.0834V5.93119C1.48832 4.98351 1.88057 4.07546 2.57645 3.40535C3.27234 2.73524 4.21532 2.35752 5.19944 2.35469H12.6268ZM12.6268 0.924316H5.19944C2.33969 0.924316 0 3.17735 0 5.93119V13.0834C0 15.8373 2.33969 18.0903 5.19944 18.0903H12.6268C15.4865 18.0903 17.8262 15.8373 17.8262 13.0834V5.93119C17.8262 3.17735 15.4865 0.924316 12.6268 0.924316Z"
+                    fill="#1C2752" />
+                  <path
+                    d="M13.7409 5.93139C13.5205 5.93139 13.3051 5.86847 13.1219 5.75058C12.9387 5.63269 12.7959 5.46513 12.7116 5.26909C12.6272 5.07305 12.6052 4.85733 12.6482 4.64921C12.6912 4.44109 12.7973 4.24993 12.9531 4.09988C13.1089 3.94984 13.3074 3.84766 13.5235 3.80626C13.7397 3.76486 13.9637 3.78611 14.1673 3.86731C14.3708 3.94852 14.5448 4.08603 14.6673 4.26246C14.7897 4.4389 14.855 4.64632 14.855 4.85852C14.8553 4.9995 14.8267 5.13914 14.7709 5.26945C14.715 5.39975 14.6329 5.51815 14.5294 5.61783C14.4259 5.71752 14.3029 5.79653 14.1676 5.85034C14.0323 5.90415 13.8873 5.9317 13.7409 5.93139ZM8.9131 6.64639C9.50074 6.64639 10.0752 6.81419 10.5638 7.12857C11.0524 7.44296 11.4332 7.8898 11.6581 8.41261C11.883 8.93541 11.9418 9.51069 11.8272 10.0657C11.7125 10.6207 11.4296 11.1305 11.014 11.5306C10.5985 11.9308 10.0691 12.2033 9.49274 12.3137C8.91639 12.4241 8.31899 12.3674 7.77608 12.1508C7.23317 11.9343 6.76914 11.5676 6.44266 11.0971C6.11619 10.6266 5.94193 10.0734 5.94193 9.50751C5.94277 8.74894 6.25608 8.02168 6.81309 7.48529C7.37011 6.9489 8.12535 6.6472 8.9131 6.64639ZM8.9131 5.21602C8.03167 5.21602 7.17005 5.46771 6.43717 5.93926C5.70429 6.41082 5.13309 7.08106 4.79578 7.86523C4.45847 8.6494 4.37022 9.51227 4.54218 10.3447C4.71413 11.1772 5.13858 11.9419 5.76184 12.5421C6.3851 13.1422 7.17918 13.551 8.04367 13.7165C8.90815 13.8821 9.80422 13.7972 10.6185 13.4723C11.4329 13.1475 12.1289 12.5975 12.6186 11.8917C13.1083 11.186 13.3696 10.3563 13.3696 9.50751C13.3696 8.36934 12.9001 7.27778 12.0644 6.47297C11.2286 5.66815 10.095 5.21602 8.9131 5.21602Z"
+                    fill="#1C2752" />
                 </svg>
               </a>
             </li>
-            <li class="footer__social-item wow animate__fadeInUp" data-wow-delay=".2s">
-              <a class="footer__social-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-                  height="24px" viewBox="0 0 24 24" version="1.1">
-                  <path
-                    d="M 12 0 C 5.378906 0 0 5.378906 0 12 C 0 18.621094 5.378906 24 12 24 C 18.621094 24 24 18.621094 24 12 C 24 5.378906 18.621094 0 12 0 Z M 12 21.066406 C 6.976562 21.066406 2.890625 17.023438 2.890625 12 C 2.894531 9.585938 3.855469 7.269531 5.5625 5.5625 C 7.269531 3.855469 9.585938 2.894531 12 2.890625 C 14.414062 2.894531 16.730469 3.855469 18.4375 5.5625 C 20.144531 7.269531 21.105469 9.585938 21.109375 12 C 21.066406 17.023438 17.023438 21.066406 12 21.066406 Z M 12 21.066406 " />
-                  <path
-                    d="M 10.535156 13.734375 C 11.378906 14.488281 12.621094 14.488281 13.421875 13.734375 L 13.421875 10.265625 C 12.578125 9.511719 11.332031 9.511719 10.535156 10.265625 Z M 12 5.824219 C 10.355469 5.824219 8.800781 6.488281 7.644531 7.644531 L 9.6875 9.6875 C 9.992188 9.382812 10.351562 9.140625 10.746094 8.972656 C 11.144531 8.808594 11.570312 8.722656 12 8.722656 C 12.429688 8.722656 12.855469 8.808594 13.253906 8.972656 C 13.648438 9.140625 14.007812 9.382812 14.3125 9.6875 L 16.355469 7.644531 C 15.199219 6.488281 13.644531 5.824219 12 5.824219 Z M 12 5.824219 " />
-                  <path
-                    d="M 14.3125 14.3125 C 14.007812 14.617188 13.648438 14.859375 13.253906 15.027344 C 12.855469 15.191406 12.429688 15.277344 12 15.277344 C 11.570312 15.277344 11.144531 15.191406 10.746094 15.027344 C 10.351562 14.859375 9.992188 14.617188 9.6875 14.3125 L 7.644531 16.355469 C 10.042969 18.753906 13.957031 18.753906 16.355469 16.355469 Z M 11.996094 24 C 12.085938 22.578125 11.242188 21.289062 9.863281 20.84375 C 6.308594 19.957031 3.640625 17.066406 3.0625 13.46875 L 9.109375 13.46875 C 8.621094 12.535156 8.621094 11.46875 9.109375 10.578125 L 3.0625 10.578125 C 3.863281 5.601562 8.488281 2.265625 13.421875 3.023438 C 14.585938 3.199219 15.703125 3.609375 16.707031 4.222656 C 17.953125 4.976562 19.597656 4.667969 20.488281 3.511719 C 15.820312 -1.15625 8.21875 -1.15625 3.507812 3.511719 C -1.203125 8.179688 -1.203125 15.777344 3.507812 20.488281 C 5.777344 22.710938 8.796875 24 11.996094 24 Z M 11.996094 24 " />
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-item wow animate__fadeInUp" data-wow-delay=".3s">
-              <a class="footer__social-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px"
-                  height="24px" viewBox="0 0 27 24" version="1.1">
-                  <path
-                    d="M 10.875 11.117188 C 12.367188 10.40625 13.144531 9.328125 13.144531 7.648438 C 13.144531 4.339844 10.679688 3.535156 7.832031 3.535156 L 0 3.535156 L 0 20.148438 L 8.054688 20.148438 C 11.070312 20.148438 13.90625 18.699219 13.90625 15.324219 C 13.90625 13.238281 12.917969 11.695312 10.875 11.117188 Z M 3.652344 6.371094 L 7.078125 6.371094 C 8.394531 6.371094 9.582031 6.742188 9.582031 8.269531 C 9.582031 9.679688 8.65625 10.246094 7.355469 10.246094 L 3.652344 10.246094 Z M 7.554688 17.324219 L 3.652344 17.324219 L 3.652344 12.75 L 7.632812 12.75 C 9.238281 12.75 10.257812 13.421875 10.257812 15.121094 C 10.257812 16.800781 9.042969 17.324219 7.554688 17.324219 Z M 24.359375 6.042969 L 17.625 6.042969 L 17.625 4.40625 L 24.359375 4.40625 Z M 27 14.304688 C 27 10.75 24.917969 7.78125 21.144531 7.78125 C 17.480469 7.78125 14.992188 10.539062 14.992188 14.148438 C 14.992188 17.890625 17.347656 20.460938 21.144531 20.460938 C 24.019531 20.460938 25.878906 19.167969 26.773438 16.414062 L 23.859375 16.414062 C 23.546875 17.441406 22.25 17.984375 21.25 17.984375 C 19.3125 17.984375 18.296875 16.851562 18.296875 14.925781 L 26.972656 14.925781 C 26.984375 14.726562 27 14.515625 27 14.304688 Z M 18.300781 12.84375 C 18.40625 11.265625 19.457031 10.273438 21.042969 10.273438 C 22.703125 10.273438 23.535156 11.25 23.675781 12.84375 Z M 18.300781 12.84375"
-                    fill="" />
+            <li class="footer__social-item wow animate__animated animate__fadeIn" data-wow-delay=".7s">
+              <a href="#" class="footer__social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                  height="18px" viewBox="0 0 20 18" version="1.1">
+                  <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
+                    d="M 19.085938 4.363281 C 18.871094 3.53125 18.226562 2.875 17.410156 2.65625 C 15.933594 2.25 10.003906 2.25 10.003906 2.25 C 10.003906 2.25 4.074219 2.25 2.59375 2.65625 C 1.777344 2.875 1.136719 3.53125 0.917969 4.363281 C 0.519531 5.871094 0.519531 9.015625 0.519531 9.015625 C 0.519531 9.015625 0.519531 12.15625 0.917969 13.664062 C 1.136719 14.496094 1.777344 15.125 2.59375 15.34375 C 4.074219 15.75 10.003906 15.75 10.003906 15.75 C 10.003906 15.75 15.933594 15.75 17.414062 15.34375 C 18.230469 15.125 18.871094 14.496094 19.089844 13.664062 C 19.484375 12.15625 19.484375 9.015625 19.484375 9.015625 C 19.484375 9.015625 19.484375 5.871094 19.089844 4.363281 Z M 8.0625 11.867188 L 8.0625 6.160156 L 13.015625 9.015625 Z M 8.0625 11.867188 " />
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer__item footer__contact">
-          <h4 class="footer__item-title">Контакти</h4>
-          <a class="footer__contact-link wow animate__fadeIn" href="tel:+380966059033">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-              height="24px" viewBox="0 0 24 24" version="1.1">
-              <path
-                d="M 7.730469 1.152344 C 7.367188 0.28125 6.417969 -0.183594 5.507812 0.0664062 L 1.382812 1.191406 C 0.566406 1.414062 0 2.15625 0 3 C 0 14.597656 9.402344 24 21 24 C 21.84375 24 22.585938 23.433594 22.808594 22.617188 L 23.933594 18.492188 C 24.183594 17.582031 23.71875 16.632812 22.847656 16.269531 L 18.347656 14.394531 C 17.582031 14.078125 16.695312 14.296875 16.175781 14.9375 L 14.28125 17.25 C 10.984375 15.6875 8.3125 13.015625 6.75 9.71875 L 9.0625 7.828125 C 9.703125 7.304688 9.921875 6.421875 9.605469 5.65625 L 7.730469 1.15625 Z M 7.730469 1.152344 "
-                fill="" />
-            </svg>
-            <span>+38 096 605-90-33</span></a>
-          <a class="footer__contact-link wow animate__fadeIn" data-wow-delay=".1s" href="mailto:archiviz.biz@gmail.com">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-              height="24px" viewBox="0 0 24 24" version="1.1">
-              <path
-                d="M 2.25 3 C 1.007812 3 0 4.007812 0 5.25 C 0 5.957031 0.332031 6.625 0.898438 7.050781 L 11.101562 14.699219 C 11.632812 15.097656 12.367188 15.097656 12.898438 14.699219 L 23.101562 7.050781 C 23.667969 6.625 24 5.957031 24 5.25 C 24 4.007812 22.992188 3 21.75 3 Z M 0 8.25 L 0 18 C 0 19.65625 1.34375 21 3 21 L 21 21 C 22.65625 21 24 19.65625 24 18 L 24 8.25 L 13.800781 15.898438 C 12.730469 16.703125 11.269531 16.703125 10.199219 15.898438 Z M 0 8.25 "
-                fill="" />
-            </svg>
-            <span>archiviz.biz@gmail.com</span></a>
-          <address class="footer__adress wow animate__fadeIn" data-wow-delay=".2s">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-              height="32px" viewBox="0 0 24 32" version="1.1">
-              <path
-                d="M 13.480469 31.199219 C 16.6875 27.1875 24 17.460938 24 12 C 24 5.375 18.625 0 12 0 C 5.375 0 0 5.375 0 12 C 0 17.460938 7.3125 27.1875 10.519531 31.199219 C 11.289062 32.15625 12.710938 32.15625 13.480469 31.199219 Z M 12 8 C 14.210938 8 16 9.789062 16 12 C 16 14.210938 14.210938 16 12 16 C 9.789062 16 8 14.210938 8 12 C 8 9.789062 9.789062 8 12 8 Z M 12 8 "
-                fill="" />
-            </svg>
-            <span>
-              м. Харків, Україна <br>
-              вул. Клочківська, 111А
-            </span>
-          </address>
+        <div class="footer__contact-box footer__style-item">
+          <h4 class="footer__contact-title wow animate__animated animate__fadeIn" data-wow-delay=".1s">Контакти</h4>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+              <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                  fill="#232d55" />
+                <path
+                  d="M44.5 24H23.5C22.1193 24 21 25.1193 21 26.5V41.5C21 42.8807 22.1193 44 23.5 44H44.5C45.8807 44 47 42.8807 47 41.5V26.5C47 25.1193 45.8807 24 44.5 24Z"
+                  stroke="#232d55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M25 28L34 35L43 28" stroke="#232d55" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+              <div class="footer__contact-box">
+                <h4 class="footer__contact-name">Email</h4>
+                <a class="footer__contact-link" href="mailto:korielsales@gmail.com">korielsales@gmail.com</a>
+              </div>
+            </li>
+            <li class="footer__contact-item wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+              <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                  fill="#FFB342" />
+                <path
+                  d="M45.2509 40.8062C44.3347 39.8832 42.1158 38.5361 41.0393 37.9933C39.6373 37.2871 39.5219 37.2294 38.42 38.0481C37.6849 38.5944 37.1963 39.0824 36.3361 38.899C35.4759 38.7155 33.6066 37.6811 31.9698 36.0497C30.333 34.4182 29.2386 32.4948 29.0545 31.6376C28.8705 30.7803 29.3667 30.2974 29.9078 29.5607C30.6705 28.5223 30.6129 28.3492 29.9609 26.9474C29.4526 25.857 28.0663 23.6591 27.1397 22.7476C26.1485 21.7686 26.1485 21.9416 25.5098 22.207C24.9899 22.4258 24.4911 22.6917 24.0196 23.0014C23.0965 23.6146 22.5842 24.124 22.2259 24.8896C21.8676 25.6551 21.7067 27.4499 23.5569 30.8109C25.4071 34.1719 26.7053 35.8905 29.3921 38.5696C32.0788 41.2487 34.1449 42.6892 37.1651 44.383C40.9014 46.4754 42.3345 46.0675 43.1024 45.7098C43.8703 45.3522 44.382 44.8445 44.9965 43.9215C45.307 43.4508 45.5735 42.9526 45.7926 42.4331C46.0586 41.7967 46.2317 41.7967 45.2509 40.8062Z"
+                  stroke="#1C2752" stroke-width="2" stroke-miterlimit="10" />
+              </svg>
+              <div class="footer__contact-box">
+                <h4 class="footer__contact-name">Телефон</h4>
+                <a class="footer__contact-link" href="tel:+380966258089">(096) 625-80-89</a>
+              </div>
+            </li>
+            <li class="footer__contact-item wow animate__animated animate__fadeIn" data-wow-delay=".7s">
+              <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+                  fill="#FFB342" />
+                <path
+                  d="M34 19C28.4792 19 24 23.4274 24 28.8803C24 35.1546 30.6667 45.0977 33.1146 48.532C33.2162 48.677 33.3494 48.7949 33.5032 48.8763C33.6571 48.9576 33.8273 49 34 49C34.1727 49 34.3429 48.9576 34.4968 48.8763C34.6506 48.7949 34.7838 48.677 34.8854 48.532C37.3333 45.0991 44 35.1597 44 28.8803C44 23.4274 39.5208 19 34 19Z"
+                  stroke="#1C2752" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M34 34C36.2091 34 38 32.2091 38 30C38 27.7909 36.2091 26 34 26C31.7909 26 30 27.7909 30 30C30 32.2091 31.7909 34 34 34Z"
+                  stroke="#1C2752" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <div class="footer__contact-box">
+                <h4 class="footer__contact-name">Адреса</h4>
+                <a class="footer__contact-link" href="#">вулиця Січнева, 1, Бориспіль</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer__bottom wow animate__fadeIn">
-        <a class="footer__bottom-link" href="#">Copyright @ 2024 Архитектурная студия ArchiViz</a>
-        <a class="footer__bottom-link" href="#">view code</a>
+      <div class="footer__bottom wow animate__animated animate__fadeInLeft" data-wow-delay=".7s">
+        <p>Copyright @ 2025 ТОВ "Коріел Груп"</p>
+        <div class="footer__bottom-author-box">
+          <p class="footer__bottom-author-title">Developed:</p>
+          <a class="footer__bottom-author-link" href="https://freelancehunt.com/freelancer/NovemberMan90.html "
+            target="_blank" rel="noopener noreferrer">Ivashchenko</a>
+        </div>
       </div>
     </div>
   </footer>
-  <a class="go-top" href="#hero">
+
+
+  <a class="go-top" href="#header" data-scroll>
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px"
       viewBox="0 0 22 22" version="1.1">
       <path
@@ -335,36 +685,23 @@
       <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
-          fill="" />
+          fill="#232d55" />
         <path
           d="M44.5 24H23.5C22.1193 24 21 25.1193 21 26.5V41.5C21 42.8807 22.1193 44 23.5 44H44.5C45.8807 44 47 42.8807 47 41.5V26.5C47 25.1193 45.8807 24 44.5 24Z"
-          stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M25 28L34 35L43 28" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          stroke="#232d55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M25 28L34 35L43 28" stroke="#232d55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </a>
     <a class="contact-wiget__link-item" href="tel:+380673560410">
       <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
-          fill="" />
+          fill="#FFB342" />
         <path
           d="M45.2509 40.8062C44.3347 39.8832 42.1158 38.5361 41.0393 37.9933C39.6373 37.2871 39.5219 37.2294 38.42 38.0481C37.6849 38.5944 37.1963 39.0824 36.3361 38.899C35.4759 38.7155 33.6066 37.6811 31.9698 36.0497C30.333 34.4182 29.2386 32.4948 29.0545 31.6376C28.8705 30.7803 29.3667 30.2974 29.9078 29.5607C30.6705 28.5223 30.6129 28.3492 29.9609 26.9474C29.4526 25.857 28.0663 23.6591 27.1397 22.7476C26.1485 21.7686 26.1485 21.9416 25.5098 22.207C24.9899 22.4258 24.4911 22.6917 24.0196 23.0014C23.0965 23.6146 22.5842 24.124 22.2259 24.8896C21.8676 25.6551 21.7067 27.4499 23.5569 30.8109C25.4071 34.1719 26.7053 35.8905 29.3921 38.5696C32.0788 41.2487 34.1449 42.6892 37.1651 44.383C40.9014 46.4754 42.3345 46.0675 43.1024 45.7098C43.8703 45.3522 44.382 44.8445 44.9965 43.9215C45.307 43.4508 45.5735 42.9526 45.7926 42.4331C46.0586 41.7967 46.2317 41.7967 45.2509 40.8062Z"
-          stroke="" stroke-width="2" stroke-miterlimit="10" />
+          stroke="#1C2752" stroke-width="2" stroke-miterlimit="10" />
       </svg>
     </a>
-  </div>
-
-  <div class="cookie" id="cookie">
-    <div class="cookie__inner">
-      <p class="cookie__text">Ми використовуємо <a href="privacy-polic.html" target="_blank"
-          rel="noopener noreferrer">файли cookie</a> для покращення вашого досвіду на нашому сайті. Продовжуючи
-        користуватися сайтом, ви погоджуєтеся з нашою політикою конфіденційності та використанням файлів cookie.</p>
-
-      <div class="cookie__button-box">
-        <button class="cookie__button cookie__button--accept" type="button">Прийняти</button>
-        <button class="cookie__button cookie__button--decline" type="button">Відхилити</button>
-      </div>
-    </div>
   </div>
 
   <script src="./js/main.min.js"></script>
