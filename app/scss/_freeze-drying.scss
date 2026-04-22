@@ -34,6 +34,14 @@
         margin-bottom: 0;
       }
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 }
 .step {
@@ -181,6 +189,14 @@
 
   &__sub-title {
     font-size: 18px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 
   &__pretitle {
@@ -229,6 +245,14 @@
     strong {
       @include Rubik-500;
     }
+    a {
+      color: $blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $grey-700;
+      }
+    }
   }
 }
 .equipment-drying {
@@ -260,6 +284,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
       }
     }
   }
@@ -330,6 +362,14 @@
   &__item-text {
     color: $grey;
     font-size: 18px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 }
 
@@ -441,6 +481,14 @@
 
   &__sub-title {
     font-size: 18px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 
   &__pretitle {
@@ -488,6 +536,14 @@
   &__item-text {
     color: $grey;
     font-size: 18px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 }
 

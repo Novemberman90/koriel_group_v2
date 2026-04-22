@@ -34,6 +34,14 @@
         margin-bottom: 0;
       }
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 
   &__inner {
@@ -105,6 +113,14 @@
   &__item-text {
     color: $grey;
     font-size: 18px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 }
 .recuperation-economy {
@@ -142,6 +158,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
       }
     }
   }
@@ -224,6 +248,14 @@
         margin-bottom: 0;
       }
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 
   &__cta {
@@ -272,6 +304,14 @@
         margin-bottom: 0;
       }
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
   &__steps {
     display: grid;
@@ -298,6 +338,14 @@
   }
   &__step-text {
     color: $white;
+    a {
+      color: $blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $grey-700;
+      }
+    }
   }
   &__img-block {
     max-width: 100%;
@@ -341,6 +389,14 @@
         margin-bottom: 0;
       }
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 
   &__items {
@@ -374,6 +430,14 @@
 
   &__item-text {
     color: $white;
+    a {
+      color: $blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $grey-700;
+      }
+    }
   }
 }
 .recuperation-advantages {
@@ -420,6 +484,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
       }
     }
   }
@@ -478,6 +550,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+      a {
+        color: $blue;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $grey-700;
+        }
       }
     }
   }
@@ -552,6 +632,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $grey-700;
       }
     }
   }

@@ -26,6 +26,14 @@
         margin-bottom: 0;
       }
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 
   &__pretitle {
@@ -105,6 +113,14 @@
   &__item-text {
     color: $grey;
     font-size: 18px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 }
 
@@ -143,6 +159,14 @@
     strong {
       @include Rubik-600;
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
   &__grid {
     display: grid;
@@ -170,6 +194,14 @@
       margin-bottom: 10px;
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
       }
     }
   }
@@ -210,16 +242,17 @@
     strong {
       @include Rubik-600;
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
   &__note {
     margin-bottom: 30px;
-    a {
-      color: $blue;
-      transition: all .3s;
-      &:hover {
-        color: $grey-700;
-      }
-    }
   }
   &__grid {
     margin-bottom: 30px;
@@ -244,6 +277,14 @@
     font-size: 22px;
     @include Rubik-500;
     margin-bottom: 15px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
   &__card-text {
     margin-bottom: 15px;
@@ -284,6 +325,14 @@
   }
   &__cta-text {
     margin-bottom: 10px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
   
 }
@@ -317,6 +366,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
       }
     }
   }
@@ -361,6 +418,14 @@
   &__item-text {
     color: $grey;
     font-size: 18px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 
   &__img-block {
@@ -399,6 +464,14 @@
   
     strong {
       @include Rubik-600;
+    }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
     }
   }
 
@@ -447,6 +520,14 @@
   &__item-text {
     color: $grey;
     font-size: 18px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 }
 
@@ -482,6 +563,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
       }
     }
   }
@@ -564,6 +653,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $grey-700;
       }
     }
   }

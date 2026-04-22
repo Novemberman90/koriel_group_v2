@@ -35,6 +35,14 @@
         margin-bottom: 0;
       }
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
   &__conclusion {
     margin-bottom: 0;
@@ -79,6 +87,14 @@
 
         &:last-child {
           margin-bottom: 0;
+        }
+        a {
+          color: $dark-blue;
+          transition: all 0.3s;
+
+          &:hover {
+            color: $blue;
+          }
         }
       }
     }
@@ -127,6 +143,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
       }
     }
   }
@@ -182,6 +206,14 @@
     strong {
       @include Rubik-500;
     }
+    a {
+      color: $blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $grey-700;
+      }
+    }
   }
 }
 .carel-solutions {
@@ -224,6 +256,14 @@
         margin-bottom: 0;
       }
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
   &__img-block {
     max-width: 100%;
@@ -256,6 +296,14 @@
   &__item-title {
     @include Rubik-400;
     font-size: 20px;
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 }
 .automation-benefits {
@@ -288,6 +336,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
       }
     }
   }
@@ -346,6 +402,14 @@
         margin-bottom: 0;
       }
     }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 
   &__final {
@@ -390,6 +454,14 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $grey-700;
       }
     }
   }
@@ -537,6 +609,14 @@
       margin-bottom: 10px;
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    a {
+      color: $dark-blue;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $blue;
       }
     }
   }
