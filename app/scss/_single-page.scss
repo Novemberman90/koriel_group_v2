@@ -63,6 +63,11 @@
       height: auto;
       object-fit: cover;
     }
+    iframe {
+      width:100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9;
+    }
   }
   a {
     color: $blue;
