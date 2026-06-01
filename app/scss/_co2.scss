@@ -72,6 +72,16 @@
   &__sub-title {
     font-size: 18px;
     text-align: center;
+    a {
+      color: $blue;
+      text-decoration: none;
+      @include Rubik-500;
+      transition: 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        color: $grey-700;
+      }
+    }
   }
   &__pretitle {
     margin: 0 auto 25px auto;
@@ -110,6 +120,17 @@
   }
   &__item-text {
     color: $white;
+    a {
+      color: $blue;
+      text-decoration: none;
+      @include Rubik-500;
+      transition: 0.3s ease;
+      cursor: pointer;
+  
+      &:hover {
+        color: $grey-700;
+      }
+    }
   }
 }
 
@@ -241,6 +262,17 @@
   &__item-text {
     color: $grey;
     font-size: 18px;
+    a {
+      color: $dark-blue;
+      text-decoration: none;
+      @include Rubik-500;
+      transition: 0.3s ease;
+      cursor: pointer;
+  
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 }
 .co2-target {
@@ -413,6 +445,17 @@
 
   &__item-text {
     color: $white;
+    a {
+      color: $blue;
+      text-decoration: none;
+      @include Rubik-500;
+      transition: 0.3s ease;
+      cursor: pointer;
+  
+      &:hover {
+        color: $grey-700;
+      }
+    }
   }
 }
 .co2-comparison {
