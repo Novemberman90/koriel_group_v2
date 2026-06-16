@@ -68,6 +68,15 @@
       height: auto !important;
       aspect-ratio: 16 / 9;
     }
+    table th {
+      border-bottom: 2px solid $blue;
+      background-color: $white;
+    }
+
+    table td {
+      border-bottom: 1px solid $grey;
+      background-color: $white;
+    }
   }
   a {
     color: $blue;
@@ -92,6 +101,10 @@
       h1, h2, h3, h4, h5, h6 {
         font-size: 20px;
       }
+    }
+    table th,
+        table td {
+      word-break: break-word;
     }
   }
   
